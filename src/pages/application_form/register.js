@@ -103,7 +103,7 @@ export default class Application_form extends React.Component {
                   </button>
 
 
-                  <button type="button" value={data.app_id} onClick={() => this.onDownload()} className="btn btn-xs btn-primary">Download</button>
+                  <button type="button"  onClick={() => this.onDownload()} className="btn btn-xs btn-primary">Download</button>
                 </div>
               </form>
             </div>
