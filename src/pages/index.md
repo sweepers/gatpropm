@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: ศูนย์กลางข้อมูลให้ธุรกิจติดต่อราชการแบบเบ็ดเสร็จ ครบวงจร ณ จุดเดียว
 image: /img/home-jumbotron.jpg
-heading: ศูนย์กลางข้อมูลให้ธุรกิจติดต่อราชการแบบเบ็ดเสร็จ ครบวงจร ณ จุดเดียว
+heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
   title: Why Kaldi
