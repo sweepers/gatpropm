@@ -29,9 +29,8 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "uuid": "^3.2.1",
-    "jspdf": "^1.4.1",
-    "jspdf-customfonts": "0.0.4-rc.4",
-    "pdfjs-dist": "^2.0.943"
+    "jspdf": "^1.4.1"
+   
   },
   "keywords": [
     "gatsby"
