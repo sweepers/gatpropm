@@ -18,6 +18,20 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-copy-files',
+      options: {
+          source: `${__dirname}/src/public`,
+          destination: ''
+      }
+  },
+  {
+      resolve: 'gatsby-plugin-copy-files',
+      options: {
+          source: `${__dirname}/src/images`,
+          destination: '/images'
+      }
+  },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
