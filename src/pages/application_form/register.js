@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 //import * as jsPDF from 'jspdf'
-import jsPDF from '../../../dist/jspdf.debug';
+
 function encode(data) {
   const formData = new FormData()
 
