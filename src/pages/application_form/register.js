@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-//import * as jsPDF from 'jspdf'
+import * as jsPDF from 'jspdf'
 
 function encode(data) {
   const formData = new FormData()
@@ -41,7 +41,10 @@ export default class Application_form extends React.Component {
       .catch(error => alert(error))
   }
   onDownload(){
-    
+    var doc = new jsPDF()
+
+  doc.text('Hello world!', 10, 10)
+  doc.save('a4.pdf')
   }
 
   render() {
