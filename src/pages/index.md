@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: ศูนย์กลางข้อมูลให้ธุรกิจติดต่อราชการแบบเบ็ดเสร็จ ครบวงจร ณ จุดเดียว
+subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
   title: Why Kaldi
   description: >
@@ -68,3 +68,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
