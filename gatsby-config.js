@@ -75,6 +75,7 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    
     `gatsby-transformer-pdf`,
   ],
   // for avoiding CORS while developing Netlify Functions locally
