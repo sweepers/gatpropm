@@ -2,7 +2,7 @@ var proxy = require("http-proxy-middleware")
 
 module.exports = {
   siteMetadata: {
-    title: 'บริการการยื่นคำร้อง',
+    title: 'บริการการยื่นคำร้อง-mypromp',
     description:
       'บริการการยื่นคำร้องขอเปิดบริษัท',
   },
