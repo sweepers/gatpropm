@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import * as jsPDF from 'jspdf'
+//import * as jsPDF from 'jspdf'
 
 function encode(data) {
   const formData = new FormData()
@@ -41,18 +41,7 @@ export default class Application_form extends React.Component {
       .catch(error => alert(error))
   }
   onDownload(){
-    const pdf = new jsPDF('p', 'pt', 'A4');
-    pdf.setProperties({
-        title: 'Form 1',
-        subject: 'Requset',		
-        author: 'Sweepers',
-        
-        
-        });
-        var width = pdf.internal.pageSize.getWidth();
-        var height = pdf.internal.pageSize.getHeight(); 
-        pdf.text('test',180,105);
-        pdf.save("test.pdf");
+    
   }
 
   render() {
