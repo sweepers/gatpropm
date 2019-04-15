@@ -43,7 +43,7 @@ export default class Application_form extends React.Component {
   onDownload(){
     var doc = new jsPDF()
 
-  doc.text('Hello world!', 10, 10)
+  doc.text('Helloss world!', 10, 10)
   doc.save('a4.pdf')
   }
 
