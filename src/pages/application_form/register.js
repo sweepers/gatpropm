@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import * as jsPDF from 'jspdf'
 
 function encode(data) {
   const formData = new FormData()
@@ -38,6 +39,20 @@ export default class Application_form extends React.Component {
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error))
+  }
+  onDownload(){
+    const pdf = new jsPDF('p', 'pt', 'A4');
+    pdf.setProperties({
+        title: 'Form 1',
+        subject: 'Requset',		
+        author: 'Sweepers',
+        
+        
+        });
+        var width = pdf.internal.pageSize.getWidth();
+        var height = pdf.internal.pageSize.getHeight(); 
+        pdf.text('test',180,105);
+        pdf.save("test.pdf");
   }
 
   render() {
@@ -97,6 +112,9 @@ export default class Application_form extends React.Component {
                   <button className="button is-link" type="submit">
                     Send
                   </button>
+
+
+                  <button type="button" value={data.app_id} onClick={() => this.onDownload()} className="btn btn-xs btn-primary">Download</button>
                 </div>
               </form>
             </div>
