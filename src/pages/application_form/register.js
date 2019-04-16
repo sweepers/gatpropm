@@ -2,8 +2,8 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
-import firebase from 'firebase/app'
-import 'firebase/database'
+//import firebase from 'firebase/app'
+//import 'firebase/database'
 //import * as jsPDF from 'jspdf'
 
 function encode(data) {
