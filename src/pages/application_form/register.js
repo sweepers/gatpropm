@@ -1,9 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-
-//import firebase from 'firebase/app'
-//import 'firebase/database'
 //import * as jsPDF from 'jspdf'
 
 function encode(data) {
@@ -24,7 +21,6 @@ export default class Application_form extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
-    
   }
 
   handleAttachment = e => {
@@ -46,10 +42,6 @@ export default class Application_form extends React.Component {
   }
   onDownload(){
     
-    /*var doc = new jsPDF()
-
-  doc.text('Helloss world!', 10, 10)
-  doc.save('a4.pdf')*/
   }
 
   render() {
@@ -68,15 +60,15 @@ export default class Application_form extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="Register" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
+
+
+
+
+
+                
+                <input type="hidden" name="form-name" value="register" />
                 <div className="field">
-                  <label className="label" htmlFor={'company_name'}>
+                  <label className="label" htmlFor={'name'}>
                   ชื่อบริษัท
                   </label>
                   <div className="control">
@@ -85,24 +77,35 @@ export default class Application_form extends React.Component {
                       type={'text'}
                       name={'company_name'}
                       onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
                       id={'company_name'}
                       required={true}
                     />
                   </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
                   <div className="control">
                     <input
                       className="input"
                       type={'text'}
-                      name={'name'}
+                      name={'company_nameen'}
                       onChange={this.handleChange}
-                      id={'name'}
+                      id={'company_nameen'}
+                      placeholder={'English'}
                       required={true}
                     />
+                  </div>
+                </div>
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{' '}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'name'}>
+                    รูปภาพ
+                  </label>
+                  <div className="control">
+                    
                   </div>
                 </div>
                 <div className="field">
@@ -120,6 +123,64 @@ export default class Application_form extends React.Component {
                     </label>
                   </div>
                 </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'company_type'}>
+                  ประเภทกิจการ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_type'}
+                      onChange={this.handleChange}
+                     
+                      id={'company_type'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'company_number'}>
+                  เลขทะเบียนบริษัท
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_number'}
+                      onChange={this.handleChange}
+                    
+                      id={'company_number'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'company_date'}>
+                  วันที่จดทะเบียน
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_date'}
+                      onChange={this.handleChange}
+                    
+                      id={'company_date'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+
+
+
+
                 <div className="field">
                   <button className="button is-link" type="submit">
                     Send
