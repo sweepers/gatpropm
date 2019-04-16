@@ -24,6 +24,7 @@ export default class Application_form extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
+    
   }
 
   handleAttachment = e => {
@@ -45,10 +46,10 @@ export default class Application_form extends React.Component {
   }
   onDownload(){
     
-    var doc = new jsPDF()
+    /*var doc = new jsPDF()
 
   doc.text('Helloss world!', 10, 10)
-  doc.save('a4.pdf')
+  doc.save('a4.pdf')*/
   }
 
   render() {
@@ -67,12 +68,27 @@ export default class Application_form extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="file-upload" />
+                <input type="hidden" name="form-name" value="Register" />
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'company_name'}>
+                  ชื่อบริษัท
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_name'}
+                      onChange={this.handleChange}
+                      id={'company_name'}
+                      required={true}
+                    />
+                  </div>
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
