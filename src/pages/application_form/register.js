@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 
 function encode(data) {
@@ -164,15 +165,12 @@ export default class Application_form extends React.Component {
                   วันที่จดทะเบียน
                   </label>
                   <div className="control">
-                    <input
-                      className="input"
-                      type={'text'}
-                      name={'company_date'}
-                      onChange={this.handleChange}
+                  <DatePicker
+                    componentId="DateSensor"
+                    dataField="date_from"
                     
-                      id={'company_date'}
-                      required={true}
-                    />
+                    initialMonth={new Date('2017-05-05')}
+                  />
                   </div>
                   
                 </div>
