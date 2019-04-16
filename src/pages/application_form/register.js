@@ -166,10 +166,7 @@ export default class Application_form extends React.Component {
                   </label>
                   <div className="control">
                   <DatePicker
-                    componentId="DateSensor"
-                    dataField="date_from"
-                    
-                    initialMonth={new Date('2017-05-05')}
+                   
                   />
                   </div>
                   
