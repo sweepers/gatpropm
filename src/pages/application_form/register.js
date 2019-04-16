@@ -1,6 +1,9 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+
+import firebase from 'firebase/app'
+import 'firebase/database'
 //import * as jsPDF from 'jspdf'
 
 function encode(data) {
@@ -41,6 +44,7 @@ export default class Application_form extends React.Component {
       .catch(error => alert(error))
   }
   onDownload(){
+    
     var doc = new jsPDF()
 
   doc.text('Helloss world!', 10, 10)
