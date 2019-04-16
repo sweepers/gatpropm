@@ -84,6 +84,9 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
+                <Link className="navbar-item" to="/application_form/login">
+                  Login
+                </Link>
                 <Link className="navbar-item" to="/application_form/register">
                   Register
                 </Link>
