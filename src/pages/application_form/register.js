@@ -42,7 +42,9 @@ export default class Application_form extends React.Component {
       .catch(error => alert(error))
   }
   onDownload(){
-    
+    const pdf = new jsPDF('p', 'pt', 'A4');
+    pdf.text('Hello world',180,105);
+    pdf.save("genpdf.pdf");
   }
 
   render() {

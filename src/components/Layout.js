@@ -37,6 +37,7 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
