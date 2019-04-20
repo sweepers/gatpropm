@@ -10,7 +10,7 @@ export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  about={widgetFor('body')},
+  
   subheading,
   mainpitch,
   description,
