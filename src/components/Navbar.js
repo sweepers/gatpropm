@@ -34,68 +34,60 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+      <header>
+      <nav class="nav-top">
+        
+          <div class="logo">
+              <h1>
+                  <a href="index.html">Corpo</a>
+              </h1>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                <Link className="navbar-item" to="/application_form/login">
-                  Login
-                </Link>
-                <Link className="navbar-item" to="/application_form/register">
-                  Register
-                </Link>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
+          <ul class="nav_links list-unstyled">
+              <li class="nav-link-list">
+                  <a href="index.html">
+                      <span class="fa fa-home"></span>
+                      <p>Home</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#about">
+                      <span class="fa fa-question"></span>
+                      <p>About</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#services">
+                      <span class="fa fa-cog"></span>
+                      <p>Services</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#blog">
+                      <span class="fa fa-clipboard"></span>
+                      <p>Blog</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#team">
+                      <span class="fa fa-users"></span>
+                      <p>Team</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#testi">
+                      <span class="fa fa-coffee"></span>
+                      <p>Clients</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#contact">
+                      <span class="fa fa-map-marker"></span>
+                      <p>Contact</p>
+                  </a>
+              </li>
+          </ul>
       </nav>
+  </header>
     );
   }
 };
