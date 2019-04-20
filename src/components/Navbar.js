@@ -35,59 +35,61 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <header>
-      <nav class="nav-top">
-        
-          <div class="logo">
-              <h1>
-                  <a href="index.html">Corpo</a>
-              </h1>
-          </div>
-          <ul class="nav_links list-unstyled">
-              <li class="nav-link-list">
-                  <a href="index.html">
-                      <span class="fa fa-home"></span>
-                      <p>Home</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#about">
-                      <span class="fa fa-question"></span>
-                      <p>About</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#services">
-                      <span class="fa fa-cog"></span>
-                      <p>Services</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#blog">
-                      <span class="fa fa-clipboard"></span>
-                      <p>Blog</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#team">
-                      <span class="fa fa-users"></span>
-                      <p>Team</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#testi">
-                      <span class="fa fa-coffee"></span>
-                      <p>Clients</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="#contact">
-                      <span class="fa fa-map-marker"></span>
-                      <p>Contact</p>
-                  </a>
-              </li>
-          </ul>
-      </nav>
-  </header>
+        <nav class="nav-top">
+            <!-- Created By Bogdan Nagorniy -->
+            <div class="logo">
+                <h1>
+                    <a href="index.html">Corpo</a>
+                </h1>
+            </div>
+            <ul class="nav_links list-unstyled">
+               
+                <li class="nav-link-list">
+                    
+                    <a href="/">
+                        <span class="fa fa-home"></span>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <Link  to="/about">
+                        <span class="fa fa-question"></span>
+                        <p>About</p>
+                    </Link>
+                </li>
+                <li>
+                    <a href="#services">
+                        <span class="fa fa-cog"></span>
+                        <p>Services</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        <span class="fa fa-clipboard"></span>
+                        <p>Blog</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#team">
+                        <span class="fa fa-users"></span>
+                        <p>Team</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testi">
+                        <span class="fa fa-coffee"></span>
+                        <p>Clients</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="fa fa-map-marker"></span>
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     );
   }
 };
