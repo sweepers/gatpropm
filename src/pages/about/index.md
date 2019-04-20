@@ -1,19 +1,38 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+<div class="container py-xl-5 py-lg-3">
+            <div class="row py-xl-4">
+              <div class="col-lg-6 welcome-left pr-lg-5">
+                <h3>Story About Us</h3>
+                <h4 class="mt-2 mb-3">Welcome to our company</h4>
+                <h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore</h6>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta erat sit amet eros
+                  sagittis, quis
+                  hendrerit
+                  libero aliquam. Fusce semper augue ac dolor efficitur, a pretium metus pellentesque.</p>
+              </div>
+              <div class="col-lg-6 welcome-right text-center mt-lg-0 mt-5">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="about-sty ml-sm-3">
+                      <span class="fa fa-bar-chart text-wh"></span>
+                      <p class="text-li mt-2">Business Strategy</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 mt-sm-0 mt-4">
+                    <div class="about-sty-2 px-4 py-5">
+                      <span class="fa fa-line-chart text-wh"></span>
+                      <p class="text-li mt-2">Business Growth</p>
+                    </div>
+                    <div class="about-sty-2 px-4 py-5 mt-4">
+                      <span class="fa fa-usd text-wh"></span>
+                      <p class="text-li mt-2">Financial Planning</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
