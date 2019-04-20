@@ -34,7 +34,7 @@ const Nav = class extends React.Component {
 
   render() {
     return (
-      
+        
         <header>
         <nav class="nav-top">
             <!-- Created By Bogdan Nagorniy -->
