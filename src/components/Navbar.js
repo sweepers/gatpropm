@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
     return (
       <header>
 			<nav class="nav-top">
-				<!-- Created By Bogdan Nagorniy -->
+			
 				<div class="logo">
 					<h1>
 						<a href="index.html">Corpo</a>
