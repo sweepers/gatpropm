@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: ศูนย์กลางข้อมูลให้ธุรกิจติดต่อราชการแบบเบ็ดเสร็จ ครบวงจร ณ จุดเดียว
-image: /img/home-jumbotron.jpg
+title: PROMPT LEGAL SERVICES
+image: /img/banner1.jpg
 heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
