@@ -43,19 +43,19 @@ const Navbar = class extends React.Component {
                 </h1>
             </div>
             <ul class="nav_links list-unstyled">
-               
+                
                 <li class="nav-link-list">
                     
-                    <a href="/">
+                    <a href="index.html">
                         <span class="fa fa-home"></span>
                         <p>Home</p>
                     </a>
                 </li>
                 <li>
-                    <Link  to="/about">
+                    <a href="#about">
                         <span class="fa fa-question"></span>
                         <p>About</p>
-                    </Link>
+                    </a>
                 </li>
                 <li>
                     <a href="#services">
