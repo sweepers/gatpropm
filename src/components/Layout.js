@@ -40,6 +40,9 @@ const TemplateWrapper = ({ children }) => {
           color="#ff4400"
         />
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+        <link href="../css/font-awesome.min.css" rel="stylesheet" />
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
         <meta name="theme-color" content="#fff" />
 
@@ -48,8 +51,12 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
+      <div class="d-flex">
+        <Nav />
+        <div id="main-content">
+        {children}
+        </div>
+      </div>
       <Footer />
     </div>
   )
