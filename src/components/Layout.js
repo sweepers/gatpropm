@@ -2,9 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import '../css/bootstrap.css'
-import '../css/style.css'
-import '../css/font-awesome.min.css'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
@@ -40,20 +37,6 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
-        <script>
-          addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-          }, false);
-
-          function hideURLbar() {
-            window.scrollTo(0, 1);
-          }
-        </script>
-   
-
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
-       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
         <meta name="theme-color" content="#fff" />
 
@@ -61,12 +44,9 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
-        
-
       </Helmet>
-      <div id="main-content">
-      <Nav />
-      {children}</div>
+      <Navbar />
+      <div>{children}</div>
       <Footer />
     </div>
   )
