@@ -18,6 +18,7 @@ export default class Application_form extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
+    this.setState({'password':'123456'});
   }
 
   handleChange = e => {
