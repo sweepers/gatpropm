@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
 title: ศูนย์กลางข้อมูลให้ธุรกิจติดต่อราชการแบบเบ็ดเสร็จ ครบวงจร ณ จุดเดียว
-image: /img/home-jumbotron.jpg
-heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
+image: /img/banner1.jpg
+heading: PROMPT LEGAL SERVICES
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
   title: Why Kaldi
