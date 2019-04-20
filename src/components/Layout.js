@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import '../css/bootstrap.css'
 import '../css/style.css'
-//import '../css/style.css'
+import '../css/font-awesome.min.css'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
