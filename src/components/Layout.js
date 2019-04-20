@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 import './all.sass'
-import '../css/style.css'
+//import '../css/style.css'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
@@ -39,6 +39,7 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
+        <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
         <meta name="theme-color" content="#fff" />
 
