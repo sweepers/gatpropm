@@ -5,17 +5,20 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  
+  content
   subheading,
   mainpitch,
   description,
   intro,
-}) => (
+}) => {
+return(
+  const PageContent = contentComponent || Content
   <div>
     <div id="home">
 				
@@ -125,11 +128,14 @@ export const IndexPageTemplate = ({
     </section>
   </div>
 )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -147,6 +153,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
+        content={post.html}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
