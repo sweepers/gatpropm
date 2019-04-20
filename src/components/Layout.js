@@ -39,6 +39,7 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
+        <link rel="stylesheet" href="/css/bootstrap.css"></link>
         <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
         <link href="/css/font-awesome.min.css" rel="stylesheet" />
 
