@@ -6,12 +6,11 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
-
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  shortdesc,
+  
   subheading,
   mainpitch,
   description,
@@ -131,9 +130,6 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  short_desct: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -150,7 +146,6 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        shortdesc={frontmatter.shortdesc}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -184,20 +179,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        shortdesc {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
         subheading
         mainpitch {
           title
