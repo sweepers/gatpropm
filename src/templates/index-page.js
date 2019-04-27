@@ -130,7 +130,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  content: propTypes.markdown,
+  content: propTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
