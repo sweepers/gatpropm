@@ -11,7 +11,6 @@ export const IndexPageTemplate = ({
   title,
   heading,
   about,
-  services,
   subheading,
   mainpitch,
   description,
@@ -98,9 +97,6 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   about: PropTypes.string,
-  services: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -119,7 +115,6 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         about={frontmatter.about}
-        services={frontmatter.services}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -154,27 +149,6 @@ export const pageQuery = graphql`
         }
         heading
         about
-        services {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            title
-            text
-          }
-          title
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
         subheading
         mainpitch {
           title
