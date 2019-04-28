@@ -146,6 +146,7 @@ export const pageQuery = graphql`
           }
         }
         heading
+        about
         subheading
         mainpitch {
           title
