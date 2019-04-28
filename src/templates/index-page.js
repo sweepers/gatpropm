@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -17,6 +17,7 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
+  
   <div>
     <div id="home">
 				
@@ -42,8 +43,8 @@ export const IndexPageTemplate = ({
 		
 			</div>
       <div class="welcome py-5" id="about">
-          {about}
-        </div>
+        <Content className="content" content={about} />
+      </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
