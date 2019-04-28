@@ -20,6 +20,24 @@ about: >-
   erat sit amet eros sagittis, quis hendrerit libero aliquam. Fusce semper augue
   ac dolor efficitur, a pretium metus pellentesque.
 services:
+  blurbs:
+    - text: >
+        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
+        laboriosam.
+      title: Service 1
+      image: /img/favicon-32x32.png
+    - text: >+
+        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
+        laboriosam.
+
+      title: service2
+      image: /img/safari-pinned-tab.svg
+    - text: >+
+        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
+        laboriosam.
+
+      title: service 3
+      image: /img/apple-touch-icon.png
   title: Service
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
