@@ -146,7 +146,7 @@ const IndexPage = ({ data }) => {
        
         services={frontmatter.services}
         heading={frontmatter.heading}
-       
+        
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -178,7 +178,7 @@ export const pageQuery = graphql`
           }
         }
         heading
-      
+        
        
 
         services {
