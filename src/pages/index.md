@@ -45,33 +45,86 @@ mainpitch:
 description: Commercial Contract and Consultation
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/services-icon-01.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Business Law and Investment
+
+        – Advising and registering company formation and tax registrations
+
+        ให้คำปรึกษาจดทะเบียนจัดตั้งบริษัทและขอเลขประจำตัวผู้เสียภาษีอากร
+
+        – Foreign Business License
+
+        ขอรับใบอนุญาตประกอบธุรกิจของคนต่างด้าว
+
+        – Board of Investment Promotion
+
+        ขอรับบัตรส่งเสริมการลงทุน
+
+        – Business licenses and permits(e.g. e-commerce license,
+
+        direct marketing license,import license, etc.)
+        ขอรับใบอนุญาตประกอบธุรกิจต่างๆ (เช่น
+        ใบอนุญาตประกอบธุรกิจพาณิชย์อิเล็กทรอนิกส์,
+        ในอนุญาตประกอบธุรกิจแบบตรงหรือตลาดแบบตรง, ใบอนุญาตนำเข้าสินค้า ฯลฯ
+    - image: /img/services-icon-02.png
+      text: >-
+        Corporate and Legal Administration
+
+        – Convening shareholders’ and board of directors’ meetings
+
+        จัดประชุมผู้ถือหุ้นและประชุมคณะกรรมการ
+
+        – Corporate registrations (i.e. change of directors, business
+        objectives, registered capital etc.)
+
+        จดทะเบียนหุ้นส่วนบริษัท (เช่น เปลี่ยนแปลงกรรมการ,
+        เปลี่ยนแปลงวัตถุประสงค์, เพิ่มหรือลดทุนจดทะเบียน
+
+        – Corporate due diligence
+
+        ตรวจสอบสถานะบริษัท
+
+        – Employment and labour law
+
+        การจ้างงานและกฎหมายแรงงาน
+
+        – Documents retention and company  registrar
+
+        บริการจัดเก็บเอกสารและจัดทำทะเบียนบริษัท
+
+        – etc. อื่นๆ
+    - image: /img/services-icon-04.png
+      text: >-
+        Property
+
+        – Land due diligence
+
+        ตรวจสอบสถานะทางกฎหมายของที่ดิน
+
+        – Contracts drafting, reviewing and negotiating
+
+        ร่าง ตรวจสอบ และเจรจาสัญญา
+
+        – Registrations with respect to property (e.g. sale, purchase, lease,
+        mortgage, usufruct, etc.)
+
+        จดทะเบียนสิทธิเกี่ยวกับทรัพย์สิน (เช่น ซื้อขาย, เช่า, จำนอง,
+        สิทธิเก็บกิน ฯลฯ)
+
+        – etc. อื่นๆ
+    - image: /img/tax-icon.png
+      text: |
+        Tax and Customs
+        – Advising on tax planning
+        ให้คำปรึกษาด้านการวางแผนภาษี
+        – Importer and exporter registration
+        จดทะเบียนผู้นำเข้าและผู้ส่งออก
+        – Customs HS code verification
+        ตรวจสอบพิกัดอัตราศุลกากร
+        – Liaising with government authorities
+        ติดต่อประสานงานกับพนักงานเจ้าหน้าที่ของรัฐ
+        – etc. อื่นๆ  
   heading: What we offer
   description: ssss
 main:
