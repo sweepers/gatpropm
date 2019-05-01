@@ -42,6 +42,7 @@ export const IndexPageTemplate = ({
 				</div>
 		
 			</div>
+      
       <div class="serives-w3pvt-web py-5" id="services">
 				<div class="container py-xl-5 py-lg-3">
 					<div class="row support-bottom text-center">
