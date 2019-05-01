@@ -12,8 +12,9 @@ description: >-
   ทั้งนี้
   ในภาพกว้างๆของการประกอบธุรกิจในประเทศไทยจะมีกฎหมายที่เกี่ยวข้องดังต่อไปนี้
 tags:
-  - brewing
-  - chemex
+  - Laws
+  - Business
+  - Operating Business
 ---
 ![Operating Business](/img/do-business-part2-th.png)
 
