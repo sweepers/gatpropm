@@ -7,22 +7,27 @@ about: content
 services:
   blurbs:
     - text: >
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-      title: Service 1
-      image: /img/favicon-32x32.png
-    - text: >+
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-
-      title: service2
-      image: /img/safari-pinned-tab.svg
-    - text: >+
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-
-      title: service 3
-      image: /img/apple-touch-icon.png
+        Predictable legal cost is the heart of PROMPT’s protocols. We implement
+        modern working regime and reduce unnecessary  costs so that we are able
+        to promise clients reasonable, valuable and expect-able fees. We also
+        offer customized packages and retainers to suit specific need and budget
+        of each client.
+      title: Predictable Cost
+      image: /img/services-icon-01.png
+    - text: >-
+        PROMPT is established and operated by professional lawyers with
+        extensive experiences from reputable law firms in Thailand.  We warrant
+        service quality at a professional standard level. Meanwhile, we use our
+        best effort to simplify complicated legal works and make the easiest for
+        the clients.
+      title: Professional Legal Services
+      image: /img/services-icon-02.png
+    - text: >-
+        PROMPT accompanies clients from their starts to successes. It is our
+        commitment to ensure the clients’ goal can be achieved without legal
+        obstacles.
+      title: 'Loyalty '
+      image: /img/services-icon-03.png
   title: Service
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
