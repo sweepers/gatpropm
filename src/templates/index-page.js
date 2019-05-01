@@ -13,14 +13,10 @@ export const IndexPageTemplate = ({
   about,
   services,
   subheading,
-  content,
-  contentComponent,
   mainpitch,
   description,
   intro,
-}) =>{ 
-  const PageContent = contentComponent || Content
-  return (
+}) => (
   
   <div>
     <div id="home">
@@ -47,7 +43,7 @@ export const IndexPageTemplate = ({
 		
 			</div>
       <div class="welcome py-5" id="about">
-        <PageContent className="content" content={content} />
+        <Content className="content" content={about} />
       </div>
     <section className="section section--gradient">
       <div className="container">
@@ -97,14 +93,12 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)}
+)
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   about: PropTypes.string,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
   services: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -119,15 +113,13 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const { markdownRemark: post } = data
+
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        about={post.frontmatter.about}
-        content={post.html}
-        contentComponent={HTMLContent}
+        about={frontmatter.about}
         services={frontmatter.services}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -152,7 +144,6 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      html
       frontmatter {
         title
         image {
