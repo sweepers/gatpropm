@@ -15,10 +15,8 @@ description: >-
   damages. Generally, legal matters related to starting business to be
   considered are as follows:
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - Laws
+  - Starting up Business
 ---
 ![](/img/do-business-part1-eng.png)
 
