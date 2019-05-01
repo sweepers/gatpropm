@@ -38,9 +38,9 @@ const Navbar = class extends React.Component {
 			<nav class="nav-top">
 			
 				<div class="logo">
-					<h1>
+					
 						<Link to="/"><img src={logo} style="width:82px;" /></Link>
-					</h1>
+				
 				</div>
 				<ul class="nav_links list-unstyled">
 					<li class="nav-link-list">
