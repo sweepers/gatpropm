@@ -57,7 +57,7 @@ export const IndexPageTemplate = ({
 				<div class="container py-xl-5 py-lg-3">
 					<div class="row support-bottom text-center">
 						
-            <Services gridItems={serices.blurbs} />
+            <Services gridItems={services.blurbs} />
 						
 					</div>
 				</div>
