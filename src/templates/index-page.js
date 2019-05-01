@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
+import Services from '../components/Services'
 import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
@@ -46,10 +47,11 @@ export const IndexPageTemplate = ({
       <div class="serives-w3pvt-web py-5" id="services"
       style={{
         backgroundImage: `url(${
-          !!services.markdownRemarkimage.childImageSharp ? services.image.childImageSharp.fluid.src : services.image
+          !!services.image.childImageSharp ? services.image.childImageSharp.fluid.src : services.image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+     
       }}
       >
 				<div class="container py-xl-5 py-lg-3">
