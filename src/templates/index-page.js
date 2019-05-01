@@ -42,8 +42,16 @@ export const IndexPageTemplate = ({
 				</div>
 		
 			</div>
-      
-      <div class="serives-w3pvt-web py-5" id="services">
+
+      <div class="serives-w3pvt-web py-5" id="services"
+      style={{
+        backgroundImage: `url(${
+          !!services.markdownRemarkimage.childImageSharp ? services.image.childImageSharp.fluid.src : services.image
+        })`,
+        backgroundPosition: `top left`,
+        backgroundAttachment: `fixed`,
+      }}
+      >
 				<div class="container py-xl-5 py-lg-3">
 					<div class="row support-bottom text-center">
 						<div class="col-md-4 services-w3ls-grid">
