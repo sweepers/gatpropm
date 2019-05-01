@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
 		
 			</div>
       <div class="welcome py-5" id="about">
-        <PageContent className="about" content={about} />
+        <PageContent className="content" content={content} />
       </div>
     <section className="section section--gradient">
       <div className="container">
