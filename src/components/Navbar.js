@@ -39,7 +39,7 @@ const Navbar = class extends React.Component {
 			
 				<div class="logo">
 					<h1>
-						<Link to="/"><img src={logo} style="width:83px;" /></Link>
+						<Link to="/"><img src={logo} /></Link>
 					</h1>
 				</div>
 				<ul class="nav_links list-unstyled">
