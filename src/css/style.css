@@ -171,6 +171,9 @@ div#home {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+.logo img{
+    width: 82px;
+}
 
 /* //navigation */
 /* //header */
