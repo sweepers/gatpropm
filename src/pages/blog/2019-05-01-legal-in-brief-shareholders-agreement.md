@@ -3,6 +3,9 @@ templateKey: blog-post
 title: 'LEGAL IN BRIEF: SHAREHOLDERS AGREEMENT'
 date: 2019-05-01T14:07:36.626Z
 description: By Promt
+tags:
+  - Legal in Brief
+  - Shareholders agreement
 ---
 ![](/img/shareholder-agreement.png)
 
