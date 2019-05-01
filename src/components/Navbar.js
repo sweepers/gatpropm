@@ -39,18 +39,18 @@ const Navbar = class extends React.Component {
 			
 				<div class="logo">
 					<h1>
-						<a href="index.html">Corpo</a>
+						<a href="">Corpo</a>
 					</h1>
 				</div>
 				<ul class="nav_links list-unstyled">
 					<li class="nav-link-list">
-						<a href="index.html">
+						<a href="">
 							<span class="fa fa-home"></span>
 							<p>Home</p>
 						</a>
 					</li>
 					<li>
-						<a href="#about">
+						<a href="about">
 							<span class="fa fa-question"></span>
 							<p>About</p>
 						</a>
@@ -62,15 +62,15 @@ const Navbar = class extends React.Component {
 						</a>
 					</li>
 					<li>
-						<a href="#blog">
+						<a href="/blog">
 							<span class="fa fa-clipboard"></span>
 							<p>Blog</p>
 						</a>
 					</li>
 					<li>
-						<a href="#team">
+						<a href="application_form/register">
 							<span class="fa fa-users"></span>
-							<p>Team</p>
+							<p>register</p>
 						</a>
 					</li>
 					<li>
