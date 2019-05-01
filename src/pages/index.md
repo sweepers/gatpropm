@@ -3,22 +3,7 @@ templateKey: index-page
 title: PROMPT LEGAL SERVICES
 image: /img/banner1.jpg
 heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
-about: >-
-  # **Story About Us**
-
-
-  **Welcome to our company**
-
-
-
-
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta
-  erat sit amet eros sagittis, quis hendrerit libero aliquam. Fusce semper augue
-  ac dolor efficitur, a pretium metus pellentesque.
+about: content
 services:
   blurbs:
     - text: >
