@@ -117,13 +117,13 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const { markdownRemark: post } = data
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        about={frontmatter.about}
+        about={post.frontmatter.about}
         contentComponent={HTMLContent}
         services={frontmatter.services}
         heading={frontmatter.heading}
