@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const FeatureGrid = ({ gridItems }) => (
+const ServiceGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map(item => (
         <div class="col-md-4 services-w3ls-grid">
@@ -17,7 +17,7 @@ const FeatureGrid = ({ gridItems }) => (
   </div>
 )
 
-FeatureGrid.propTypes = {
+ServiceGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -26,4 +26,4 @@ FeatureGrid.propTypes = {
   ),
 }
 
-export default FeatureGrid
+export default ServiceGrid
