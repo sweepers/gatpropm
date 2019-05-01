@@ -1,33 +1,89 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+templateKey: blog-post
+title: >-
+  Laws and Doing Business in Thailand (Part 1: Laws related to starting-up
+  business)
 date: 2017-01-04T15:04:10.000Z
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  To make a decision for starting a business, an entrepreneur has to concentrate
+  not only on the profit, competition and business growth, business cost, source
+  of investment fund and quality of product and services but such entrepreneur
+  must pay attention to knowledge on laws and regulations related to the
+  business. Understanding of all the related laws and regulations will help the
+  entrepreneur make a good business plan and be prepared in complying with all
+  the requirements to both obtain benefit and to avoid any legal risks and
+  damages. Generally, legal matters related to starting business to be
+  considered are as follows:
 tags:
   - jamaica
   - green beans
   - flavor
   - tasting
 ---
+![](/img/do-business-part1-eng.png)
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+Types of Business Unit
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+Types of business unit can vary from a sole proprietorship, limited partnership, company, and a public limited company, which requires at least fifteen shareholders. Each business unit has different legal status, management, relevant taxes, and others pros and cons. Therefore entrepreneurs should decide a suitable business unit according to the business objectives, business plan and limitations. General types of business unit are as follows:
 
-## A little history
+1. Sole Proprietorship
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+A business unit of which the owner, as an individual, operates and manages everything, take profits and loss, and be liable solely. Such business unit shall be simply managed by its owner but will have limitation in implementing business plan, growth and credibility.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+2. Partnership
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+A partnership is jointly established by at least 2 partners. It can be established as a non-juristic person partnership, which is not separated from its partners i.e. “an ordinary partnership”, or established as a new juristic person, which is separated from its partners i.e. “a registered ordinary partnership” and “a limited partnership”. Each type of partnership has different legal status, liability of partners and authorization of management etc.
 
-## What you need to know before trying
+3. Limited Company
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+A limited company is jointly established by at least 3 promoters (In the future, only one person will be able to establish a limited company). A limited company is a juristic person in separation from its shareholders. Liability of limited company will be limited by its registered capital which includes unpaid shares price of its shareholders. A limited company has more strict duties, as required by laws, than a partnership e.g. duties with respect to operation of a company, board meeting for approving legal actions of a company, high standard and complication of accounting and financial systems. This high standard of rules will ensure good internal control of a company and will result to its transparency and creditability.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+4. Public Limited Company
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Public limited companies (PLCs) are established under the requirements of having at least 15 shareholders and 5 board of directors, and not less than half of these board of directors must be domiciled in Thailand. PLCs have more legal requirements than a limited company. Moreover, public limited companies in the stock exchange must follow the regulations of the Stock Exchange of Thailand (SET) and the Securities and Exchange Commission, Thailand (SEC) particularly having internal control system in place to ensure its transparency. The PLCs have key advantages on raising fund in stock market through selling shares to the public.
+
+5. Other business units
+
+Apart from this, there are other types of business units which have different legal status and suitability for one another, such as state enterprises, cooperatives, joint ventures, consortiums or multinational corporations that engage in business in the form of branch offices, distributors, regional offices or representative offices. These business types will have to follow the laws and regulations related to its nature.
+
+Permissions or Registrations with respect to Businesses
+
+A. Permissions or Registrations in terms of Types of Core Business
+
+In various types of business, entrepreneurs must obtain permissions from or complete registration with the authorized government agencies prior to providing services, sale or production. This includes other proceedings related to providing services, sale or production e.g. importing, processing or exporting raw materials, parts and components, and other materials with respect to operation of their businesses.
+
+Types of Businesses require permission and registration are insurance businesses, businesses related to alcohol beverage, online trades, cosmetics and pharmaceutics businesses, direct sales, manufacturing and trading products under industrial or sanitarian standards and other businesses that products or services may cause impacts to public etc.
+
+Moreover, there are other additional permissions with respect to operation of businesses such as establishing factory, processing, importing or exporting hazardous substances etc.
+
+B. Permissions or Registrations in terms of Supporting Units of Business
+
+Apart from the permissions or registrations of types of core business, entrepreneurs are required to obtain permissions or proceed registrations with respect to supporting units of business such as work permits, registrations of employer and employee, social security registrations, value added tax (vat) registrations and registrations for use of cash registering machines.
+
+Conditions, Restrictions and Permissions for Foreign Businesses
+
+Foreign juristic persons under Thai laws are juristic persons which established under foreign laws or juristic persons which established under Thai laws with at least 51% of shares held by foreigners. There are some conditions and restrictions for foreign juristic persons which are different from Thai juristic persons.
+
+A. General Cases
+
+In general, persons, regardless of nationality, have freedom to conduct businesses. However, laws determine conditions or restrictions for a foreigner to engage in some types of business. A major law relating to this matter is Foreign Business Act B.E. 2542 which determines types of business that foreigners are restricted or required prior permissions for operating, as follows:
+
+List 1: Businesses which are prohibited for operating by special reasons e.g. newspaper businesses, broadcasting businesses and fishery businesses in Thai territorial sea or exclusive economic zone of Thailand etc.
+
+List 2: Businesses relating to safety and security of the country or impacting arts and cultures, traditions, folk handicraft or natural resources and environment such as manufacturing, trading and maintaining armaments, ships, aircrafts or military vehicles, and mining including exploding or breaking rocks etc.
+
+List 3: Businesses which Thai person are not ready for competition such as accounting services, architectural services and advertising businesses etc.
+
+In conclusion, laws prohibit foreigners to operate the businesses in List 1. The businesses in List 2 and List 3, foreigners must obtain permissions before operating. To obtain permissions to engage in the businesses in List 2 are more difficult than the businesses in the List 3 which, at present, there have been numbers of persons obtaining permissions to engage in such List 3 businesses.
+
+Besides, laws provide privileges for foreigners from some countries under trade treaties between their countries and Thailand or foreigners who obtain investment promotion from The Board of Investment of Thailand (BOI), to operate businesses in Thailand without obtaining foreign business licenses.
+
+B. Businesses under the Investment Promotions of BOI
+
+Types of business under the BOI’s promotion and relevant privileges are prescribed by laws i.e. the Promotion Act and announcements of BOI. Such privileges include many types of business according to investment promotion policy and shall be altered for being suitable with each period. It seems that such privileges focus on businesses with respect to research and development, innovation, addition of value of agriculture, industry and service, promotion of small and medium enterprises, environmental friendly enterprises and energy saving or alternative energy enterprises, and other enterprises which affect development of economics and society of Thailand. Current types of promoted businesses are stated in announcements of BOI and a manual guide document of BOI which is available in BOI’s website (www.boi.go.th).
+
+After obtaining the investment promotion, entrepreneurs will have to apply for a foreign business certificate from the Department of Business Development in order to be completely permitted to operate their businesses in Thailand. Applying for the foreign business certificate is less complicated than applying for a foreign business license as a general case.
+
+Pawan Lertpayub
+
+Legal Counsel
