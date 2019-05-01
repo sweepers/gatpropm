@@ -13,6 +13,7 @@ export const IndexPageTemplate = ({
   about,
   services,
   subheading,
+  content,
   contentComponent,
   mainpitch,
   description,
