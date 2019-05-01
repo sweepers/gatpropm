@@ -13,10 +13,13 @@ export const IndexPageTemplate = ({
   about,
   services,
   subheading,
+  contentComponent,
   mainpitch,
   description,
   intro,
-}) => (
+}) =>{ 
+  const PageContent = contentComponent || Content
+  return (
   
   <div>
     <div id="home">
@@ -93,12 +96,13 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+)}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   about: PropTypes.string,
+  contentComponent: PropTypes.func,
   services: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -120,6 +124,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         about={frontmatter.about}
+        contentComponent={HTMLContent}
         services={frontmatter.services}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
