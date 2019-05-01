@@ -2,8 +2,13 @@
 templateKey: index-page
 title: PROMPT LEGAL SERVICES
 image: /img/banner1.jpg
-heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
-about: content
+heading: Brand
+about: |-
+  \- ร่าง ตรวจสอบ และเจรจาสัญญา
+
+  \- ตรวจสอบสัญญากู้และสัญญาทางการเงินอื่นๆ
+
+  \- ตรวจสอบสัญญากู้และสัญญาทางการเงินอื่นๆ
 services:
   blurbs:
     - text: >
@@ -32,17 +37,12 @@ services:
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: Commercial Contract and Consultation
+  description: |-
+    – Contracts drafting, reviewing and negotiating
+    – Reviewing Loan and other financial facility agreement
+    – Legal advice on various commercial matters
+description: Commercial Contract and Consultation
 intro:
   blurbs:
     - image: /img/coffee.png
