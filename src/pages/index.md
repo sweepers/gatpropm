@@ -18,7 +18,7 @@ services:
         offer customized packages and retainers to suit specific need and budget
         of each client.
       title: Predictable Cost
-      image: /img/about-icon-03.png
+      image: /img/about-icon-03_e.png
     - text: >-
         PROMPT is established and operated by professional lawyers with
         extensive experiences from reputable law firms in Thailand. We warrant
@@ -26,13 +26,13 @@ services:
         best effort to simplify complicated legal works and make the easiest for
         the clients.
       title: Professional Legal Services
-      image: /img/about-icon-01.png
+      image: /img/about-icon-01_e.png
     - text: >-
         PROMPT accompanies clients from their starts to successes. It is our
         commitment to ensure the clients’ goal can be achieved without legal
         obstacles.
       title: 'Loyalty '
-      image: /img/about-icon-02.png
+      image: /img/about-icon-02_e.png
   title: Service
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
