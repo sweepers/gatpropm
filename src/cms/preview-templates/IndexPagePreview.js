@@ -12,7 +12,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         title={data.title}
         heading={data.heading}
 
-        content={getAsset('about')}
+        content={getAsset('body')}
         
         services={data.services}
         subheading={data.subheading}
