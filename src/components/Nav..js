@@ -35,60 +35,75 @@ const Nav = class extends React.Component {
   render() {
     return (
         
-        <header>
-        <nav class="nav-top">
-            <!-- Created By Bogdan Nagorniy -->
-            <div class="logo">
-                <h1>
-                    <a href="index.html">Corpo</a>
-                </h1>
-            </div>
-            <ul class="nav_links list-unstyled">
-                <li class="nav-link-list">
-                    <a href="index.html">
-                        <span class="fa fa-home"></span>
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <span class="fa fa-question"></span>
-                        <p>About</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#services">
-                        <span class="fa fa-cog"></span>
-                        <p>Services</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#blog">
-                        <span class="fa fa-clipboard"></span>
-                        <p>Blog</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#team">
-                        <span class="fa fa-users"></span>
-                        <p>Team</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#testi">
-                        <span class="fa fa-coffee"></span>
-                        <p>Clients</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <span class="fa fa-map-marker"></span>
-                        <p>Contact</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <header class="header_area">
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between">
+						<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+					</form>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+				
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="Service.html">Service</a></li>
+							<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav ml-auto">
+							<div class="social-icons d-flex align-items-center">
+								<a href="">
+									<li><i class="fa fa-facebook"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-twitter"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-dribbble"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-behance"></i></li>
+								</a>
+							</div>
+							<li class="nav-item"><a href="#" class="search">
+								<i class="lnr lnr-magnifier" id="search"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
     );
   }
 };
