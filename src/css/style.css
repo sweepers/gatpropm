@@ -105,10 +105,7 @@ button:focus {
     margin-bottom: 0px;
     font-weight: 300; }
 
-/* End Main Title Area css
-============================================================================================ */
-/* Start Gradient Area css
-============================================================================================ */
+
 .gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .service-area, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
   background: -webkit-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
   background: -moz-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
@@ -3204,6 +3201,4 @@ h6 {
     #about .footer-area {
       margin-top: 80px; } }
 
-/*---------------------------------------------------- */
 
-/*# sourceMappingURL=style.css.map */
