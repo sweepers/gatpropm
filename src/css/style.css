@@ -1,7 +1,54 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: SPONDON IT
+Author E-mail: info@spondonit.com
 
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Medicare Medical
+@Author: Naim LAsker
+@Developed By: Naim LAsker
+
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:400,600");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #999999;
+  font-weight: 400; }
 
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999999;
+  opacity: 1;
+  font-weight: 400; }
 
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999999;
+  opacity: 1;
+  font-weight: 400; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999999;
+  font-weight: 400; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999999;
+  font-weight: 400; }
 
 .list {
   list-style: none;
@@ -43,6 +90,8 @@ button:focus {
 .white_bg {
   background: #fff !important; }
 
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 .section_gap {
   padding: 120px 0; }
   @media (max-width: 991px) {
@@ -64,7 +113,8 @@ button:focus {
 .lite_bg {
   background: #f9f9f9; }
 
-
+/* Main Title Area css
+============================================================================================ */
 .main_title {
   text-align: center;
   margin-bottom: 75px; }
@@ -77,7 +127,10 @@ button:focus {
     margin-bottom: 0px;
     font-weight: 300; }
 
-
+/* End Main Title Area css
+============================================================================================ */
+/* Start Gradient Area css
+============================================================================================ */
 .gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .service-area, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
   background: -webkit-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
   background: -moz-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
@@ -101,6 +154,10 @@ button:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+/* End Gradient Area css
+============================================================================================ */
+/* Start Buttons Area css
+============================================================================================ */
 .primary-btn {
   position: relative;
   display: inline-block;
@@ -137,7 +194,10 @@ button:focus {
       opacity: 1;
       visibility: visible; }
 
-
+/* End Buttons Area css
+============================================================================================ */
+/* Start Overlay css
+============================================================================================ */
 .overlay {
   position: relative; }
 
@@ -150,7 +210,10 @@ button:focus {
   content: "";
   z-index: -1; }
 
-
+/* End Overlay css
+============================================================================================ */
+/* Start Video Play css
+============================================================================================ */
 .video-play-button {
   position: relative;
   box-sizing: content-box;
@@ -202,6 +265,70 @@ button:focus {
   .video-play-button:hover:after {
     background-color: #ea1162; }
 
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    transform: translate(-50%, -50%) translateZ(0) scale(1);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    opacity: 0.1; } }
+@-moz-keyframes pulse-border {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    transform: translate(-50%, -50%) translateZ(0) scale(1);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    opacity: 0.1; } }
+@-o-keyframes pulse-border {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    transform: translate(-50%, -50%) translateZ(0) scale(1);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    opacity: 0.1; } }
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1);
+    transform: translate(-50%, -50%) translateZ(0) scale(1);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -moz-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -ms-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    -o-transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    transform: translate(-50%, -50%) translateZ(0) scale(1.5);
+    opacity: 0.1; } }
+/* End Video Play css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 .header_area {
   position: relative;
   width: 100%;
@@ -423,7 +550,8 @@ button:focus {
     border-radius: 0px; }
 
 @media (max-width: 991px) {
-
+  /* Main Menu Area css
+  ============================================================================================ */
   .navbar-toggler {
     border: none;
     border-radius: 0px;
@@ -514,7 +642,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  
+  /*background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;*/
   background-size: cover; }
   .home_banner_area.overlay:after {
     background: #000;
@@ -557,7 +685,7 @@ button:focus {
     min-height: 780px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+      /*background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;*/
       opacity: 0.5;
       height: 125%;
       position: absolute;
@@ -591,7 +719,7 @@ button:focus {
   min-height: 300px; }
   .banner_area .banner_inner {
     position: relative;
-    background: url(../img/banner/common-banner.jpg) no-repeat center center;
+    /*background: url(../img/banner/common-banner.jpg) no-repeat center center;*/
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -706,12 +834,16 @@ button:focus {
     #about .features_area {
       margin-top: 80px; } }
 
+/* End Features Area css
+============================================================================================ */
+/* Start video Area css
+============================================================================================ */
 @media (max-width: 768px) {
   .video-sec-area {
     padding-top: 0px; } }
 
 .video-left {
-  background: url(../img/video-bg.jpg) no-repeat center;
+  /*background: url(../img/video-bg.jpg) no-repeat center;*/
   background-size: cover;
   height: 350px;
   border-radius: 10px;
@@ -994,7 +1126,7 @@ button:focus {
 /* Start CTA Area css
 ============================================================================================ */
 .cta-area {
-  background: url(../img/cta-bg.jpg) center no-repeat;
+  /*background: url(../img/cta-bg.jpg) center no-repeat;*/
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -1607,6 +1739,10 @@ button:focus {
     font-size: 13px;
     color: #777; }
 
+/*============ End Blog Single Styles  =============*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============== contact_area css ================*/
 .mapBox {
   height: 420px;
   margin-bottom: 80px; }
@@ -1675,6 +1811,8 @@ button:focus {
       background: #f4f8ff;
       border: 1px solid #eeeeee; }
 
+/* Contact Success and error Area css
+============================================================================================ */
 .modal-message .modal-dialog {
   position: absolute;
   top: 36%;
@@ -1706,7 +1844,11 @@ button:focus {
     .modal-message .modal-dialog .modal-content .modal-header p {
       display: block; }
 
-
+/* End Contact Success and error Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============== Elements Area css ================*/
 .mb-20 {
   margin-bottom: 20px; }
 
@@ -1736,6 +1878,8 @@ button:focus {
     .sample-text-area p u {
       color: #fec00f; }
 
+/*============== End Elements Area css ================*/
+/*==============Elements Button Area css ================*/
 .elements_button .title_color {
   margin-bottom: 30px;
   color: #222222; }
@@ -1865,7 +2009,11 @@ button:focus {
   padding-top: 0px;
   padding-bottom: 0px; }
 
-
+/*==============End Elements Button Area css ================*/
+/* =================================== */
+/*  Elements Page Styles
+/* =================================== */
+/*---------- Start Elements Page -------------*/
 .generic-banner {
   margin-top: 60px;
   text-align: center; }
@@ -1912,6 +2060,7 @@ button:focus {
 .switch-wrap p {
   margin: 0; }
 
+/*---------- End Elements Page -------------*/
 .sample-text-area {
   padding: 100px 0 70px 0; }
 
@@ -2601,7 +2750,7 @@ h6 {
   color: #222222; }
 
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  /*background: url(../img/elements/primary-check.png) no-repeat center center/cover;*/
   border: none; }
 
 .confirm-checkbox {
@@ -2635,7 +2784,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  /*background: url(../img/elements/success-check.png) no-repeat center center/cover;*/
   border: none; }
 
 .disabled-checkbox {
@@ -2673,7 +2822,7 @@ h6 {
   z-index: 3; }
 
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  /*background: url(../img/elements/disabled-check.png) no-repeat center center/cover;*/
   border: none; }
 
 .primary-radio {
@@ -2707,7 +2856,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  /*background: url(../img/elements/primary-radio.png) no-repeat center center/cover;*/
   border: none; }
 
 .confirm-radio {
@@ -2741,7 +2890,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  /*background: url(../img/elements/success-radio.png) no-repeat center center/cover;*/
   border: none; }
 
 .disabled-radio {
@@ -2788,7 +2937,7 @@ h6 {
   padding: 0px; }
 
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  /*background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;*/
   border: none; }
 
 .default-select {
@@ -2889,8 +3038,11 @@ h6 {
 .form-select .nice-select::after {
   right: 20px; }
 
-
-.f_btn {
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Main Button Area css
+============================================================================================ */
+.white_bg_btn {
   background: #fff;
   display: inline-block;
   color: #222222;
@@ -2924,7 +3076,13 @@ h6 {
     border-color: #fec00f;
     color: #fff; }
 
-
+/* End Main Button Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============== footer-area css ===============*/
 .footer-area {
   background-color: #222222; }
   .footer-area h5 {
@@ -3068,3 +3226,6 @@ h6 {
     #about .footer-area {
       margin-top: 80px; } }
 
+/*---------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
