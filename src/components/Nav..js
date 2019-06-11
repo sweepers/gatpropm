@@ -35,9 +35,9 @@ const Nav = class extends React.Component {
   render() {
     return (
         
-        <header class="header_area">
+        <header>
         <nav class="nav-top">
-           
+            <!-- Created By Bogdan Nagorniy -->
             <div class="logo">
                 <h1>
                     <a href="index.html">Corpo</a>
