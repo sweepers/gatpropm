@@ -69,6 +69,9 @@ const TemplateWrapper = ({ children }) => {
       </div>
       <Footer />
       <Helmet>
+      <script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/popper.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/stellar.js"></script>
 	<script src="/js/jquery.magnific-popup.min.js"></script>
 	<script src="/vendors/lightbox/simpleLightbox.min.js"></script>
