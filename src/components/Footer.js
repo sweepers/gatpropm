@@ -54,11 +54,7 @@ const Footer = class extends React.Component {
 						<div class="single-footer-widget">
 							<h5>Newsletter</h5>
 							<p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
-							<div class="footer-newsletter" id="mc_embed_signup">	
-								
-									
-								
-							</div>
+							
 						</div>
 					</div>
 					<div class="col-lg-3  col-md-6 col-sm-6">
