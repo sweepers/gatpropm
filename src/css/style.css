@@ -1,6 +1,28 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: SPONDON IT
+Author E-mail: info@spondonit.com
 
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Medicare Medical
+@Author: Naim LAsker
+@Developed By: Naim LAsker
+
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:400,600");
-
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #999999;
@@ -105,7 +127,10 @@ button:focus {
     margin-bottom: 0px;
     font-weight: 300; }
 
-
+/* End Main Title Area css
+============================================================================================ */
+/* Start Gradient Area css
+============================================================================================ */
 .gradient-bg, .primary-btn:after, #search_input_box, .single_feature:hover, .about-area .about-inner .single-success:hover, .service-area, .categories_post:hover .categories_details, .blog_right_sidebar .widget_title, .blog_right_sidebar .search_widget .input-group .form-control, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .contact_form .primary-btn, .single-footer-widget .click-btn {
   background: -webkit-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
   background: -moz-linear-gradient(90deg, #fec00f 0%, #f48464 100%);
@@ -617,7 +642,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  /*background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;*/
+  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
   background-size: cover; }
   .home_banner_area.overlay:after {
     background: #000;
@@ -660,7 +685,7 @@ button:focus {
     min-height: 780px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      /*background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;*/
+      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: 0.5;
       height: 125%;
       position: absolute;
@@ -694,7 +719,7 @@ button:focus {
   min-height: 300px; }
   .banner_area .banner_inner {
     position: relative;
-    /*background: url(../img/banner/common-banner.jpg) no-repeat center center;*/
+    background: url(../img/banner/common-banner.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -818,7 +843,7 @@ button:focus {
     padding-top: 0px; } }
 
 .video-left {
-  /*background: url(../img/video-bg.jpg) no-repeat center;*/
+  background: url(../img/video-bg.jpg) no-repeat center;
   background-size: cover;
   height: 350px;
   border-radius: 10px;
@@ -1101,7 +1126,7 @@ button:focus {
 /* Start CTA Area css
 ============================================================================================ */
 .cta-area {
-  /*background: url(../img/cta-bg.jpg) center no-repeat;*/
+  background: url(../img/cta-bg.jpg) center no-repeat;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -2725,7 +2750,7 @@ h6 {
   color: #222222; }
 
 .primary-checkbox input:checked + label {
-  /*background: url(../img/elements/primary-check.png) no-repeat center center/cover;*/
+  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-checkbox {
@@ -2759,7 +2784,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-checkbox input:checked + label {
-  /*background: url(../img/elements/success-check.png) no-repeat center center/cover;*/
+  background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none; }
 
 .disabled-checkbox {
@@ -2797,7 +2822,7 @@ h6 {
   z-index: 3; }
 
 .disabled-checkbox input:checked + label {
-  /*background: url(../img/elements/disabled-check.png) no-repeat center center/cover;*/
+  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none; }
 
 .primary-radio {
@@ -2831,7 +2856,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .primary-radio input:checked + label {
-  /*background: url(../img/elements/primary-radio.png) no-repeat center center/cover;*/
+  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none; }
 
 .confirm-radio {
@@ -2865,7 +2890,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-radio input:checked + label {
-  /*background: url(../img/elements/success-radio.png) no-repeat center center/cover;*/
+  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none; }
 
 .disabled-radio {
@@ -2912,7 +2937,7 @@ h6 {
   padding: 0px; }
 
 .disabled-radio input:checked + label {
-  /*background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;*/
+  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none; }
 
 .default-select {
@@ -3201,4 +3226,6 @@ h6 {
     #about .footer-area {
       margin-top: 80px; } }
 
+/*---------------------------------------------------- */
 
+/*# sourceMappingURL=style.css.map */
