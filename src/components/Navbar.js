@@ -36,7 +36,6 @@ const Navbar = class extends React.Component {
     return (
 			<header class="header_area">
             
-			
 				<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
 					

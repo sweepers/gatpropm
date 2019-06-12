@@ -8,6 +8,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
+    <div>
     <section class="banner_area ">
         <div class="banner_inner overlay d-flex align-items-center">
             <div class="container">
@@ -35,6 +36,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 
