@@ -56,7 +56,14 @@ const Footer = class extends React.Component {
 							<p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
 							<div class="footer-newsletter" id="mc_embed_signup">	
 								
-									
+									<div class="d-flex flex-row">
+										<input class="form-control" name="EMAIL" placeholder="Enter Email"  type="email" />
+										<button class="click-btn btn btn-default"><span class="lnr lnr-location" aria-hidden="true"></span></button>
+										<div style="position: absolute; left: -5000px;">
+											<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+										</div>
+									</div>
+									<div class="info"></div>
 								
 							</div>
 						</div>
@@ -65,7 +72,14 @@ const Footer = class extends React.Component {
 						<div class="single-footer-widget mail-chimp">
 							<h5 class="mb-20">Instragram Feed</h5>
 							<ul class="instafeed d-flex flex-wrap">
-								
+								<li><img src={i1} alt="" /></li>
+								<li><img src={i2} alt="" /></li>
+								<li><img src={i3} alt="" /></li>
+								<li><img src={i4} alt="" /></li>
+								<li><img src={i5} alt="" /></li>
+								<li><img src={i6} alt="" /></li>
+								<li><img src={i7} alt="" /></li>
+								<li><img src={i8} alt="" /></li>
 							</ul>
 						</div>
 					</div>
@@ -77,7 +91,7 @@ const Footer = class extends React.Component {
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
 						<p>
-Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>
+Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 </p>
 					</div>
 					<div class="col-lg-6 col-md-12 text-right">
