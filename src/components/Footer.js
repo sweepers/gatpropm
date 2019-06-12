@@ -56,14 +56,7 @@ const Footer = class extends React.Component {
 							<p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
 							<div class="footer-newsletter" id="mc_embed_signup">	
 								
-									<div class="d-flex flex-row">
-										<input class="form-control" name="EMAIL" placeholder="Enter Email"  type="email" />
-										<button class="click-btn btn btn-default"><span class="lnr lnr-location" aria-hidden="true"></span></button>
-										<div style="position: absolute; left: -5000px;">
-											<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
-										</div>
-									</div>
-									<div class="info"></div>
+									
 								
 							</div>
 						</div>
@@ -91,7 +84,7 @@ const Footer = class extends React.Component {
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
 						<p>
-Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> 
 </p>
 					</div>
 					<div class="col-lg-6 col-md-12 text-right">
