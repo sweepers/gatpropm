@@ -6,7 +6,10 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Services from '../components/Services'
 import BlogRoll from '../components/BlogRoll'
-
+import faature_1 from '../img/features/1.png'
+import faature_2 from '../img/features/2.png'
+import faature_3 from '../img/features/3.png'
+import faature_4 from '../img/features/4.png'
 export const IndexPageTemplate = ({
   image,
   title,
@@ -24,7 +27,7 @@ export const IndexPageTemplate = ({
     <section class="home_banner_area overlay">
 		<div class="banner_inner">
 			<div class="container">
-				<div class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="row fullscreen d-flex align-items-center justify-content-center height-657px">
 					<div class="banner_content">
 						<h2>
 							PROMPT LEGAL SERVICES
@@ -37,6 +40,61 @@ export const IndexPageTemplate = ({
 			</div>
 		</div>
 	</section>
+  <section class="features_area" id="features_counter">
+      <div class="container">
+        <div class="row counter_wrapper">
+        
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single_feature">
+              <div class="thumb">
+                <img src={faature_1} alt="" />
+              </div>
+              <div class="info-content">
+                <h4><span class="counter">596</span>+</h4>
+                <p>Qualified Lawyer</p>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single_feature">
+              <div class="thumb">
+                <img src={faature_2} alt="" />
+              </div>
+              <div class="info-content">
+                <h4><span class="counter">20650</span>+</h4>
+                <p>Solved Cases</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single_feature">
+              <div class="thumb">
+                <img src={faature_3} alt="" />
+              </div>
+              <div class="info-content">
+                <h4><span class="counter">2.5</span>k</h4>
+                <p>Trusted Clients</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single_feature">
+              <div class="thumb">
+                <img src={faature_4} alt="" />
+              </div>
+              <div class="info-content">
+                <h4><span class="counter">50</span>+</h4>
+                <p>Achievements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 )
 
