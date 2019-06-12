@@ -47,7 +47,49 @@ const Navbar = class extends React.Component {
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="Service.html">Service</a></li>
+							<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Blog</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+							<div class="nav navbar-nav ml-auto">
+							<div class="social-icons d-flex align-items-center">
+								<a href="">
+									<li><i class="fa fa-facebook"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-twitter"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-dribbble"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-behance"></i></li>
+								</a>
+							</div>
+							<li class="nav-item"><a href="#" class="search">
+								<i class="lnr lnr-magnifier" id="search"></i></a>
+							</li>
+							</div>
+						</div>
 						
 					</div>
 				</nav>
