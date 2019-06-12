@@ -11,19 +11,23 @@ import faature_2 from '../img/features/2.png'
 import faature_3 from '../img/features/3.png'
 import faature_4 from '../img/features/4.png'
 import img_abt from '../img/about-author.png'
-import img_service1 from '../img/service/service1.jpg'
-import img_service2 from '../img/service/service2.jpg'
-import img_service3 from '../img/service/service3.jpg'
-import img_service4 from '../img/service/service4.jpg'
-import img_service5 from '../img/service/service5.jpg'
-import img_service6 from '../img/service/service6.jpg'
-import img_service7 from '../img/service/service7.jpg'
+import img_service1 from '../img/service/service_1.jpg'
+import img_service2 from '../img/service/service_2.jpg'
+import img_service3 from '../img/service/service_3.jpg'
+import img_service4 from '../img/service/service_4.jpg'
+import img_service5 from '../img/service/service_5.jpg'
+import img_service6 from '../img/service/service_6.jpg'
+
 import team_1 from '../img/team/team1.jpg'
 import team_2 from '../img/team/team2.jpg'
 import team_3 from '../img/team/team3.jpg'
 import blog_1 from '../img/blog/h-blog1.jpg'
 import blog_2 from '../img/blog/h-blog2.jpg'
 import blog_3 from '../img/blog/h-blog3.jpg'
+import img_service_4 from '../img/service/service4.jpg'
+import img_service_5 from '../img/service/service5.jpg'
+import img_service_6 from '../img/service/service6.jpg'
+import img_service_7 from '../img/service/service7.jpg'
 export const IndexPageTemplate = ({
   image,
   title,
@@ -306,14 +310,14 @@ export const IndexPageTemplate = ({
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="left-image">
-                    <div class="s-img"><img class="img-fluid" src={img_service4} alt="" /></div>
-                    <div class="s-img"><img class="img-fluid" src={img_service5} alt="" /></div>
+                    <div class="s-img"><img class="img-fluid" src={img_service_4} alt="" /></div>
+                    <div class="s-img"><img class="img-fluid" src={img_service_5} alt="" /></div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="right-image">
-                      <div class="s-img"><img class="img-fluid" src={img_service6} alt="" /></div>
-                      <div class="s-img"><img class="img-fluid" src={img_service7} alt="" /></div>
+                      <div class="s-img"><img class="img-fluid" src={img_service_6} alt="" /></div>
+                      <div class="s-img"><img class="img-fluid" src={img_service_7} alt="" /></div>
                   </div>
                 </div>
               </div>

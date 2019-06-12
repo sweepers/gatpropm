@@ -49,8 +49,8 @@ const Navbar = class extends React.Component {
 						</button>
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+							<li class="nav-item active"><Link to="/">Home</Link></li>
+							<li class="nav-item"><Link to="/about">About</Link></li>
 							<li class="nav-item"><a class="nav-link" href="Service.html">Service</a></li>
 							<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
 							<li class="nav-item submenu dropdown">
