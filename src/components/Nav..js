@@ -36,6 +36,7 @@ const Nav = class extends React.Component {
     return (
         
         <header class="header_area">
+            
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
