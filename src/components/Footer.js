@@ -79,11 +79,12 @@ const Footer = class extends React.Component {
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
+            
 						<p>
 Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> 
 </p>
 					</div>
-          
+
 					<div class="col-lg-6 col-md-12 text-right">
 						<div class="social-icons">
 							<a href="#"><i class="fa fa-facebook"></i></a>

@@ -20,6 +20,7 @@ export const IndexPageTemplate = ({
 }) => (
   
   <div>
+    
     <section class="home_banner_area overlay">
 		<div class="banner_inner">
 			<div class="container">
