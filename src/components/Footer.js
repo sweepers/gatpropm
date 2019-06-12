@@ -92,7 +92,7 @@ const Footer = class extends React.Component {
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
 						<p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>
 </p>
 					</div>
 					<div class="col-lg-6 col-md-12 text-right">
