@@ -20,79 +20,22 @@ export const IndexPageTemplate = ({
 }) => (
   
   <div>
-    <div id="home">
-				
-				<div class="banner_w3lspvt">
-					<div class="banner-top1"
-          style={{
-            backgroundImage: `url(${
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`,
-            backgroundPosition: `top left`,
-            backgroundAttachment: `fixed`,
-          }}
-          >
-						<div class="container">
-							<div class="banner-text text-center">
-								
-								<h3 class="my-md-4 my-3">{ title }</h3>
-							
-							</div>
-						</div>
-					</div>
-				</div>
-		
-			</div>
-
-      <div class="serives-w3pvt-web py-5" id="services"
-      style={{
-        backgroundImage: `url(${
-          !!services.image.childImageSharp ? services.image.childImageSharp.fluid.src : services.image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-     
-      }}
-      >
-				<div class="container py-xl-5 py-lg-3">
-					<div class="row support-bottom text-center">
-						
-            <Services gridItems={services.blurbs} />
-						
+    <section class="home_banner_area overlay">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center justify-content-center">
+					<div class="banner_content">
+						<h2>
+							PROMPT LEGAL SERVICES
+						</h2>
+						<p>
+							PROMPT accompanies clients from their starts to successes. It is our commitment to ensure the clients’ goal can be achieved without legal obstacles.
+						</p>
 					</div>
 				</div>
 			</div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		</div>
+	</section>
   </div>
 )
 
