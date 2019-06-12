@@ -13,7 +13,7 @@ import '../vendors/lightbox/simpleLightbox.css'
 import '../vendors/nice-select/css/nice-select.css'
 import '../vendors/animate-css/animate.css'
 import '../css/style.css'
-import '../js/jquery-3.2.1.min.js'
+
 
 //import '../css/style.css'
 //import '../css/font-awesome.min.css'
