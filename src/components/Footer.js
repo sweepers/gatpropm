@@ -73,14 +73,14 @@ const Footer = class extends React.Component {
 						<div class="single-footer-widget mail-chimp">
 							<h5 class="mb-20">Instragram Feed</h5>
 							<ul class="instafeed d-flex flex-wrap">
-								<li><img src="{i1}" alt="" /></li>
-								<li><img src="{i2}" alt="" /></li>
-								<li><img src="{i3}" alt="" /></li>
-								<li><img src="{i4}" alt="" /></li>
-								<li><img src="{i5}" alt="" /></li>
-								<li><img src="{i6}" alt="" /></li>
-								<li><img src="{i7}" alt="" /></li>
-								<li><img src="{i8}" alt="" /></li>
+								<li><img src={i1} alt="" /></li>
+								<li><img src={i2} alt="" /></li>
+								<li><img src={i3} alt="" /></li>
+								<li><img src={i4} alt="" /></li>
+								<li><img src={i5} alt="" /></li>
+								<li><img src={i6} alt="" /></li>
+								<li><img src={i7} alt="" /></li>
+								<li><img src={i8} alt="" /></li>
 							</ul>
 						</div>
 					</div>
