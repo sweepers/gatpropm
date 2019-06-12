@@ -5,8 +5,10 @@ import Navbar from '../components/Navbar'
 
 import './all.sass'
 import '../css/bootstrap.css'
-import '../css/style.css'
-import '../css/font-awesome.min.css'
+import '../vendors/linericon/style.css'
+
+//import '../css/style.css'
+//import '../css/font-awesome.min.css'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
@@ -41,16 +43,17 @@ const TemplateWrapper = ({ children }) => {
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
         />
-        <link rel="stylesheet" href="/css/bootstrap.css" />
-        <link rel="stylesheet" href="/vendors/linericon/style.css" />
-        <link rel="stylesheet" href="/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/css/magnific-popup.css" />
-        <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
-        <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
-        <link rel="stylesheet" href="/vendors/animate-css/animate.css" />
-      /
-        <link rel="stylesheet" href="css/style.css" />
+       <link rel="stylesheet" href="/css/bootstrap.css" />
+
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+
+	<link href="/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;subset=latin-ext,thai,vietnamese"
+	 rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Courgette&amp;subset=latin-ext" rel="stylesheet" />
+       
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
