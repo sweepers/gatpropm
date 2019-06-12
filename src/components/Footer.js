@@ -32,7 +32,7 @@ const Footer = class extends React.Component {
 							<h5 class="footer_title">Navigation Links</h5>
 							<div class="row">
 								<div class="col-5">
-									<ul class="list" style="background:none;">
+									<ul class="list">
 										<li><a href="#">Home</a></li>
 										<li><a href="#">Features</a></li>
 										<li><a href="#">Services</a></li>
