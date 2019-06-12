@@ -8,6 +8,19 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
+    <section class="banner_area ">
+        <div class="banner_inner overlay d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="about-us.html">About Us</a>
+                    </div>
+                    <h2>About Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
