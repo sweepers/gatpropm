@@ -20,11 +20,11 @@ export const IndexPageTemplate = ({
 }) => (
   
   <div>
-    
+
     <section class="home_banner_area overlay">
 		<div class="banner_inner">
 			<div class="container">
-				<div class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="row fullscreen d-flex align-items-center justify-content-center" style="width:657px">
 					<div class="banner_content">
 						<h2>
 							PROMPT LEGAL SERVICES
