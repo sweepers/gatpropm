@@ -64,12 +64,9 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Navbar />
-      <div class="d-flex">
-        
-        <div id="main-content">
+      
         {children}
-        </div>
-      </div>
+       
       <Footer />
       <Helmet>
       <script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/jquery-3.2.1.min_pov7vj.js"></script>
