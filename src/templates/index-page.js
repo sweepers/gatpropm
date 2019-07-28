@@ -42,7 +42,13 @@ export const IndexPageTemplate = ({
   
   <div>
 
-    <section class="home_banner_area overlay">
+    <section class="home_banner_area overlay"  style={{
+            backgroundImage: `url(${
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+            backgroundPosition: `top left`,
+            backgroundAttachment: `fixed`,
+          }}>
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row fullscreen d-flex align-items-center justify-content-center height-657px">
