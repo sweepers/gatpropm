@@ -11,12 +11,7 @@ import faature_2 from '../img/features/2.png'
 import faature_3 from '../img/features/3.png'
 import faature_4 from '../img/features/4.png'
 import img_abt from '../img/about-author.png'
-import img_service1 from '../img/service/service_1.jpg'
-import img_service2 from '../img/service/service_2.jpg'
-import img_service3 from '../img/service/service_3.jpg'
-import img_service4 from '../img/service/service_4.jpg'
-import img_service5 from '../img/service/service_5.jpg'
-import img_service6 from '../img/service/service_6.jpg'
+
 
 import team_1 from '../img/team/team1.jpg'
 import team_2 from '../img/team/team2.jpg'
@@ -55,10 +50,10 @@ export const IndexPageTemplate = ({
 				<div class="row fullscreen d-flex align-items-center justify-content-center height-657px">
 					<div class="banner_content">
 						<h2>
-							PROMPT LEGAL SERVICES
+						 { title }
 						</h2>
 						<p>
-							PROMPT accompanies clients from their starts to successes. It is our commitment to ensure the clients’ goal can be achieved without legal obstacles.
+						 { heading }
 						</p>
 					</div>
 				</div>
@@ -211,66 +206,16 @@ export const IndexPageTemplate = ({
           <Services gridItems={services.blurbs} />
           
          
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service2} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Corporate and Legal Administration</a></h5>
-                <p>Convening shareholders’ and board of directors’ meetings. Corporate registrations. Corporate due diligence. Employment and labour law. Documents retention and company  registrar </p>
-              </div>
-            </div>
-          </div>
-         
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service3} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Commercial Contract and Consultation</a></h5>
-                <p>Contracts drafting, reviewing and negotiating. Reviewing Loan and other financial facility agreement. 
-                  Legal advice on various commercial matters.</p>
-              </div>
-            </div>
-          </div>
           
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service4} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Property</a></h5>
-                <p>Land due diligence. Contracts drafting, reviewing and negotiating. Registrations with respect to property (e.g. sale, purchase, lease, mortgage, usufruct, etc.)</p>
-              </div>
-            </div>
-          </div>
          
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service5} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Tax and Customs</a></h5>
-                <p>Advising on tax planning. Importer and exporter registration. Customs HS code verification. Liaising with government authorities</p>
-              </div>
-            </div>
-          </div>
+          
+          
+         
        
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service6} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Other Legal Matters</a></h5>
-                <p>Visa and work permit. Family and heritage laws. Notarization services. Legal document translation service.</p>
-              </div>
-            </div>
-          </div>
+         
+         
+       
+         
         </div>
       </div>
     </section>  
@@ -327,7 +272,7 @@ export const IndexPageTemplate = ({
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="main_title">
-              <h2>Meet Our Experienced Team</h2>
+              <h2>{mainpitch.title} </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
                 aliqua enim minim veniam quis nostrud.</p>
             </div>
