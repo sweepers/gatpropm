@@ -8,18 +8,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single_member">
-              <div class="author">
-                <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
-              </div>
-              <div class="author_decs">
-                <h5>{ alt }</h5>
-                
-              </div>
-            </div>
-          </div>
-      
+      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
     )
   }
 

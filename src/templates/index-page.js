@@ -5,7 +5,6 @@ import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Services from '../components/Services'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BlogRoll from '../components/BlogRoll'
 import faature_1 from '../img/features/1.png'
 import faature_2 from '../img/features/2.png'
@@ -13,7 +12,7 @@ import faature_3 from '../img/features/3.png'
 import faature_4 from '../img/features/4.png'
 import img_abt from '../img/about-author.png'
 
-
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import team_1 from '../img/team/team1.jpg'
 import team_2 from '../img/team/team2.jpg'
 import team_3 from '../img/team/team3.jpg'
@@ -278,16 +277,43 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-        
         <div class="row justify-content-center">
-          <PreviewCompatibleImage imageInfo={main.image1} />
-          <PreviewCompatibleImage imageInfo={main.image2} />
-          <PreviewCompatibleImage imageInfo={main.image3} />
-          
-          
-          
-          
          
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single_member">
+              <div class="author">
+               <PreviewCompatibleImage imageInfo={main.image1} />
+              </div>
+              <div class="author_decs">
+                <h5>{main.image1.alt }</h5>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single_member">
+              <div class="author">
+                <PreviewCompatibleImage imageInfo={main.image2} />
+              </div>
+              <div class="author_decs">
+                <h5>{main.image2.alt }</h5>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single_member">
+              <div class="author">
+              <PreviewCompatibleImage imageInfo={main.image3} />
+              </div>
+              <div class="author_decs">
+                <h5>{main.image3.alt }</h5>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -384,6 +410,7 @@ IndexPageTemplate.propTypes = {
     description: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -477,6 +504,7 @@ export const pageQuery = graphql`
               }
             }
           }
+
           image2 {
             alt
             image {
@@ -487,7 +515,18 @@ export const pageQuery = graphql`
               }
             }
           }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
+
 
 
         subheading
