@@ -50,24 +50,11 @@ const Navbar = class extends React.Component {
 							<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><Link to="/" className="nav-link">Home</Link></li>
 							<li class="nav-item"><Link to="/about" className="nav-link">About</Link></li>
-							<li class="nav-item"><a class="nav-link" href="Service.html">Service</a></li>
-							<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+							<li class="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
+							
+							
+						
 							</ul>
 							<div class="nav navbar-nav ml-auto">
 							<div class="social-icons d-flex align-items-center">
