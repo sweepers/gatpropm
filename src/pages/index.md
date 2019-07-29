@@ -18,7 +18,36 @@ services:
         permits.
       title: Business Law and Investment
       image: /img/service_1.jpg
-  title: Services Offered By Us
+    - text: >-
+        Convening shareholders’ and board of directors’ meetings. Corporate
+        registrations. Corporate due diligence. Employment and labour law.
+        Documents retention and company registrar
+      title: Corporate and Legal Administration
+      image: /img/s_2.jpg
+    - text: >
+        Contracts drafting, reviewing and negotiating. Reviewing Loan and other
+        financial facility agreement. Legal advice on various commercial
+        matters.
+      title: Commercial Contract and Consultation
+      image: /img/s_3.jpg
+    - text: >+
+        Land due diligence. Contracts drafting, reviewing and negotiating.
+        Registrations with respect to property (e.g. sale, purchase, lease,
+        mortgage, usufruct, etc.)
+
+      title: Property
+      image: /img/s_4.jpg
+    - text: >-
+        Advising on tax planning. Importer and exporter registration. Customs HS
+        code verification. Liaising with government authorities
+      title: Tax and Customs
+      image: /img/s_5.jpg
+    - text: >-
+        Visa and work permit. Family and heritage laws. Notarization services.
+        Legal document translation service.
+      title: Other Legal Matters
+      image: /img/s_6.jpg
+  title: Services Offered By Us a
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
