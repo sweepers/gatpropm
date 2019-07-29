@@ -207,9 +207,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-        <Services gridItems={services.blurbs} />
         <div class="row justify-content-center">
-          
+          <Services gridItems={services.blurbs} />
           
          
           <div class="col-lg-4 col-md-4 col-sm-6">
@@ -530,7 +529,6 @@ export const pageQuery = graphql`
             text
           }
           title
-          description
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
