@@ -94,20 +94,18 @@ intro:
   heading: What we offer
   description: ssss
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: Meet Our Experienced Team
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Ethel Davis
+    image: /img/p_1.jpg
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: Ethel Davis
+    image: /img/p_2.jpg
   image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+    alt: Ethel Davis
+    image: /img/p_3.jpg
 ---
 
