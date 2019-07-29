@@ -237,14 +237,14 @@ export const IndexPageTemplate = ({
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="left-image">
-                    <div class="s-img"><img class="img-fluid" src={img_service_4} alt="" /></div>
-                    <div class="s-img"><img class="img-fluid" src={img_service_5} alt="" /></div>
+                    <div class="s-img"><img class="img-fluid" src={ !!intro.blurbs[0].image.childImageSharp ? intro.blurbs[0].image.childImageSharp.fluid.src : intro.blurbs[0].image } alt="" /></div>
+                    <div class="s-img"><img class="img-fluid" src={ !!intro.blurbs[1].image.childImageSharp ? intro.blurbs[1].image.childImageSharp.fluid.src : intro.blurbs[1].image } alt="" /></div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="right-image">
-                      <div class="s-img"><img class="img-fluid" src={img_service_6} alt="" /></div>
-                      <div class="s-img"><img class="img-fluid" src={img_service_7} alt="" /></div>
+                      <div class="s-img"><img class="img-fluid" src={ !!intro.blurbs[2].image.childImageSharp ? intro.blurbs[2].image.childImageSharp.fluid.src : intro.blurbs[2].image } alt="" /></div>
+                      <div class="s-img"><img class="img-fluid" src={ !!intro.blurbs[3].image.childImageSharp ? intro.blurbs[3].image.childImageSharp.fluid.src : intro.blurbs[3].image } alt="" /></div>
                   </div>
                 </div>
               </div>
@@ -514,6 +514,7 @@ export const pageQuery = graphql`
           description
           blog1 {
             alt
+            description
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
@@ -525,6 +526,7 @@ export const pageQuery = graphql`
 
           blog2 {
             alt
+            description
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
@@ -535,6 +537,7 @@ export const pageQuery = graphql`
           }
           blog3 {
             alt
+            description
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
