@@ -201,7 +201,7 @@ export const IndexPageTemplate = ({
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="main_title">
-              <h1>Services Offered By Us</h1>
+              <h1>{ services.title }</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
                 aliqua enim minim veniam quis nostrud.</p>
             </div>
