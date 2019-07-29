@@ -52,6 +52,9 @@ services:
       image: /img/s_6.jpg
   title: Services Offered By Us a
   image: /img/ser.jpg
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
   title: Get to Know Project Estimate?
@@ -109,5 +112,19 @@ main:
   image3:
     alt: Ethel Davis
     image: /img/p_1.jpg
+blog:
+  blog1:
+    alt: Addiction When Gambling  Becomes A Problem
+    image: /img/b_1.jpg
+  blog2:
+    alt: Addiction When Gambling  Becomes A Problem
+    image: /img/b_2.jpg
+  blog3:
+    alt: Addiction When Gambling  Becomes A Problem
+    image: /img/b_3.jpg
+  heading: Latest From Our Blog Posts
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
 ---
 
