@@ -207,20 +207,10 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        <Services gridItems={services.blurbs} />
         <div class="row justify-content-center">
           
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single-service">
-              <div class="service-thumb">
-                <img class="img-fluid" src={img_service1} alt="" />
-              </div>
-              <div class="service-details">
-                <h5><a href="#">Business Law and Investment</a></h5>
-                <p> Advising and registering company formation and tax registrations. Board of Investment Promotion
-                Foreign Business License Business licenses and permits.</p>
-              </div>
-            </div>
-          </div>
+          
          
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single-service">
@@ -540,6 +530,7 @@ export const pageQuery = graphql`
             text
           }
           title
+          description
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {

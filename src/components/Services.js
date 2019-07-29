@@ -5,18 +5,24 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 
 const ServiceGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div class="row justify-content-center">
     {gridItems.map(item => (
-        <div class="col-md-4 services-w3ls-grid">
-            <div class="serv-icon mx-auto">
-            <PreviewCompatibleImage imageInfo={item} />
-            </div>
-            <h4 class="text-wh mt-md-4 mt-3 mb-3">{ item.title }</h4>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="single-service">
+          <div class="service-thumb">
+          <PreviewCompatibleImage imageInfo={item} />
+          </div>
+          <div class="service-details">
+            <h5><a href="#">{ item.title }</a></h5>
             <p>{ item.text }</p>
+          </div>
         </div>
+      </div>
+       
     
     ))}
   </div>
+  
 )
 
 ServiceGrid.propTypes = {
