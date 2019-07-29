@@ -103,9 +103,9 @@ main:
     image: /img/p_1.jpg
   image2:
     alt: Ethel Davis
-    image: /img/p_2.jpg
+    image: /img/p_1.jpg
   image3:
     alt: Ethel Davis
-    image: /img/p_3.jpg
+    image: /img/p_1.jpg
 ---
 
