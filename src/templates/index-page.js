@@ -126,10 +126,9 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           <div class="col-lg-6 video-right">
-            <h1>Get to Know Project Estimate?</h1>
-            <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
-              exciting to think about setting up your own viewing station whether that is on the deck.</p>
-            <a href="#" class="primary-btn">Learn More</a>
+            <h1>{ mainpitch.title }</h1>
+            <p>{ mainpitch.description }</p>
+           
 
             <div class="right-bottom-area">
               <div class="author-lacture">
@@ -272,9 +271,8 @@ export const IndexPageTemplate = ({
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="main_title">
-              <h2>{mainpitch.title} </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                aliqua enim minim veniam quis nostrud.</p>
+              <h2>{ main.heading } </h2>
+              <p>{ main.description }</p>
             </div>
           </div>
         </div>
@@ -481,6 +479,12 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+
+
+        main{
+          heading
+          description
         }
 
 
