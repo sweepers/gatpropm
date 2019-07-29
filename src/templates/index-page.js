@@ -32,6 +32,7 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   main,
+  blog,
   description,
   intro,
 }) => (
@@ -334,9 +335,8 @@ export const IndexPageTemplate = ({
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="main_title">
-              <h2>Latest From Our Blog Posts</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                aliqua enim minim veniam quis nostrud.</p>
+              <h2>{ blog.heading }</h2>
+              <p>{ blog.description }</p>
             </div>
           </div>
         </div>
@@ -345,14 +345,11 @@ export const IndexPageTemplate = ({
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single-blog">
               <div class="blog-thumb">
-                <img class="img-fluid" src={blog_1} alt="" />
+               <PreviewCompatibleImage imageInfo={blog.blog1} />
               </div>
               <div class="blog-details">
-                <div class="blog-meta">
-                  <span>25 june, 2018 | By Mark Wiens</span>
-                </div>
-                <h5><a href="#">Addiction When Gambling <br />
-                    Becomes A Problem</a></h5>
+                
+                <h5><a href="#">{blog.blog1.alt }</a></h5>
                 <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
                   front of their desktops.</p>
               </div>
@@ -362,14 +359,11 @@ export const IndexPageTemplate = ({
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single-blog">
               <div class="blog-thumb">
-                <img class="img-fluid" src={blog_2} alt="" />
+              <PreviewCompatibleImage imageInfo={blog.blog2} />
               </div>
               <div class="blog-details">
-                <div class="blog-meta">
-                  <span>25 june, 2018 | By Mark Wiens</span>
-                </div>
-                <h5><a href="#">Addiction When Gambling <br />
-                    Becomes A Problem</a></h5>
+                
+                <h5><a href="#">{blog.blog2.alt }</a></h5>
                 <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
                   front of their desktops.</p>
               </div>
@@ -379,14 +373,11 @@ export const IndexPageTemplate = ({
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single-blog">
               <div class="blog-thumb">
-                <img class="img-fluid" src={blog_3} alt="" />
+              <PreviewCompatibleImage imageInfo={blog.blog3} />
               </div>
               <div class="blog-details">
-                <div class="blog-meta">
-                  <span>25 june, 2018 | By Mark Wiens</span>
-                </div>
-                <h5><a href="#">Addiction When Gambling <br />
-                    Becomes A Problem</a></h5>
+                
+               <h5><a href="#">{blog.blog3.alt }</a></h5>
                 <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
                   front of their desktops.</p>
               </div>
@@ -412,6 +403,13 @@ IndexPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
+  blog: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    blog1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    blog2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    blog3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -431,6 +429,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         about={frontmatter.about}
         main={frontmatter.main}
+        blog={frontmatter.blog}
         services={frontmatter.services}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -516,6 +515,43 @@ export const pageQuery = graphql`
             }
           }
           image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+
+
+        blog {
+          heading
+          description
+          blog1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+
+          blog2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          blog3 {
             alt
             image {
               childImageSharp {
