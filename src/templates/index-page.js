@@ -226,25 +226,10 @@ export const IndexPageTemplate = ({
           <div class="col-lg-6">
             <div class="service-2-left">
               <div class="get-know">
-                <p class="df-color">Get to Know Project Estimate?</p>
-                <h1>Get to Know Project Estimate?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                  aliqua enim minim veniam quis nostrud.</p>
+                <p class="df-color">{ intro.heading }</p>
+                { intro.description }
               </div>
-              <div class="author-lacture">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                  aliqua enim minim veniam quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
-                  tempor incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua enim minim veniam quis
-                  nostrud.</p>
-                <div class="author-title">
-                  <div class="thumb"><img src={img_abt} alt="" /></div>
-                  <div class="a-desc">
-                    <h6>Marvel Maison</h6>
-                    <p>Chief Executive, Amazon</p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
           <div class="col-lg-6">
@@ -350,8 +335,7 @@ export const IndexPageTemplate = ({
               <div class="blog-details">
                 
                 <h5><a href="#">{blog.blog1.alt }</a></h5>
-                <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
-                  front of their desktops.</p>
+                <p>{blog.blog1.description }</p>
               </div>
             </div>
           </div>
@@ -364,8 +348,7 @@ export const IndexPageTemplate = ({
               <div class="blog-details">
                 
                 <h5><a href="#">{blog.blog2.alt }</a></h5>
-                <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
-                  front of their desktops.</p>
+                <p>{blog.blog2.description }</p>
               </div>
             </div>
           </div>
@@ -378,8 +361,7 @@ export const IndexPageTemplate = ({
               <div class="blog-details">
                 
                <h5><a href="#">{blog.blog3.alt }</a></h5>
-                <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in
-                  front of their desktops.</p>
+                <p>{blog.blog3.description }</p>
               </div>
             </div>
           </div>
