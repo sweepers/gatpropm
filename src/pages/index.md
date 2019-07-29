@@ -2,28 +2,23 @@
 templateKey: index-page
 title: PROMPT LEGAL SERVICES
 image: /img/banner1.jpg
-heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
-about: content
+heading: Get to Know Project Estimate?
+about: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
 services:
   blurbs:
-    - text: >
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-      title: Service 1
-      image: /img/favicon-32x32.png
-    - text: >+
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-
-      title: service2
-      image: /img/safari-pinned-tab.svg
-    - text: >+
-        Ut enim ad minima veniam, quis nostrum ullam corporis suscipit
-        laboriosam.
-
-      title: service 3
-      image: /img/apple-touch-icon.png
-  title: Service
+    - text: >-
+        Advising and registering company formation and tax registrations. Board
+        of Investment Promotion Foreign Business License Business licenses and
+        permits.
+      title: Business Law and Investment
+      image: /img/service_1.jpg
+  title: Services Offered By Us
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
