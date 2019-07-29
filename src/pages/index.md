@@ -116,12 +116,21 @@ blog:
   blog1:
     alt: Addiction When Gambling  Becomes A Problem
     image: /img/b_1.jpg
+    description: >-
+      Computers have become ubiquitous in almost every facet of our lives. At
+      work, desk jockeys spend hours in front of their desktops.
   blog2:
     alt: Addiction When Gambling  Becomes A Problem
     image: /img/b_2.jpg
+    description: >-
+      Computers have become ubiquitous in almost every facet of our lives. At
+      work, desk jockeys spend hours in front of their desktops.
   blog3:
     alt: Addiction When Gambling  Becomes A Problem
     image: /img/b_3.jpg
+    description: >-
+      Computers have become ubiquitous in almost every facet of our lives. At
+      work, desk jockeys spend hours in front of their desktops.
   heading: Latest From Our Blog Posts
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
