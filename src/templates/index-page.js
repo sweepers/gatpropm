@@ -29,11 +29,11 @@ export const IndexPageTemplate = ({
   heading,
   about,
   services,
-  subheading,
+  //subheading,
   mainpitch,
   main,
   blog,
-  description,
+ // description,
   intro,
 }) => (
   
@@ -134,64 +134,15 @@ export const IndexPageTemplate = ({
 
             <div class="right-bottom-area">
               <div class="author-lacture">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                  aliqua enim minim veniam quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
-                  tempor incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua enim minim veniam quis
-                  nostrud.</p>
-                <div class="author-title">
-                  <div class="thumb"><img src={img_abt} alt="" /></div>
-                  <div class="a-desc">
-                    <h6>Marvel Maison</h6>
-                    <p>Chief Executive, Amazon</p>
-                  </div>
-                </div>
+                <p>{ about }</p>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-inner">
-              <div class="row">
-               
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-success">
-                    <h5>Road to Success</h5>
-                    <p>Lorem ipsum dolor sit amet, sed eiusmod tempor incididunt labore dolore magna.</p>
-                  </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-success">
-                    <h5>Road to Success</h5>
-                    <p>Lorem ipsum dolor sit amet, sed eiusmod tempor incididunt labore dolore magna.</p>
-                  </div>
-                </div>
-               
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-success">
-                    <h5>Road to Success</h5>
-                    <p>Lorem ipsum dolor sit amet, sed eiusmod tempor incididunt labore dolore magna.</p>
-                  </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-success">
-                    <h5>Road to Success</h5>
-                    <p>Lorem ipsum dolor sit amet, sed eiusmod tempor incididunt labore dolore magna.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="service-area section_gap">
       <div class="container">
         <div class="row justify-content-center">
