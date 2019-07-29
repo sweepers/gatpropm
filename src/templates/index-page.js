@@ -31,6 +31,7 @@ export const IndexPageTemplate = ({
   services,
   subheading,
   mainpitch,
+  main,
   description,
   intro,
 }) => (
@@ -404,6 +405,7 @@ IndexPageTemplate.propTypes = {
   services: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  main: PropTypes.object,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -422,6 +424,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         about={frontmatter.about}
+        main={frontmatter.main}
         services={frontmatter.services}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
