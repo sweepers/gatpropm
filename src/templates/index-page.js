@@ -277,19 +277,10 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        
         <div class="row justify-content-center">
-         
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single_member">
-              <div class="author">
-                <img class="img-fluid" src={team_1} alt="" />
-              </div>
-              <div class="author_decs">
-                <h5>Ethel Davis</h5>
-                <p class="profession">Senior Barrister at law</p>
-              </div>
-            </div>
-          </div>
+        <PreviewCompatibleImage imageInfo={main.image1} />
+          
           
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="single_member">
@@ -405,7 +396,12 @@ IndexPageTemplate.propTypes = {
   services: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  main: PropTypes.object,
+  main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -485,11 +481,30 @@ export const pageQuery = graphql`
         }
 
 
-        main{
+        main {
           heading
           description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
-
 
 
         subheading
