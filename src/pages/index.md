@@ -6,6 +6,7 @@ heading: >-
   PROMPT accompanies clients from their starts to successes. It is our
   commitment to ensure the clients’ goal can be achieved without legal
   obstacles.
+image_about: /img/video-bg-e61ec8917f7dfc4352a1680428943e54.jpg
 about: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
   incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
