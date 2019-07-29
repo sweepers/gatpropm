@@ -5,6 +5,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Services from '../components/Services'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BlogRoll from '../components/BlogRoll'
 import faature_1 from '../img/features/1.png'
 import faature_2 from '../img/features/2.png'
@@ -279,32 +280,14 @@ export const IndexPageTemplate = ({
         </div>
         
         <div class="row justify-content-center">
-        <PreviewCompatibleImage imageInfo={main.image1} />
+          <PreviewCompatibleImage imageInfo={main.image1} />
+          <PreviewCompatibleImage imageInfo={main.image2} />
+          <PreviewCompatibleImage imageInfo={main.image3} />
           
           
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single_member">
-              <div class="author">
-                <img class="img-fluid" src={team_2} alt="" />
-              </div>
-              <div class="author_decs">
-                <h5>Ethel Davis</h5>
-                <p class="profession">Senior Barrister at law</p>
-              </div>
-            </div>
-          </div>
           
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="single_member">
-              <div class="author">
-                <img class="img-fluid" src={team_3} alt="" />
-              </div>
-              <div class="author_decs">
-                <h5>Ethel Davis</h5>
-                <p class="profession">Senior Barrister at law</p>
-              </div>
-            </div>
-          </div>
+          
+         
         </div>
       </div>
     </section>
