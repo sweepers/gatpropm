@@ -2,12 +2,14 @@
 templateKey: index-page
 title: PROMPT LEGAL SERVICES
 image: /img/banner1.jpg
-heading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
-about: >+
-  PROMPT accompanies clients from their starts to successes. It is our
-  commitment to ensure the clients’ goal can be achieved without legal
-  obstacles.
-
+heading: Get to Know Project Estimate?
+about: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
+  incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
 services:
   blurbs:
     - text: >-
