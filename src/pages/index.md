@@ -2,7 +2,10 @@
 templateKey: index-page
 title: PROMPT LEGAL SERVICES
 image: /img/banner1.jpg
-heading: Get to Know Project Estimate?
+heading: >-
+  PROMPT accompanies clients from their starts to successes. It is our
+  commitment to ensure the clients’ goal can be achieved without legal
+  obstacles.
 about: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
   incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
@@ -51,12 +54,11 @@ services:
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
-  title: Why Kaldi
+  title: Get to Know Project Estimate?
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    There is a moment in the life of any aspiring astronomer that it is time to
+    buy that first telescope. It’s exciting to think about setting up your own
+    viewing station whether that is on the deck.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
