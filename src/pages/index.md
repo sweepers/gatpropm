@@ -54,12 +54,11 @@ services:
   image: /img/ser.jpg
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
-  title: Why Kaldi
+  title: Get to Know Project Estimate?
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    There is a moment in the life of any aspiring astronomer that it is time to
+    buy that first telescope. It’s exciting to think about setting up your own
+    viewing station whether that is on the deck.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
