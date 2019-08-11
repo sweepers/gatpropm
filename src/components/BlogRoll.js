@@ -67,6 +67,13 @@ export default () => (
               }
               frontmatter {
                 title
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 240, quality: 64) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
               }
