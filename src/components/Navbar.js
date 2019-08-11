@@ -93,12 +93,7 @@ const Navbar = class extends React.Component {
 								<a href="">
 									<li><i class="fa fa-twitter"></i></li>
 								</a>
-								<a href="">
-									<li><i class="fa fa-dribbble"></i></li>
-								</a>
-								<a href="">
-									<li><i class="fa fa-behance"></i></li>
-								</a>
+								
 							</div>
 							<li class="nav-item"><a href="#" class="search">
 								<i class="lnr lnr-magnifier" id="search"></i></a>
