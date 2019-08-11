@@ -90,17 +90,17 @@ intro:
 main:
   heading: Meet Our Experienced Team
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    Click through to view profiles on our leaders and senior staff, and how they
+    can help you.
   image1:
     alt: Ethel Davis
     image: /img/p_1.jpg
   image2:
     alt: Ethel Davis
-    image: /img/p_1.jpg
+    image: /img/p_2.jpg
   image3:
     alt: Ethel Davis
-    image: /img/p_1.jpg
+    image: /img/p_3.jpg
 blog:
   blog1:
     alt: Addiction When Gambling  Becomes A Problem
