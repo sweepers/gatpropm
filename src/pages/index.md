@@ -8,12 +8,11 @@ heading: >-
   obstacles.
 image_about: /img/b_3.jpg
 about: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+  พร้อมท์
+  ก่อตั้งและดำเนินการโดยที่ปรึกษากฎหมายผู้มีประสบการณ์ในสำนักงานกฎหมายที่มีชื่อเสียงในประเทศไทย
+  เรารับรองมาตรฐานการบริการในระดับวิชาชีพ ขณะเดียวกัน
+  เราได้ใช้ความพยายามในการลดทอนความยุ่งยากของงานกฎหมาย
+  เพื่ออำนวยความสะดวกของผู้รับบริการของเราถึงที่สุด
 services:
   blurbs:
     - text: >-
