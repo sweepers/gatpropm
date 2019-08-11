@@ -50,11 +50,11 @@ services:
         Legal document translation service.
       title: Other Legal Matters
       image: /img/s_6.jpg
-  title: Services Offered By Us a
+  title: Services Offered By Us
   image: /img/ser.jpg
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    PROMPT is established and operated by professional lawyers with extensive
+    experiences from reputable law firms in Thailand.
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
   title: Professional Legal Services
