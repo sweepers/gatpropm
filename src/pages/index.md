@@ -56,6 +56,8 @@ services:
     PROMPT is established and operated by professional lawyers with extensive
     experiences from reputable law firms in Thailand.
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
+banner:
+  title: Get to Know Project Estimate?
 mainpitch:
   title: Professional Legal Services
   description: >
