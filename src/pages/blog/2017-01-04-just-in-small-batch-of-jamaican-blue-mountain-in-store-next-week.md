@@ -1,34 +1,57 @@
 ---
 templateKey: blog-post
-image: /img/m-blog-3.jpg
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+image: /img/do-business-part2-eng.png
+title: กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 2
 date: 2017-01-04T15:04:10.000Z
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  ในด้านการทำธุรกิจก็มีกฎหมายที่เข้ามาเกี่ยวข้องมากมายที่เกี่ยวข้องกับการดำเนินงานของเรา
+  ทั้งนี้
+  ในภาพกว้างๆของการประกอบธุรกิจในประเทศไทยจะมีกฎหมายที่เกี่ยวข้องดังต่อไปนี้
 tags:
   - jamaica
   - green beans
   - flavor
   - tasting
 ---
+## ก. กฎหมายทั่วไป
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+1. **กฎหมายที่เกี่ยวข้องกับองค์กร**
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+องค์กรในที่นี้ก็คือหน่วยธุรกิจที่ได้กล่าวถึงไว้ในส่วนที่ 1 แต่ในที่นี้จะกล่าวถึงเฉพาะองค์กรที่พบเจอโดยทั่วไปซึ่งได้แก่ห้างหุ้นส่วน บริษัทจำกัด และบริษัทมหาชนจำกัด ในการดำเนินกิจการโดยทั่วไปของผู้ประกอบการเหล่านี้ จะอยู่ภายใต้กฎหมายหลักเช่น ประมวลกฎหมายแพ่งและพาณิชย์ (ป.พ.พ.) และพระราชบัญญัติบริษัทมหาชนจำกัด พ.ศ. 2535 เป็นต้น โดยกฎหมายดังกล่าวก็จะกำหนดหลักเกณฑ์ในการดำเนินกิจการของผู้ประกอบการไว้ในเรื่องต่างๆดังตัวอย่างต่อไปนี้
 
-## A little history
+* ขอบเขตของวัตถุประสงค์ในการดำเนินธุรกิจขององค์กร
+* หลักเกณฑ์เกี่ยวกับการจัดตั้งองค์กร
+* หลักเกณฑ์เกี่ยวกับหุ้นส่วน หุ้น และผู้ถือหุ้น
+* หลักเกณฑ์เกี่ยวกับการจัดการต่างๆขององค์กร เช่น การประชุมผู้ถือหุ้นหรือการประชุมคณะกรรมการของบริษัทเพื่ออนุมัติกิจการต่างๆ กิจการที่ต้องได้รับอนุมัติจากประชุมผู้ถือหุ้นของบริษัท การออกเสียงลงคะแนน การกำหนดและเปลี่ยนแปลงข้อบังคับของบริษัท การแต่งตั้งและถอดถอนกรรมการของบริษัท การจัดทำบัญชีงบดุล การจ่ายเงินปันผลและการเก็บเงินสำรอง การเลิกห้างหุ้นส่วนหรือบริษัท และการชำระบัญชี เป็นต้น
+* หลักเกณฑ์เกี่ยวกับสิทธิ หน้าที่ และความสัมพันธ์ระหว่างบุคคลต่างๆที่เกี่ยวข้อง ไม่ว่าจะเป็น หุ้นส่วน ผู้ถือหุ้น กรรมการ ผู้ชำระบัญชี เป็นต้น
+* หลักเกณฑ์เกี่ยวกับการเปิดเผยข้อมูลต่อหน่วยงานรัฐที่รับผิดชอบหรือประชาชน
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+นอกจากนี้ในกรณีที่เป็นบริษัทมหาชนจำกัดที่อยู่ในตลาดหลักทรัพย์ก็ต้องอยู่ภายใต้กฎเกณฑ์ของตลาดหลักทรัพย์แห่งประเทศไทย (ตลท.) และสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.) ด้วย
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+2. **กฎหมายแพ่งและพาณิชย์**
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+ในการดำเนินธุรกิจและทำนิติกรรมต่างๆ ก็มีกฎหมายเกี่ยวข้องจำนวนมาก โดยหลักแล้วกฎหมายตามประมวลกฎหมายแพ่งและพาณิชย์ก็จะเกี่ยวข้องกับการดำเนินธุรกิจและนิติกรรมต่างๆ ไม่ว่าจะเป็น การทำสัญญา การซื้อขาย การเช่า การเช่าซื้อ การให้กู้ยืมเงิน การค้ำประกัน การจ้างแรงงาน การจ้างทำของ เป็นต้น
 
-## What you need to know before trying
+3. **กฎหมายด้านการตลาดและการโฆษณา**
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+ในทุกธุรกิจย่อมต้องมีกิจกรรมด้านการตลาดและการโฆษณา ซึ่งในเรื่องดังกล่าวก็มีกฎหมายที่กำหนดหลักเกณฑ์ไว้เพื่อให้เกิดความสงบเรียบร้อย ความยุติธรรม และการคุ้มครองผลประโยชน์ของบุคคลที่เกี่ยวข้องทั้งผู้ประกอบการ คู่แข่ง และผู้บริโภค โดยจะมีกฎหมายหลักๆที่เกี่ยวข้อง เช่น กฎหมายแข่งขันทางการค้า กฎหมายว่าด้วยการกำหนดราคาสินค้าและบริการ กฎหมายเกี่ยวกับการส่งเสริมส่งเสริมการขายและการตลาด กฎหมายคุ้มครองผู้บริโภค กฎหมายว่าด้วยข้อสัญญาที่ไม่เป็นธรรม เป็นต้น
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+4. **กฎหมายแรงงาน**
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+ในด้านแรงงาน ประมวลกฎหมายแพ่งและพาณิชย์และพ.ร.บ.คุ้มครองแรงงาน เป็นกฎหมายหลักที่กำหนดสิทธิ หน้าที่ และความรับผิด ระหว่างนายจ้างและลูกจ้างตามสัญญาจ้างแรงงาน โดยกำหนดกฎเกณฑ์ในประเด็นต่างๆเช่น ลักษณะใดที่เป็นการจ้างแรงงาน จำนวนจำกัดของวันและระยะเวลาในการทำงาน ค่าจ้าง ค่าล่วงเวลา วันลา วันหยุด การทดลองงาน การเลิกจ้าง การจ่ายค่าชดเชย กรณีไม่ต้องจ่ายค่าชดเชย ข้อบังคับการทำงาน เป็นต้น นอกจากนี้ก็ยังมีกฎหมายอื่นที่เกี่ยวข้องด้านแรงงานอีกเช่น กฎหมายแรงงานสัมพันธ์ กฎหมายเงินทดแทน กฎหมายประกันสังคม กฎหมาย กองทุนสำรองเลี้ยงชีพ และกฎหมายจัดตั้งศาลแรงงานและวิธีพิจารณาคดีในศาลแรงงาน เป็นต้น
+
+5. **กฎหมายภาษีอากร**
+
+โดยทั่วไปแล้วธุรกิจก็จะเกี่ยวข้องกับภาษีเงินได้ ภาษีหัก ณ ที่จ่าย ภาษีมูลค่าเพิ่ม ตามประมวลรัษฎากรซึ่งเป็นภาษีในความรับผิดชอบของกรมสรรพากร นอกจากนี้ก็อาจเกี่ยวข้องกับภาษีศุลกากร ภาษีสรรพสามิต ภาษีโรงเรือนและที่ดิน ภาษีบำรุงท้องที่ และภาษีป้าย เป็นต้น ทั้งนี้ก็ขึ้นอยู่กับกิจการของผู้ประกอบการ
+
+## ข. กฎหมายที่เกี่ยวข้องกับธุรกิจหลัก
+
+กิจการบางประเภท (ไม่ว่าจะเป็นการผลิตหรือการจำหน่ายสินค้า หรือการให้บริการ รวมถึงการนำเข้า ครอบครอง และส่งออกสิ่งของต่างๆที่เกี่ยวข้องกับธุรกิจ) เป็นกิจการที่มีความเป็นได้ที่จะมีผลกระทบต่อสังคมส่วนรวม สุขภาพอนามัย สิ่งแวดล้อม หรือความสงบเรียบร้อยของสังคม เช่น กิจการผลิตและจำหน่ายสินค้าที่มีมาตรฐานอุตสาหกรรมหรือมาตรฐานด้านสาธรณสุขกำหนดมาตรฐานคุณภาพของสินค้าไว้ (ตัวอย่างสินค้าเช่น เครื่องใช้ไฟฟ้า อุปกรณ์อิเล็กทรอนิกส์ รถยนต์ สารเคมี ยา อาหารเสริม เป็นต้น)  กิจการด้านสถาบันการเงิน กิจการประกันภัย กิจการเครื่องดื่มแอลกอฮอล์ การก่อสร้าง การขายตรง เป็นต้น
+
+กิจการดังกล่าวก็จะต้องมีกฎหมายเข้ามาควบคุมเพิ่มเติมโดยเฉพาะ เช่น กฎหมายมาตรฐานผลิตภัณฑ์อุตสาหกรรม กฎหมายโรงงาน กฎหมายเกี่ยวกับวัตถุอันตราย กฎหมายอาหาร กฎหมายยา กฎหมายธุรกิจสถาบันการเงิน  กฎหมายว่าด้วยธุรกรรมทางอิเล็กทรอนิกส์ กฎหมายว่าด้วยการควบคุมดูแลธุรกิจบริการการชำระเงินทางอิเล็กทรอนิกส์กฎหมายประกันภัย กฎหมายประกันชีวิต กฎหมายควบคุมเครื่องดื่มแอลกอฮอล์ กฎหมายการก่อสร้างอาคาร กฎหมายขายตรงและการตลาดแบบตรง เป็นต้น
+
+ไม่ว่าเราจะประกอบธุรกิจประเภทใดก็ตาม ย่อมมีกฎหมายที่เข้ามาเกี่ยวข้องด้วยเสมอ ส่วนจะมีมากหรือน้อยก็ขึ้นอยู่กับประเภทธุรกิจและกิจกรรมต่างๆที่เกี่ยวข้องด้วย ผู้ประกอบการจึงควรศึกษาข้อมูลเกี่ยวกับกฎหมายเพื่อประโยชน์ในการเตรียมพร้อม วางแผน พิจารณา และตัดสินใจได้อย่างถูกต้องและเหมาสม ซึ่งก็จะช่วยให้ได้ประโยชน์จากกิจการอย่างเต็มที่และลดความเสี่ยงในการเกิดความเสียหายต่างๆได้
+
+ปวัน เลิศพยับ
+
+ที่ปรึกษาด้านกฎหมาย
