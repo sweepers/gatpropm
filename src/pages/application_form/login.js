@@ -38,9 +38,9 @@ export default class Application_form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    console.log('form',form.getAttribute);
+    console.log('form',form['email']);
     let usersRef = firebase.database().ref('data_company');
-    /*usersRef.orderByChild('email').equalTo(formData['email']).on("value",snapshot => {
+    usersRef.orderByChild('email').equalTo(form['email']).on("value",snapshot => {
       let user = snapshot.val();
       let user_data = {};
       let key = '';
@@ -52,8 +52,8 @@ export default class Application_form extends React.Component {
             //console.log(data.key);
         });
         user_data  = user[key];
-        console.log('daa',formData['password'])
-        if(user_data.password == formData['password']){
+        console.log('daa',form['password'])
+        if(user_data.password == form['password']){
          console.log(3);
           let data = {};
             data['email'] = user_data.email;
@@ -76,7 +76,7 @@ export default class Application_form extends React.Component {
       }
       
      
-    });*/
+    });
   
     /*fetch('/', {
       method: 'POST',
@@ -127,6 +127,7 @@ export default class Application_form extends React.Component {
                       className="input"
                       type={'text'}
                       name={'email'}
+                      ref="email"
                       onChange={this.handleChange}
                       placeholder={'email'}
                       id={'email'}
