@@ -5,7 +5,22 @@ import logo from "../img/logo.png";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props);
+	super(props);
+	var config = {
+		apiKey: "AIzaSyAcuRid40eaVEx5TKKn5yibuDTFNDyQxAU",
+		authDomain: "promp-d2fc3.firebaseapp.com",
+		databaseURL: "https://promp-d2fc3.firebaseio.com",
+		projectId: "promp-d2fc3",
+		storageBucket: "promp-d2fc3.appspot.com",
+		messagingSenderId: "660976897097",
+		uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
+	  };
+	  console.log('config',config);
+	  firebase.initializeApp(config);
+	  this.state = {
+		current_user: null,
+	   
+	  };
     this.state = {
       active: false,
       navBarActiveClass: ""
