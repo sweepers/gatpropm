@@ -101,6 +101,7 @@ export default class Application_form extends React.Component {
     );
   }
   render() {
+    let message = '';
     if(this.state.wronglogin){
       message = this.renderElement();  ;
     }
