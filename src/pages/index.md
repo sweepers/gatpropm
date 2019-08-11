@@ -9,12 +9,14 @@ heading: >-
 image_about: /img/b_3.jpg
 banner: /img/cta-bg.jpg
 banner_detail:
-  button: Get Free Estimate
-  title: Get to Know Project Estimate?
-  description: >
-    There is a moment in the life of any aspiring astronomer that it is time to
-    buy that first telescope. It’s exciting to think about setting up your own
-    viewing station whether that is on the deck
+  button: Get Free Registration
+  title: Predictable Cost
+  description: >-
+    Predictable legal cost is the heart of PROMPT’s protocols. We implement
+    modern working regime and reduce unnecessary costs so that we are able to
+    promise clients reasonable, valuable and expectable fees. We also offer
+    customized packages and retainers to suit specific need and budget of each
+    client.
 about: >-
   พร้อมท์
   ก่อตั้งและดำเนินการโดยที่ปรึกษากฎหมายผู้มีประสบการณ์ในสำนักงานกฎหมายที่มีชื่อเสียงในประเทศไทย
