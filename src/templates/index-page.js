@@ -31,6 +31,7 @@ export const IndexPageTemplate = ({
   about,
   services,
   banner,
+  banner_detail,
   //subheading,
   mainpitch,
   main,
@@ -153,8 +154,7 @@ export const IndexPageTemplate = ({
           <div class="col-lg-7">
             <div class="main_title">
               <h1>{ services.title }</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna
-                aliqua enim minim veniam quis nostrud.</p>
+              <p>{ services.description }</p>
             </div>
           </div>
         </div>
@@ -258,14 +258,18 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <div class="cta-area section_gap overlay">
+    <div class="cta-area section_gap overlay" style={{
+      backgroundImage: `url(${
+        !!banner.childImageSharp ? banner.childImageSharp.fluid.src : banner
+      })`,
+      
+    }}>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h1>Get to Know Project Estimate?</h1>
-            <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
-              exciting to think about setting up your own viewing station whether that is on the deck</p>
-            <a href="#" class="primary-btn">Get Free Estimate</a>
+            <h1>{ banner_detail.title }</h1>
+            <p>{ banner_detail.description }</p>
+            <a href="#" class="primary-btn">{ banner_detail.button }</a>
           </div>
         </div>
       </div>
@@ -335,6 +339,7 @@ IndexPageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   banner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  banner_detail: PropTypes.object,
   main: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
@@ -373,6 +378,7 @@ const IndexPage = ({ data }) => {
         blog={frontmatter.blog}
         services={frontmatter.services}
         banner={frontmatter.banner}
+        banner_detail={frontmatter.banner_detail}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
@@ -411,6 +417,18 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+        banner {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        banner_detail {
+          title
+          description
+          button
         }
         heading
         about
