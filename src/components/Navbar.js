@@ -29,8 +29,8 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
-	let current_user  = JSON.parse(localStorage.getItem('current_user'));
-	console.log('current_user',current_user);
+	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
+	//console.log('current_user',current_user);
 	
   }
 
