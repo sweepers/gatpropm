@@ -111,26 +111,24 @@ main:
     image: /img/p_3.jpg
 blog:
   blog1:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_1.jpg
+    alt: Laws and Doing Business in Thailand Part 1
+    image: /img/do-business-part1-th.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      To make a decision for starting a business, an entrepreneur has to
+      concentrate not only on the profit, competition and business growth
   blog2:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_2.jpg
+    alt: กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 2
+    image: /img/do-business-part2-eng.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      ในด้านการทำธุรกิจก็มีกฎหมายที่เข้ามาเกี่ยวข้องมากมายที่เกี่ยวข้องกับการดำเนินงานของเรา
+      ทั้งนี้ ในภาพกว้างๆของการประกอบธุรกิจในประเทศไทยจะมีกฎหมายที่เกี่ยวข้อง
   blog3:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_3.jpg
+    alt: กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 1
+    image: /img/do-business-part1-eng.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      ในการตัดสินในจะเริ่มต้นธุรกิจสักธุรกิจนั้น
+      นอกจากผู้ประกอบการจะต้องคำนึงถึงปัจจัยต่างๆที่จะทำให้ธุรกิจเติบโตและประสบความสำเร็จในแง่ของผลกำไรและมูลค่า
   heading: Latest From Our Blog Posts
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+  description: Law Firm Blogs. Blogging Tips for Lawyers
 ---
 
