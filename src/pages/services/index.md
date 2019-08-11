@@ -48,8 +48,16 @@ title: Service
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<div class="right-image">
-									<div class="s-img"><img class="img-fluid" src="img/service/service6.jpg" alt=""></div>
-									<div class="s-img"><img class="img-fluid" src="img/service/service7.jpg" alt=""></div>
+									<div class="s-img">
+
+![](/img/in_2.jpg)
+
+</div>
+									<div class="s-img">
+
+![](/img/img_4.jpg)
+
+</div>
 								</div>
 							</div>
 						</div>
@@ -74,7 +82,7 @@ title: Service
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-service">
 						<div class="service-thumb">
-							<img class="img-fluid" src="img/service/service1.jpg" alt="">
+							
 						</div>
 						<div class="service-details">
 							<h5><a href="#">Get to Know Project Estimate?</a></h5>
