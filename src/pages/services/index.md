@@ -2,8 +2,6 @@
 templateKey: service-page
 title: Service
 ---
-
-
 <section class="service-area-2 section_gap">
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
@@ -22,7 +20,7 @@ title: Service
 								consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua enim minim veniam quis
 								nostrud.</p>
 							<div class="author-title">
-								<div class="thumb"><img src="img/about-author.png" alt=""></div>
+							
 								<div class="a-desc">
 									<h6>Marvel Maison</h6>
 									<p>Chief Executive, Amazon</p>
@@ -36,8 +34,16 @@ title: Service
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<div class="left-image">
-										<div class="s-img"><img class="img-fluid" src="img/service/service4.jpg" alt=""></div>
-										<div class="s-img"><img class="img-fluid" src="img/service/service5.jpg" alt=""></div>
+										<div class="s-img">
+
+![](/img/in_1.jpg)
+
+</div>
+										<div class="s-img">
+
+![](/img/in_3.jpg)
+
+</div>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
