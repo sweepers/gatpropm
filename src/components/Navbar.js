@@ -85,8 +85,11 @@ const Navbar = class extends React.Component {
 							</ul>
 							<div class="nav navbar-nav ml-auto">
 							<div class="social-icons d-flex align-items-center">
-								<li><Link to="application_form/login" className="nav-link">Login</Link> / <Link to="application_form/register" className="nav-link">Register</Link></li>
-							
+								<li><Link to="application_form/login" className="nav-link">Login</Link> </li>
+								<a href="">
+									<li>/</li>
+								</a>
+								<li><Link to="application_form/register" className="nav-link">Register</Link></li>
 								<a href="">
 									<li><i class="fa fa-facebook"></i></li>
 								</a>
