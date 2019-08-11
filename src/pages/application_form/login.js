@@ -2,6 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import firebase from 'firebase'
+
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 
@@ -37,8 +38,9 @@ export default class Application_form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
+    console.log('form',form);
     let usersRef = firebase.database().ref('data_company');
-    usersRef.orderByChild('email').equalTo(formData['email']).on("value",snapshot => {
+    /*usersRef.orderByChild('email').equalTo(formData['email']).on("value",snapshot => {
       let user = snapshot.val();
       let user_data = {};
       let key = '';
@@ -74,8 +76,8 @@ export default class Application_form extends React.Component {
       }
       
      
-  });
-    console.log(form);
+    });*/
+  
     /*fetch('/', {
       method: 'POST',
       body: encode({
