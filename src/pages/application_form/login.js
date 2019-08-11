@@ -36,6 +36,44 @@ export default class Application_form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
+    let usersRef = firebase.database().ref('data_company');
+    usersRef.orderByChild('email').equalTo(formData['email']).on("value",snapshot => {
+      let user = snapshot.val();
+      let user_data = {};
+      let key = '';
+      if(snapshot.val() ===  null){
+        this.setState({ wronglogin: true });
+      }else{
+        snapshot.forEach(function(data) {
+          key = data.key;
+            //console.log(data.key);
+        });
+        user_data  = user[key];
+        console.log('daa',formData['password'])
+        if(user_data.password == formData['password']){
+         console.log(3);
+          let data = {};
+            data['email'] = user_data.email;
+            data['fullname'] = user_data.fullname;
+            data['id'] = key;
+            console.log('dataa',JSON.stringify(data));
+            //return false;
+            localStorage.setItem('current_user',JSON.stringify(data));
+            localStorage.setItem('abc','1');
+            //console.log('data', data);
+            window.location.reload();
+            this.setState({ current_user: true });
+         
+        }else{
+          console.log('pass', user_data.password );
+          this.setState({ wronglogin: true });
+            
+        }
+
+      }
+      
+     
+  });
     console.log(form);
     /*fetch('/', {
       method: 'POST',
