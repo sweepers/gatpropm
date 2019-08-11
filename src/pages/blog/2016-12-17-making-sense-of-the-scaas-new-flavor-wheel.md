@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-image: /img/m-blog-1.jpg
+image: /img/do-business-part1-eng.png
 title: กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 1
 date: 2016-12-17T15:04:10.000Z
 description: >-
