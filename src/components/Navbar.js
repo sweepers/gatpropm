@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 //import github from "../img/github-icon.svg";
 import logo from "../img/logo.png";
 import firebase from 'firebase';
+import 'firebase/database'
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
@@ -16,7 +17,7 @@ const Navbar = class extends React.Component {
 		uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
 	  };
 	  console.log('config',config);
-	  //firebase.initializeApp(config);
+	  firebase.initializeApp(config);
 	  this.state = {
 		current_user: null,
 	   
