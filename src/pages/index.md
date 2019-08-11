@@ -9,12 +9,14 @@ heading: >-
 image_about: /img/b_3.jpg
 banner: /img/cta-bg.jpg
 banner_detail:
-  button: Get Free Estimate
-  title: Get to Know Project Estimate?
-  description: >
-    There is a moment in the life of any aspiring astronomer that it is time to
-    buy that first telescope. It’s exciting to think about setting up your own
-    viewing station whether that is on the deck
+  button: Get Free Registration
+  title: Predictable Cost
+  description: >-
+    Predictable legal cost is the heart of PROMPT’s protocols. We implement
+    modern working regime and reduce unnecessary costs so that we are able to
+    promise clients reasonable, valuable and expectable fees. We also offer
+    customized packages and retainers to suit specific need and budget of each
+    client.
 about: >-
   พร้อมท์
   ก่อตั้งและดำเนินการโดยที่ปรึกษากฎหมายผู้มีประสบการณ์ในสำนักงานกฎหมายที่มีชื่อเสียงในประเทศไทย
@@ -111,26 +113,28 @@ main:
     image: /img/p_3.jpg
 blog:
   blog1:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_1.jpg
+    alt: Laws and Doing Business in Thailand Part 1
+    image: /img/do-business-part1-th.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      To make a decision for starting a business, an entrepreneur has to
+      concentrate not only on the profit, competition and business growth
   blog2:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_2.jpg
+    alt: กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 2
+    image: /img/do-business-part2-eng.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      ในด้านการทำธุรกิจก็มีกฎหมายที่เข้ามาเกี่ยวข้องมากมายที่เกี่ยวข้องกับการดำเนินงานของเรา
+      ทั้งนี้ ในภาพกว้างๆของการประกอบธุรกิจในประเทศไทยจะมีกฎหมายที่เกี่ยวข้อง
   blog3:
-    alt: Addiction When Gambling  Becomes A Problem
-    image: /img/b_3.jpg
+    alt: 'กฎหมายกับการประกอบธุรกิจในประเทศไทย ส่วนที่ 1 '
+    image: /img/do-business-part1-eng.png
     description: >-
-      Computers have become ubiquitous in almost every facet of our lives. At
-      work, desk jockeys spend hours in front of their desktops.
+      ในการตัดสินในจะเริ่มต้นธุรกิจสักธุรกิจนั้น
+      นอกจากผู้ประกอบการจะต้องคำนึงถึงปัจจัยต่างๆที่จะทำให้ธุรกิจเติบโตและประสบความสำเร็จในแง่ของผลกำไรและมูลค่า
   heading: Latest From Our Blog Posts
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    Law firm blogs are an excellent way for a firm to showcase its level of
+    expertise and to become more noticeable in online searches.Blogging is an
+    essential marketing practice if you want your firm to rank ahead of your
+    competitors on the internet. In this guide, we show you:
 ---
 
