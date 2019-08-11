@@ -3,11 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import faature_1 from '../img/features/1.png'
-import faature_2 from '../img/features/2.png'
-import faature_3 from '../img/features/3.png'
-import faature_4 from '../img/features/4.png'
-import img_abt from '../img/about-author.png'
+
 
 export const ServicePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
