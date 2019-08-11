@@ -131,6 +131,10 @@ blog:
       ในการตัดสินในจะเริ่มต้นธุรกิจสักธุรกิจนั้น
       นอกจากผู้ประกอบการจะต้องคำนึงถึงปัจจัยต่างๆที่จะทำให้ธุรกิจเติบโตและประสบความสำเร็จในแง่ของผลกำไรและมูลค่า
   heading: Latest From Our Blog Posts
-  description: Law Firm Blogs. Blogging Tips for Lawyers
+  description: >-
+    Law firm blogs are an excellent way for a firm to showcase its level of
+    expertise and to become more noticeable in online searches.Blogging is an
+    essential marketing practice if you want your firm to rank ahead of your
+    competitors on the internet. In this guide, we show you:
 ---
 
