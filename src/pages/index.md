@@ -7,6 +7,14 @@ heading: >-
   commitment to ensure the clients’ goal can be achieved without legal
   obstacles.
 image_about: /img/b_3.jpg
+banner: /img/cta-bg.jpg
+banner_detail:
+  button: Get Free Estimate
+  title: Get to Know Project Estimate?
+  description: >
+    There is a moment in the life of any aspiring astronomer that it is time to
+    buy that first telescope. It’s exciting to think about setting up your own
+    viewing station whether that is on the deck
 about: >-
   พร้อมท์
   ก่อตั้งและดำเนินการโดยที่ปรึกษากฎหมายผู้มีประสบการณ์ในสำนักงานกฎหมายที่มีชื่อเสียงในประเทศไทย
