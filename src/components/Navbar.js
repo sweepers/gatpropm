@@ -21,14 +21,15 @@ const Navbar = class extends React.Component {
 		firebase.initializeApp(config);
 	 }
 	  
-	  this.state = {
-		current_user: null,
-	   
-	  };
+	 
     this.state = {
       active: false,
-      navBarActiveClass: ""
+	  navBarActiveClass: "",
+		current_user: null
+	  
 	};
+	let current_user  = JSON.parse(localStorage.getItem('current_user'));
+	console.log('current_user',current_user);
 	
   }
 
