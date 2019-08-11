@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-//import { DatePicker } from '@appbaseio/reactivesearch';
+import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 
 function encode(data) {
@@ -31,8 +31,10 @@ export default class Application_form extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
+    
     const form = e.target
-    fetch('/', {
+    firebase.database().ref('data_company/').push(form);
+    /*fetch('/', {
       method: 'POST',
       body: encode({
         'form-name': form.getAttribute('name'),
@@ -40,7 +42,7 @@ export default class Application_form extends React.Component {
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
+      .catch(error => alert(error))*/
   }
   onDownload(){
     const pdf = new jsPDF('p', 'pt', 'A4');
@@ -176,7 +178,7 @@ export default class Application_form extends React.Component {
                   วันที่จดทะเบียน
                   </label>
                   <div className="control">
-                  
+                      <DatePicker name="company_date" />
                   </div>
                   
                 </div>
