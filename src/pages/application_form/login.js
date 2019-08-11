@@ -40,7 +40,7 @@ export default class Application_form extends React.Component {
     const form = e.target
     console.log('form',form['email'].value);
     let usersRef = firebase.database().ref('data_company');
-    usersRef.orderByChild('email').equalTo(form['email']).on("value",snapshot => {
+    usersRef.orderByChild('email').equalTo(form['email'].value).on("value",snapshot => {
       let user = snapshot.val();
       let user_data = {};
       let key = '';
@@ -93,11 +93,21 @@ export default class Application_form extends React.Component {
     pdf.text('Hello world',180,105);
     pdf.save("genpdf.pdf");
   }
-
+  renderElement(){
+    return (
+      <div class="alert alert-danger">
+        <strong>Email or Password Wrong.</strong> 
+      </div>
+    );
+  }
   render() {
+    if(this.state.wronglogin){
+      message = this.renderElement();  ;
+    }
     return (
       <Layout>
         <section className="section">
+          {message}
           <div className="container">
             <div className="content">
               <h1>Login</h1>
