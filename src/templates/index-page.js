@@ -45,8 +45,7 @@ export const IndexPageTemplate = ({
       backgroundImage: `url(${
         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
       })`,
-      backgroundPosition: `top left`,
-      backgroundAttachment: `fixed`,
+      
     }}>
 		<div class="banner_inner">
 			<div class="container">
