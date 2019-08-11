@@ -38,7 +38,7 @@ export default class Application_form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    console.log('form',form['email']);
+    console.log('form',form['email'].value);
     let usersRef = firebase.database().ref('data_company');
     usersRef.orderByChild('email').equalTo(form['email']).on("value",snapshot => {
       let user = snapshot.val();
