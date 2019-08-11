@@ -78,18 +78,15 @@ intro:
       text: '3'
     - image: /img/img_4.jpg
       text: '4'
-  heading: Get to Know Project Estimate?
+  heading: Loyalty
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    PROMPT accompanies clients from their starts to successes. It is our
+    commitment to ensure the clients’ goal can be achieved without legal
+    obstacles.
 
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-    ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-    ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    พร้อมท์อยู่เคียงข้างผู้รับบริการของเราตั้งแต่จุดเริ่มต้นจนประสบความสำเร็จ
+    เราถือเป็นพันธสัญญาที่จะทำให้แน่ใจว่าผู้รับบริการสามารถบรรลุเป้าหมายได้โดยปราศจากอุปสรรคทางกฎหมาย
 main:
   heading: Meet Our Experienced Team
   description: >-
