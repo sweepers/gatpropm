@@ -16,7 +16,7 @@ const Navbar = class extends React.Component {
 		uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
 	  };
 	  console.log('config',config);
-	  firebase.initializeApp(config);
+	  //firebase.initializeApp(config);
 	  this.state = {
 		current_user: null,
 	   
