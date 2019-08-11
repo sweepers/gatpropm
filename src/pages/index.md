@@ -6,7 +6,7 @@ heading: >-
   PROMPT accompanies clients from their starts to successes. It is our
   commitment to ensure the clients’ goal can be achieved without legal
   obstacles.
-image_about: /img/video-bg-e61ec8917f7dfc4352a1680428943e54.jpg
+image_about: /img/b_3.jpg
 about: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
   incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
@@ -58,11 +58,12 @@ services:
     incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
-  title: Get to Know Project Estimate?
+  title: Professional Legal Services
   description: >
-    There is a moment in the life of any aspiring astronomer that it is time to
-    buy that first telescope. It’s exciting to think about setting up your own
-    viewing station whether that is on the deck.
+    PROMPT is established and operated by professional lawyers with extensive
+    experiences from reputable law firms in Thailand. We warrant service quality
+    at a professional standard level. Meanwhile, we use our best effort to
+    simplify complicated legal works and make the easiest for the clients.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
