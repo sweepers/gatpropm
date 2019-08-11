@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
@@ -13,7 +13,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
               <article className="tile is-child box notification">
-                <PreviewCompatibleImage imageInfo={post} />
+              <PreviewCompatibleImage imageInfo={post.frontmatter.image} />
                 <p>
                   <Link
                     className="title has-text-primary is-size-4"
