@@ -50,7 +50,10 @@ const Navbar = class extends React.Component {
 							<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><Link to="/" className="nav-link">Home</Link></li>
 							<li class="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+							<li class="nav-item"><Link to="/services" className="nav-link">Service</Link></li>
+							<li class="nav-item"><Link to="/services" className="nav-link">Team</Link></li>
 							<li class="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+							
 							<li class="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
 							
 							
