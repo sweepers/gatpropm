@@ -52,8 +52,9 @@ export default class Application_form extends React.Component {
             //console.log(data.key);
         });
         user_data  = user[key];
-        console.log('daa',form['password'])
-        if(user_data.password == form['password']){
+        console.log('daa',form['password'].value)
+        console.log('user_data',user_data)
+        if(user_data.password == form['password'].value){
          console.log(3);
           let data = {};
             data['email'] = user_data.email;
