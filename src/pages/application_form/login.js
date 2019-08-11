@@ -17,7 +17,12 @@ function encode(data) {
 export default class Application_form extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      wronglogin:false,
+      current_user:false,
+
+ 
+   } 
   }
 
   handleChange = e => {
@@ -31,7 +36,8 @@ export default class Application_form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
+    console.log(form);
+    /*fetch('/', {
       method: 'POST',
       body: encode({
         'form-name': form.getAttribute('name'),
@@ -39,7 +45,7 @@ export default class Application_form extends React.Component {
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
+      .catch(error => alert(error))*/
   }
   onDownload(){
     const pdf = new jsPDF('p', 'pt', 'A4');
