@@ -13,6 +13,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
               <article className="tile is-child box notification">
+                <PreviewCompatibleImage imageInfo={post} />
                 <p>
                   <Link
                     className="title has-text-primary is-size-4"
