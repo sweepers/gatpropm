@@ -334,7 +334,7 @@ IndexPageTemplate.propTypes = {
   services: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  banner: PropTypes.object,
+  banner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   main: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
