@@ -6,14 +6,13 @@ heading: >-
   PROMPT accompanies clients from their starts to successes. It is our
   commitment to ensure the clients’ goal can be achieved without legal
   obstacles.
-image_about: /img/video-bg-e61ec8917f7dfc4352a1680428943e54.jpg
+image_about: /img/b_3.jpg
 about: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-  ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-  incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+  พร้อมท์
+  ก่อตั้งและดำเนินการโดยที่ปรึกษากฎหมายผู้มีประสบการณ์ในสำนักงานกฎหมายที่มีชื่อเสียงในประเทศไทย
+  เรารับรองมาตรฐานการบริการในระดับวิชาชีพ ขณะเดียวกัน
+  เราได้ใช้ความพยายามในการลดทอนความยุ่งยากของงานกฎหมาย
+  เพื่ออำนวยความสะดวกของผู้รับบริการของเราถึงที่สุด
 services:
   blurbs:
     - text: >-
@@ -51,18 +50,19 @@ services:
         Legal document translation service.
       title: Other Legal Matters
       image: /img/s_6.jpg
-  title: Services Offered By Us a
+  title: Services Offered By Us
   image: /img/ser.jpg
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    PROMPT is established and operated by professional lawyers with extensive
+    experiences from reputable law firms in Thailand.
 subheading: บริการฉับไว เว็บเดียวจบ ครบทุกเรื่อง
 mainpitch:
-  title: Get to Know Project Estimate?
+  title: Professional Legal Services
   description: >
-    There is a moment in the life of any aspiring astronomer that it is time to
-    buy that first telescope. It’s exciting to think about setting up your own
-    viewing station whether that is on the deck.
+    PROMPT is established and operated by professional lawyers with extensive
+    experiences from reputable law firms in Thailand. We warrant service quality
+    at a professional standard level. Meanwhile, we use our best effort to
+    simplify complicated legal works and make the easiest for the clients.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -78,32 +78,29 @@ intro:
       text: '3'
     - image: /img/img_4.jpg
       text: '4'
-  heading: Get to Know Project Estimate?
+  heading: Loyalty
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    PROMPT accompanies clients from their starts to successes. It is our
+    commitment to ensure the clients’ goal can be achieved without legal
+    obstacles.
 
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-    ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud. Lorem
-    ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    พร้อมท์อยู่เคียงข้างผู้รับบริการของเราตั้งแต่จุดเริ่มต้นจนประสบความสำเร็จ
+    เราถือเป็นพันธสัญญาที่จะทำให้แน่ใจว่าผู้รับบริการสามารถบรรลุเป้าหมายได้โดยปราศจากอุปสรรคทางกฎหมาย
 main:
   heading: Meet Our Experienced Team
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt labore dolore magna aliqua enim minim veniam quis nostrud.
+    Click through to view profiles on our leaders and senior staff, and how they
+    can help you.
   image1:
     alt: Ethel Davis
     image: /img/p_1.jpg
   image2:
     alt: Ethel Davis
-    image: /img/p_1.jpg
+    image: /img/p_2.jpg
   image3:
     alt: Ethel Davis
-    image: /img/p_1.jpg
+    image: /img/p_3.jpg
 blog:
   blog1:
     alt: Addiction When Gambling  Becomes A Problem
