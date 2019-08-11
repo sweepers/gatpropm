@@ -7,17 +7,18 @@ import 'firebase/database'
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
-	var config = {
-		apiKey: "AIzaSyAcuRid40eaVEx5TKKn5yibuDTFNDyQxAU",
-		authDomain: "promp-d2fc3.firebaseapp.com",
-		databaseURL: "https://promp-d2fc3.firebaseio.com",
-		projectId: "promp-d2fc3",
-		storageBucket: "promp-d2fc3.appspot.com",
-		messagingSenderId: "660976897097",
-		uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
-	  };
-	  console.log('config',config);
+	
+	  //console.log('config',config);
 	  if (!firebase.apps.length) {
+		var config = {
+			apiKey: "AIzaSyAcuRid40eaVEx5TKKn5yibuDTFNDyQxAU",
+			authDomain: "promp-d2fc3.firebaseapp.com",
+			databaseURL: "https://promp-d2fc3.firebaseio.com",
+			projectId: "promp-d2fc3",
+			storageBucket: "promp-d2fc3.appspot.com",
+			messagingSenderId: "660976897097",
+			uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
+		  };
 		firebase.initializeApp(config);
 	 }
 	  
@@ -28,8 +29,8 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
-	let current_user  = JSON.parse(localStorage.getItem('current_user'));
-	console.log('current_user',current_user);
+	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
+	//console.log('current_user',current_user);
 	
   }
 
