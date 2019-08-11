@@ -124,8 +124,7 @@ export const IndexPageTemplate = ({
       backgroundImage: `url(${
         !!image_about.childImageSharp ? image_about.childImageSharp.fluid.src : image_about
       })`,
-      backgroundPosition: `top left`,
-      backgroundAttachment: `fixed`,
+    
     }}>
             <div class="video-inner justify-content-center align-items-center d-flex">
              
