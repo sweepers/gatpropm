@@ -3,7 +3,9 @@ import { Link } from "gatsby";
 //import github from "../img/github-icon.svg";
 import logo from "../img/logo.png";
 import firebase from 'firebase';
+import { LocalStorage } from "node-localstorage";
 import 'firebase/database'
+global.localStorage = new LocalStorage('./scratch');
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
