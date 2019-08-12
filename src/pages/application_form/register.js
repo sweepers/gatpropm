@@ -162,7 +162,7 @@ export default class Application_form extends React.Component {
                           accept="image/*"
                           name="avatar"
                           randomizeFilename
-                       
+                          storageRef={firebase.storage().ref("company")}
                           onUploadStart={this.handleUploadStart}
                           onUploadError={this.handleUploadError}
                           onUploadSuccess={this.handleUploadSuccess}
