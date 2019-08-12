@@ -29,7 +29,10 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
-	//const current_user = localStorage.getItem('current_user');
+	if (!window) {
+		require('localstorage-polyfill');
+	}
+	let current_user = localStorage.getItem('current_user');
 	//console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
