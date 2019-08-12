@@ -1,7 +1,29 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import {
+	withScriptjs,
+	withGoogleMap,
+	GoogleMap,
+	Marker
+  } from "react-google-maps";
 //import Helmet from 'react-helmet'
+
+const MyMapComponent = compose(
+	withProps({
+	  googleMapURL:
+		"https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
+	  loadingElement: <div style={{ height: `100%` }} />,
+	  containerElement: <div style={{ height: `400px` }} />,
+	  mapElement: <div style={{ height: `100%` }} />
+	}),
+	withScriptjs,
+	withGoogleMap
+  )(props => (
+	<GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+	  <Marker position={{ lat: -34.397, lng: 150.644 }} />
+	</GoogleMap>
+  ));
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -40,7 +62,9 @@ export default class Index extends React.Component {
 		<div class="container">
 			
 			<div class="row">
-				
+				<div class="col-lg-12">
+					<MyMapComponent key="map" />
+				</div>
 				<div class="col-lg-3">
 					<div class="contact_info">
 						<div class="info_item">
