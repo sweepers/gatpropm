@@ -50,7 +50,7 @@ export default class Index extends React.Component {
 			
 			<div class="row">
 				<div class="col-lg-12">
-				<iframe frameBorder="0" style={{ width: "100%", height: "600"}} 
+				<iframe frameBorder="0" style={{ width: "100%", height: "450px"}} 
 						src={url_map}>
 				</iframe>
 				</div>
