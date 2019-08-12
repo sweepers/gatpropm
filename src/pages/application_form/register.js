@@ -157,32 +157,20 @@ export default class Application_form extends React.Component {
                     รูปภาพ
                   </label>
                   <div className="control">
-                  <input
-                        className="file-input"
-                        type="file"
-                        name="attachment"
-                        onChange={this.handleAttachment}
-                      />
-                      <span className="file-cta">
-                        <span className="file-label">Choose a file…</span>
-                      </span>
+                  {avatar}
+                      <FileUploader
+                          accept="image/*"
+                          name="avatar"
+                          randomizeFilename
+                       
+                          onUploadStart={this.handleUploadStart}
+                          onUploadError={this.handleUploadError}
+                          onUploadSuccess={this.handleUploadSuccess}
+                          onProgress={this.handleProgress}
+                      /> 
                   </div>
                 </div>
-                <div className="field">
-                  <div className="file">
-                    <label className="file-label">
-                      <input
-                        className="file-input"
-                        type="file"
-                        name="attachment"
-                        onChange={this.handleAttachment}
-                      />
-                      <span className="file-cta">
-                        <span className="file-label">Choose a file…</span>
-                      </span>
-                    </label>
-                  </div>
-                </div>
+                
 
                 <div className="field">
                   <label className="label" htmlFor={'company_type'}>
