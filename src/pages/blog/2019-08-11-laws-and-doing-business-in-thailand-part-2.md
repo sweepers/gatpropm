@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-image: /img/do-business-part2-eng.png
+image: /img/do-business-part2-th.png
 title: Laws and Doing Business in Thailand Part 2
 date: 2019-08-11T14:00:09.080Z
 description: >-
