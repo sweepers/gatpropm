@@ -4,6 +4,8 @@ import Layout from '../../components/Layout'
 import DatePicker from "react-datepicker";
 import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
+import firebase from 'firebase';
+import 'firebase/database'
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 
