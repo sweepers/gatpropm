@@ -3,9 +3,7 @@ import { Link } from "gatsby";
 //import github from "../img/github-icon.svg";
 import logo from "../img/logo.png";
 import firebase from 'firebase';
-import { LocalStorage } from "node-localstorage";
 import 'firebase/database'
-//global.localStorage = new LocalStorage('./scratch');
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
@@ -31,8 +29,10 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
-	
-	//let current_user = localStorage.getItem('current_user');
+	if (!window) {
+		require('localstorage-polyfill');
+	}
+	let current_user = lwindow.ocalStorage.getItem('current_user');
 	//console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
