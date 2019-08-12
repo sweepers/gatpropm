@@ -23,7 +23,7 @@ export default class Application_form extends React.Component {
     this.state = {}
     this.setState({'password':'123456'});
     this.state = {
-      startDate: new Date()
+      company_date: new Date()
     };
     this.handleChange_date = this.handleChange_date.bind(this);
   }
@@ -33,7 +33,7 @@ export default class Application_form extends React.Component {
   }
   handleChange_date(date) {
     this.setState({
-      startDate: date
+      company_date: date
     });
   }
   handleAttachment = e => {
@@ -45,7 +45,7 @@ export default class Application_form extends React.Component {
     
     const form = e.target
     console.log('form',this.state);
-    //firebase.database().ref('data_company/').push(form);
+    firebase.database().ref('data_company/').push(this.state);
     /*fetch('/', {
       method: 'POST',
       body: encode({
@@ -192,8 +192,8 @@ export default class Application_form extends React.Component {
                   <div className="control">
                   <DatePicker
                   name={"company_date"}
-                  selected={this.state.startDate}
-                  onChange={this.handleChange}
+                  selected={this.state.company_date}
+                  onChange={this.handleChange_date}
                 />
                   </div>
                   
