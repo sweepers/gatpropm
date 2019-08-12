@@ -3,7 +3,7 @@ import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import {
 	
-	GoogleMap,
+	GoogleMap,Marker
 
   } from "react-google-maps";
 //import Helmet from 'react-helmet'
