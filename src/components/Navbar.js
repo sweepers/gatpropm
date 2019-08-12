@@ -30,7 +30,7 @@ const Navbar = class extends React.Component {
 	  
 	};
 	
-	let current_user = window.localStorage.getItem('current_user');
+	//let current_user = window.localStorage.getItem('current_user');
 	//console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
