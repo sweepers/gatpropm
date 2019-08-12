@@ -44,7 +44,8 @@ export default class Application_form extends React.Component {
     e.preventDefault()
     
     const form = e.target
-    firebase.database().ref('data_company/').push(form);
+    console.log('form',this.state);
+    //firebase.database().ref('data_company/').push(form);
     /*fetch('/', {
       method: 'POST',
       body: encode({
@@ -190,8 +191,9 @@ export default class Application_form extends React.Component {
                   </label>
                   <div className="control">
                   <DatePicker
+                  name={"company_date"}
                   selected={this.state.startDate}
-                  onChange={this.handleChange_date}
+                  onChange={this.handleChange}
                 />
                   </div>
                   
