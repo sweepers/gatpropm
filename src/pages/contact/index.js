@@ -2,7 +2,6 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import Helmet from 'react-helmet'
-import { Map, GoogleApiWrapper } from 'google-maps-react';
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -35,11 +34,6 @@ export default class Index extends React.Component {
   }
 
   render() {
-	const mapStyles = {
-		width: '100%',
-		height: '100%',
-	  };
-	  
     return (
       <Layout>
         <section class="contact_area section_gap">
@@ -47,12 +41,7 @@ export default class Index extends React.Component {
 			
 			<div class="row">
 				<div class="col-lg-12">
-				<Map
-          
-          zoom={8}
-          style={mapStyles}
-          initialCenter={{ lat: 47.444, lng: -122.176}}
-        />
+					
 				</div>
 				<div class="col-lg-3">
 					<div class="contact_info">
