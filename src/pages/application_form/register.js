@@ -157,17 +157,15 @@ export default class Application_form extends React.Component {
                     รูปภาพ
                   </label>
                   <div className="control">
-                  {avatar}
-                        <FileUploader
-                            accept="image/*"
-                            name="avatar"
-                            randomizeFilename
-                            storageRef={firebase.storage().ref("company")}
-                            onUploadStart={this.handleUploadStart}
-                            onUploadError={this.handleUploadError}
-                            onUploadSuccess={this.handleUploadSuccess}
-                            onProgress={this.handleProgress}
-                        /> 
+                  <input
+                        className="file-input"
+                        type="file"
+                        name="attachment"
+                        onChange={this.handleAttachment}
+                      />
+                      <span className="file-cta">
+                        <span className="file-label">Choose a file…</span>
+                      </span>
                   </div>
                 </div>
                 <div className="field">
