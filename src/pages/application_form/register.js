@@ -83,6 +83,10 @@ export default class Application_form extends React.Component {
   }
 
   render() {
+    var avatar = '';
+        if(this.state.avatarURL){
+              avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
+        }
     return (
       <Layout>
         <section className="section">
