@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import Helmet from 'react-helmet'
+//import Helmet from 'react-helmet'
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -40,9 +40,7 @@ export default class Index extends React.Component {
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-lg-12">
-					
-				</div>
+				
 				<div class="col-lg-3">
 					<div class="contact_info">
 						<div class="info_item">

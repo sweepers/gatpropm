@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import DatePicker from "react-datepicker";
- 
+import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
@@ -23,7 +23,9 @@ export default class Application_form extends React.Component {
     this.state = {}
     this.setState({'password':'123456'});
     this.state = {
-      company_date: new Date()
+      company_date: new Date(),
+      avatarURL: "",
+      avatar: "",
     };
     this.handleChange_date = this.handleChange_date.bind(this);
   }
@@ -39,6 +41,24 @@ export default class Application_form extends React.Component {
   handleAttachment = e => {
     this.setState({ [e.target.name]: e.target.files[0] })
   }
+  handleInit() {
+    console.log('FilePond instance has initialised', this.pond);
+ }
+  handleUploadStart = () => this.setState({ isUploading: true, progress: 0 });
+  handleProgress = progress => this.setState({ progress });
+  handleUploadError = error => {
+    this.setState({ isUploading: false });
+    console.error(error);
+  }
+  handleUploadSuccess = filename => {
+    this.setState({ avatar: filename, progress: 100, isUploading: false });
+    firebase
+      .storage()
+      .ref("company")
+      .child(filename)
+      .getDownloadURL()
+      .then(url => this.setState({ avatarURL: url }));
+    }
 
   handleSubmit = e => {
     e.preventDefault()
@@ -131,7 +151,17 @@ export default class Application_form extends React.Component {
                     รูปภาพ
                   </label>
                   <div className="control">
-                    
+                  {avatar}
+                        <FileUploader
+                            accept="image/*"
+                            name="avatar"
+                            randomizeFilename
+                            storageRef={firebase.storage().ref("company")}
+                            onUploadStart={this.handleUploadStart}
+                            onUploadError={this.handleUploadError}
+                            onUploadSuccess={this.handleUploadSuccess}
+                            onProgress={this.handleProgress}
+                        /> 
                   </div>
                 </div>
                 <div className="field">
