@@ -48,7 +48,7 @@ export default class Index extends React.Component {
 			
 			<div class="row">
 				<div class="col-lg-12">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8707178563745!2d100.50786191527861!3d13.726276001581565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299cd81f01815%3A0x1660bd86761a92f4!2z4LmE4Lit4LiE4Lit4LiZ4Liq4Lii4Liy4LihIChJQ09OU0lBTSk!5e0!3m2!1sth!2sth!4v1565605677027!5m2!1sth!2sth" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
 				</div>
 				<div class="col-lg-3">
 					<div class="contact_info">
