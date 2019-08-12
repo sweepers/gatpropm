@@ -1,6 +1,9 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import DatePicker from "react-datepicker";
+ 
+import "react-datepicker/dist/react-datepicker.css";
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 
@@ -19,12 +22,20 @@ export default class Application_form extends React.Component {
     super(props)
     this.state = {}
     this.setState({'password':'123456'});
+    this.state = {
+      startDate: new Date()
+    };
+    this.handleChange_date = this.handleChange_date.bind(this);
   }
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
-
+  handleChange_date(date) {
+    this.setState({
+      startDate: date
+    });
+  }
   handleAttachment = e => {
     this.setState({ [e.target.name]: e.target.files[0] })
   }
@@ -178,7 +189,10 @@ export default class Application_form extends React.Component {
                   วันที่จดทะเบียน
                   </label>
                   <div className="control">
-                     
+                  <DatePicker
+                  selected={this.state.startDate}
+                  onChange={this.handleChange_date}
+                />
                   </div>
                   
                 </div>
