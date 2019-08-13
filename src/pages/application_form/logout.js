@@ -23,9 +23,7 @@ export default class Application_form extends React.Component {
 
  
    } 
-   var localStorage = require('localStorage');
-   localStorage.removeItem('current_user');
-   navigate('/');
+   
       
   }
 
@@ -34,7 +32,9 @@ export default class Application_form extends React.Component {
   
   
   render() {
-   
+   var localStorage = require('localStorage');
+   localStorage.removeItem('current_user');
+   //navigate('/');
     return (
       <Layout>
         
