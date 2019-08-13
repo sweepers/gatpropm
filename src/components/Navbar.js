@@ -63,15 +63,15 @@ const Navbar = class extends React.Component {
   };
   renderElement(){
     return (
-		<li class="nav-item submenu dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a><ul class="dropdown-menu"><li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li><li class="nav-item"><Link to="logout" className="nav-link">Logout</Link></li></ul></li>
+		<li class="nav-item submenu dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a><ul class="dropdown-menu"><li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li><li class="nav-item"><Link to="application_form/logout" className="nav-link">Logout</Link></li></ul></li>
     );
   }
   renderElementlogin(){
     return (
-		<Layout>
-		<li><Link to="application_form/login" className="nav-link">Login</Link></li><li><a href="">/</a></li><li><Link to="application_form/register" className="nav-link">Register</Link></li>
-		</Layout>
-    )
+		<li class="nav-item"><Link to="application_form/login" className="nav-link">Login</Link> <a href="">/</a> <Link to="application_form/register" className="nav-link">Register</Link> </li>
+	
+		
+	);
   }
   render() {
 	let current_user  = JSON.parse(localStorage.getItem('current_user'));
