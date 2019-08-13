@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import logo from "../img/logo.png";
 import firebase from 'firebase';
 import 'firebase/database'
-
 var localStorage = require('localStorage');
 
 const Navbar = class extends React.Component {
