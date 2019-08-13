@@ -221,4 +221,3 @@ export default class Index extends React.Component {
         
     }
 }
-export default companylist;
