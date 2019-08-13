@@ -6,132 +6,692 @@ import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
 import firebase from 'firebase';
 import 'firebase/database'
-/*import {
-	
-	GoogleMap,Marker
-
-  } from "react-google-maps";*/
-//import Helmet from 'react-helmet'
-
+//import { DatePicker } from '@appbaseio/reactivesearch';
+//import * as jsPDF from 'jspdf'
 
 function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+  const formData = new FormData()
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key])
+  }
+
+  return formData
 }
 
 export default class Dashboard extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {}
+    this.setState({'password':'123456'});
     this.state = {
-        messages: [],
-        data : [],
-        list_data: [],
-        view : 'view',
+      company_date: new Date(),
+      avatarURL: "",
+      avatar: "",
     };
-    var localStorage = require('localStorage');
-    let current_user  = JSON.parse(localStorage.getItem('current_user'));
-        if(current_user){
-            
-            this.handleview(current_user.id);
-        }
-            let companulist = firebase.database().ref('data_company');
-        companulist.on('value',snapshot=>{
-            // var lists = snapshot.val();
-            
-            var datelist = [];
-             snapshot.forEach(function(data){
-               
-                 var dat = data.val();
-                 dat.key = data.key;
-                 
-                
-          
-                 datelist.push(dat);
-                 
-             });
-            
-             this.setState({ list_data: datelist });
-            // this.setState({ list_data: lists })
-            
-         });
+    this.handleChange_date = this.handleChange_date.bind(this);
   }
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
-  handleview(value){
-       
-    let app = firebase.database().ref('data_company/'+value+'/');
-    app.on('value', snapshot => {
-       
-        this.setState({
-            data: snapshot.val()
-          });
+  handleChange_date(date) {
+    this.setState({
+      company_date: date
     });
-   
-    this.setState({ view: 'view' });
-    console.log('user_id',value);
+  }
+  handleAttachment = e => {
+    this.setState({ [e.target.name]: e.target.files[0] })
+  }
+  handleInit() {
+    console.log('FilePond instance has initialised', this.pond);
  }
+  handleUploadStart = () => this.setState({ isUploading: true, progress: 0 });
+  handleProgress = progress => this.setState({ progress });
+  handleUploadError = error => {
+    this.setState({ isUploading: false });
+    console.error(error);
+  }
+  handleUploadSuccess = filename => {
+    this.setState({ avatar: filename, progress: 100, isUploading: false });
+    firebase
+      .storage()
+      .ref("company")
+      .child(filename)
+      .getDownloadURL()
+      .then(url => this.setState({ avatarURL: url }));
+    }
+
   handleSubmit = e => {
     e.preventDefault()
+    
     const form = e.target
-    fetch('/', {
+    console.log('form',this.state);
+    firebase.database().ref('data_company/').push(this.state);
+    /*fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
+      .catch(error => alert(error))*/
+  }
+  onDownload(){
+    const pdf = new jsPDF('p', 'pt', 'A4');
+    pdf.text('Hello world',180,105);
+    pdf.save("genpdf.pdf");
   }
 
   render() {
-    var listdata = '';
-    console.log('company',this.state.list_data);
-    if(this.state.list_data.length > 0){
-         listdata = this.state.list_data.map((data) =>
-            <tr>
-                <td>{ data.company_name }</td>
-                <td>{ data.created }</td>
-                <td><button value={data.key} onClick={() => this.handleview(data.key)} className="btn btn-xxs btn-primary">View</button></td>
-            </tr>
-            );
-        this.state.list_data.forEach(function(data){
-            
-        });
-    }
-     /* console.log(this.state.view);
-      if(this.state.view == 'list'){
-          return this.renderlist();
-      }
-      if(this.state.view == 'view'){
-          return this.renderview();
-      }*/
+    var avatar = '';
+        if(this.state.avatarURL){
+              avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
+        }
     return (
       <Layout>
-       <div className="row padding-top">
-                <div className="col-md-12">
-                <table className="table">
-                        <thead>
-                            <tr>
-                                <th>ชื่อบริษับ</th>
-                                <th>ว้นที่ใส่ข้อมูล</th>
-                                 <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            { listdata }
-                            {this.state.list_data.forEach(answer => {     
-                            
-                            })}
-                        </tbody>
-                    </table>
+        <section className="section">
+          <div className="container">
+            <div className="content">
+              <h1>ข้อมูลสมาชิก</h1>
+              <h4>ส่วนที่ 1 ข้อมูลบริษัท</h4>
+              <form
+                name="file-upload"
+                method="post"
+                action="/contact/thanks/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
+              >
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
 
+
+
+
+
+                
+                <input type="hidden" name="form-name" value="register" />
+                <div className="field">
+                  <label className="label" htmlFor={'company_name'}>
+                  ชื่อบริษัท
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_name'}
+                      onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
+                      id={'company_name'}
+                      required={true}
+                    />
+                  </div>
+                  
                 </div>
+                <div className="field">
+                  <label className="label" htmlFor={'company_nameen'}>
+                  
+                  </label>
+                 
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_nameen'}
+                      onChange={this.handleChange}
+                      id={'company_nameen'}
+                      placeholder={'English'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{' '}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'name'}>
+                    รูปภาพ
+                  </label>
+                  <div className="control">
+                  {avatar}
+                      <FileUploader
+                          accept="image/*"
+                          name="avatar"
+                          randomizeFilename
+                          
+                          onUploadStart={this.handleUploadStart}
+                          onUploadError={this.handleUploadError}
+                          onUploadSuccess={this.handleUploadSuccess}
+                          onProgress={this.handleProgress}
+                      /> 
+                  </div>
+                </div>
+                
+
+                <div className="field">
+                  <label className="label" htmlFor={'company_type'}>
+                  ประเภทกิจการ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_type'}
+                      onChange={this.handleChange}
+                     
+                      id={'company_type'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'company_number'}>
+                  เลขทะเบียนบริษัท
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'company_number'}
+                      onChange={this.handleChange}
+                    
+                      id={'company_number'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'company_date'}>
+                  วันที่จดทะเบียน
+                  </label>
+                  <div className="control">
+                  <DatePicker
+                  name={"company_date"}
+                  selected={this.state.company_date}
+                  onChange={this.handleChange_date}
+                />
+                  </div>
+                  
+                </div>
+
+                <h4>สำนักงานที่ตั้ง</h4>
+                <div className="field">
+                  <label className="label" htmlFor={'house_number'}>
+                  บ้านเลขที่
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'house_number'}
+                      onChange={this.handleChange}
+                    
+                      id={'house_number'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'house_name'}>
+                  ชื่ออาคาร
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'house_name'}
+                      onChange={this.handleChange}
+                    
+                      id={'house_name'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'house_stair'}>
+                  ชั้น
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'house_stair'}
+                      onChange={this.handleChange}
+                    
+                      id={'house_stair'}
+                      required={false}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'road'}>
+                  ถนน
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'road'}
+                      onChange={this.handleChange}
+                    
+                      id={'road'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'distic'}>
+                  ตำบล
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'distic'}
+                      onChange={this.handleChange}
+                    
+                      id={'distic'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'states'}>
+                  อำเภอ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'states'}
+                      onChange={this.handleChange}
+                    
+                      id={'states'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'province'}>
+                  จังหวัด
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'province'}
+                      onChange={this.handleChange}
+                    
+                      id={'province'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+
+
+
+                <div className="field">
+                  <label className="label" htmlFor={'price_register'}>
+                  ทุนจดทะเบียน
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'prprice_registerovince'}
+                      onChange={this.handleChange}
+                    
+                      id={'price_register'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'count_hun'}>
+                  จำนวนหุ้น
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'count_hun'}
+                      onChange={this.handleChange}
+                    
+                      id={'count_hun'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'prhun_generalovince'}>
+                  หุ้นสามัญ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'hun_general'}
+                      onChange={this.handleChange}
+                    
+                      id={'hun_general'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'pay_pricegen'}>
+                  หุ้นสามัญ ชำระแล้ว
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'pay_pricegen'}
+                      onChange={this.handleChange}
+                    
+                      id={'pay_pricegen'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'hun_burin'}>
+                  หุ้นบุริมสิทธิ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'hun_burin'}
+                      onChange={this.handleChange}
+                    
+                      id={'hun_burin'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'pay_priceburin'}>
+                  หุ้นบุริมสิทธิ ชำระแล้ว
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'pay_priceburin'}
+                      onChange={this.handleChange}
+                    
+                      id={'pay_priceburin'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee'}>
+                  กรรมการ (คน)
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee'}
+                      onChange={this.handleChange}
+                    
+                      id={'committee'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+
+
+
+                <div className="field">
+                  <label className="label" htmlFor={'committee_name1'}>
+                  ชื่อกรรมการคนที่ 1
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_name1'}
+                      onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
+                      id={'committee_name1'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee_nameen1'}>
+                  
+                  </label>
+                 
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_nameen1'}
+                      onChange={this.handleChange}
+                      id={'committee_nameen1'}
+                      placeholder={'English'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee_name1'}>
+                  ชื่อกรรมการคนที่ 1
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_name1'}
+                      onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
+                      id={'committee_name1'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee_nameen1'}>
+                  
+                  </label>
+                 
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_nameen1'}
+                      onChange={this.handleChange}
+                      id={'committee_nameen1'}
+                      placeholder={'English'}
+                      required={true}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'committee_name2'}>
+                  ชื่อกรรมการคนที่ 2
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_name2'}
+                      onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
+                      id={'committee_name2'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee_nameen2'}>
+                  
+                  </label>
+                 
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_nameen2'}
+                      onChange={this.handleChange}
+                      id={'committee_nameen2'}
+                      placeholder={'English'}
+                      required={false}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'committee_name3'}>
+                  ชื่อกรรมการคนที่ 3
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_name3'}
+                      onChange={this.handleChange}
+                      placeholder={'ภาษาไทย'}
+                      id={'committee_name3'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'committee_nameen3'}>
+                  
+                  </label>
+                 
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'committee_nameen3'}
+                      onChange={this.handleChange}
+                      id={'committee_nameen3'}
+                      placeholder={'English'}
+                      required={false}
+                    />
+                  </div>
+                </div>
+                <u>ส่วนที่ 2 ข้อมูลผู้ใช้</u>
+
+
+                <div className="field">
+                  <label className="label" htmlFor={'fullname'}>
+                  ชื่อ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'fullname'}
+                      onChange={this.handleChange}
+                    
+                      id={'fullname'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'position'}>
+                  ตำแหน่ง
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'position'}
+                      onChange={this.handleChange}
+                    
+                      id={'position'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'email'}>
+                  อีเมล
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'email'}
+                      onChange={this.handleChange}
+                    
+                      id={'email'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+                <div className="field">
+                  <label className="label" htmlFor={'mobile'}>
+                  เบอร์โทรมือถือ
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'text'}
+                      name={'mobile'}
+                      onChange={this.handleChange}
+                    
+                      id={'mobile'}
+                      required={true}
+                    />
+                  </div>
+                  
+                </div>
+
+
+
+                <div className="field">
+                  <button className="button is-link" type="submit">
+                    Send
+                  </button>
+
+
+                  <button type="button"  onClick={() => this.onDownload()} className="btn btn-xs btn-primary">Download</button>
+                </div>
+              </form>
             </div>
+          </div>
+        </section>
       </Layout>
     )
   }
