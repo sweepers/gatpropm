@@ -23,7 +23,12 @@ function encode(data) {
 export default class Dashboard extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {
+        messages: [],
+        data : [],
+        list_data: [],
+        view : 'view',
+    };
     var localStorage = require('localStorage');
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
         if(current_user){
