@@ -1,6 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import firebase from 'firebase';
+import 'firebase/database'
 export default class Index extends React.Component {
     constructor(props){
         super(props);
