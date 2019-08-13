@@ -10,6 +10,8 @@ export default class Index extends React.Component {
             list_data: [],
             view : 'view',
         };
+        var localStorage = require('localStorage');
+	    
         let current_user  = JSON.parse(localStorage.getItem('current_user'));
         if(current_user){
             
