@@ -34,7 +34,8 @@ const Navbar = class extends React.Component {
 	  
 	};
 	
-	
+	const current_user = localStorage.getItem('current_user');
+	console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
 	
@@ -59,74 +60,14 @@ const Navbar = class extends React.Component {
       }
     );
   };
-   head_1(){
-	return (
-		<div class="nav navbar-nav ml-auto">
-			<div class="social-icons d-flex align-items-center">
-				<li><Link to="application_form/login" className="nav-link">Login</Link> </li>
-				<a href="">
-					<li>/</li>
-				</a>
-				
-				<li><Link to="application_form/register" className="nav-link">Register</Link></li>
-				<li class="nav-item submenu dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Profile</a>
-					<ul class="dropdown-menu">
-						<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link>></li>
-						<li class="nav-item"><Link to="application_form/login" className="nav-link">Logout</Link></li>
-					</ul>
-				</li>
-				<a href="">
-					<li><i class="fa fa-facebook"></i></li>
-				</a>
-				<a href="">
-					<li><i class="fa fa-twitter"></i></li>
-				</a>
-				
-			</div>
-			<li class="nav-item"><a href="#" class="search">
-				<i class="lnr lnr-magnifier" id="search"></i></a>
-			</li>
-		</div>
-	);
- 
- }
-  head_2(current_user){
-   return (
-	<div class="nav navbar-nav ml-auto">
-		<div class="social-icons d-flex align-items-center">
-			
-			<li class="nav-item submenu dropdown">
-				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-				aria-expanded="false">Profile</a>
-				<ul class="dropdown-menu">
-					<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link>></li>
-					<li class="nav-item"><Link to="application_form/login" className="nav-link">Logout</Link></li>
-				</ul>
-			</li>
-			<a href="">
-				<li><i class="fa fa-facebook"></i></li>
-			</a>
-			<a href="">
-				<li><i class="fa fa-twitter"></i></li>
-			</a>
-			
-		</div>
-		<li class="nav-item"><a href="#" class="search">
-			<i class="lnr lnr-magnifier" id="search"></i></a>
-		</li>
-		</div>
-   );
- 
- }
+
   render() {
 	let current_user  = JSON.parse(localStorage.getItem('current_user'));
-	console.log('current_user', current_user);
+	let head_top = '<li><Link to="application_form/login" className="nav-link">Login</Link></li><a href=""><li>/</li></a><li><Link to="application_form/register" className="nav-link">Register</Link></li>';
 	if(current_user){
-		head_top = this.head_2(current_user);
+	//	head_top = head_2(current_user);
 	  }else{
-		head_top = this.head_1();
+		//head_top = head_1();
 	  }
     return (
 			<header class="header_area">
@@ -154,7 +95,41 @@ const Navbar = class extends React.Component {
 							
 						
 							</ul>
-							
+							<div class="nav navbar-nav ml-auto">
+							<div class="social-icons d-flex align-items-center">
+								
+								
+								
+								
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">Profile</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link>></li>
+										<li class="nav-item"><Link to="application_form/login" className="nav-link">Logout</Link></li>
+									</ul>
+								</li>
+								
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">Profile</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link>></li>
+										<li class="nav-item"><Link to="application_form/login" className="nav-link">Logout</Link></li>
+									</ul>
+								</li>
+								<a href="">
+									<li><i class="fa fa-facebook"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa fa-twitter"></i></li>
+								</a>
+								
+							</div>
+							<li class="nav-item"><a href="#" class="search">
+								<i class="lnr lnr-magnifier" id="search"></i></a>
+							</li>
+							</div>
 						</div>
 						
 					</div>
