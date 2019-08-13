@@ -26,7 +26,7 @@ export default class Application_form extends React.Component {
    var localStorage = require('localStorage');
    localStorage.removeItem('current_user');
    navigate('/');
-       // window.location.href = '/';
+      
   }
 
  
