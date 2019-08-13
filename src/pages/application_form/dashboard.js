@@ -24,6 +24,7 @@ export default class Dashboard extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isValidated: false }
+    var localStorage = require('localStorage');
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
         if(current_user){
             
@@ -54,7 +55,19 @@ export default class Dashboard extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
-
+  handleview(value){
+       
+    let app = firebase.database().ref('data_company/'+value+'/');
+    app.on('value', snapshot => {
+       
+        this.setState({
+            data: snapshot.val()
+          });
+    });
+   
+    this.setState({ view: 'view' });
+    console.log('user_id',value);
+ }
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
