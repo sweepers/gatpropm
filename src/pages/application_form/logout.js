@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+
 import Layout from '../../components/Layout'
 
 
@@ -24,7 +25,8 @@ export default class Application_form extends React.Component {
    } 
    var localStorage = require('localStorage');
    localStorage.removeItem('current_user');
-        window.location.href = '/';
+   navigate('/');
+       // window.location.href = '/';
   }
 
  

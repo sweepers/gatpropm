@@ -78,10 +78,10 @@ const Navbar = class extends React.Component {
 	let head_top =  '';
 	if(current_user){
 		head_top = this.renderElement();
-	//	head_top = head_2(current_user);
+	
 	  }else{
 		  head_top = this.renderElementlogin();
-		//head_top = head_1();
+	
 	  }
     return (
 			<header class="header_area">
