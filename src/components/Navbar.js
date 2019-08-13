@@ -4,31 +4,6 @@ import { Link } from "gatsby";
 import logo from "../img/logo.png";
 import firebase from 'firebase';
 import 'firebase/database'
-export const isBrowser = () => typeof window !== "undefined"
-export const getUser = () =>
-  isBrowser() && window.localStorage.getItem("gatsbyUser")
-    ? JSON.parse(window.localStorage.getItem("gatsbyUser"))
-    : {}
-const setUser = user =>
-  window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
-export const handleLogin = ({ username, password }) => {
-  if (username === `john` && password === `pass`) {
-    return setUser({
-      username: `john`,
-      name: `Johnny`,
-      email: `johnny@example.org`,
-    })
-  }
-  return false
-}
-export const isLoggedIn = () => {
-  const user = getUser()
-  return !!user.username
-}
-export const logout = callback => {
-  setUser({})
-  callback()
-}
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
@@ -54,9 +29,8 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
-	
-	//let current_user = window.localStorage.getItem('current_user');
-	console.log('current_user',getUser());
+	//const current_user = localStorage.getItem('current_user');
+	//console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
 	
