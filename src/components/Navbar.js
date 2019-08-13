@@ -122,10 +122,11 @@ const Navbar = class extends React.Component {
  }
   render() {
 	let current_user  = JSON.parse(localStorage.getItem('current_user'));
+	console.log('current_user', current_user);
 	if(current_user){
-		head_top = head_2(current_user);
+		head_top = this.head_2(current_user);
 	  }else{
-		head_top = head_1();
+		head_top = this.head_1();
 	  }
     return (
 			<header class="header_area">
