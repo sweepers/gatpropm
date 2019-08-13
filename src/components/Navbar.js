@@ -7,7 +7,7 @@ import 'firebase/database'
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
-	
+		
 	  //console.log('config',config);
 	  if (!firebase.apps.length) {
 		var config = {
@@ -32,8 +32,9 @@ const Navbar = class extends React.Component {
 		current_user: null
 	  
 	};
+	var localStorage = require('localStorage');
 	const current_user = localStorage.getItem('current_user');
-	//console.log('current_user',current_user);
+	console.log('current_user',current_user);
 	//let current_user  = JSON.parse(localStorage.getItem('current_user'));
 	//console.log('current_user',current_user);
 	
