@@ -5,6 +5,7 @@ import logo from "../img/logo.png";
 import firebase from 'firebase';
 import 'firebase/database'
 var localStorage = require('localStorage');
+
 const Navbar = class extends React.Component {
   constructor(props) {
 	super(props);
