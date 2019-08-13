@@ -61,12 +61,16 @@ const Navbar = class extends React.Component {
       }
     );
   };
-
+  renderElement(){
+    return (
+		<li class="nav-item submenu dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a><ul class="dropdown-menu"><li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li><li class="nav-item"><Link to="logout" className="nav-link">Logout</Link></li></ul></li>
+    );
+  }
   render() {
 	let current_user  = JSON.parse(localStorage.getItem('current_user'));
-	let head_top = '<li><Link to="application_form/login" className="nav-link">Login</Link></li><a href=""><li>/</li></a><li><Link to="application_form/register" className="nav-link">Register</Link></li>';
+	let head_top =  '<li><Link to="application_form/login" className="nav-link">Login</Link></li><a href=""><li>/</li></a><li><Link to="application_form/register" className="nav-link">Register</Link></li>';
 	if(current_user){
-		head_top = '<li class="nav-item submenu dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a><ul class="dropdown-menu"><li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li><li class="nav-item"><Link to="logout" className="nav-link">Logout</Link></li></ul></li>';
+		head_top = this.renderElement();
 	//	head_top = head_2(current_user);
 	  }else{
 		//head_top = head_1();
