@@ -58,14 +58,14 @@ export default class Dashboard extends React.Component {
              $.each(data,function(i,v){
               console.log('i',i);
               console.log('v',v);
-              this.setState({ i: v })
+              //this.setState({ i: v })
                 
               });
               
 
             //this.setState({});
             this.setState({
-               
+                data:data,
                 company_date: company_date,
                 iscommi: data.iscommi,
                 avatarURL:data.company_logo,
@@ -172,6 +172,7 @@ export default class Dashboard extends React.Component {
                       placeholder={'ภาษาไทย'}
                       id={'company_name'}
                       required={true}
+                      value={this.state.data.company_name}
                     />
                   </div>
                   
