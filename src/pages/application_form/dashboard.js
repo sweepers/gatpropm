@@ -41,7 +41,7 @@ export default class Dashboard extends React.Component {
         };
       firebase.initializeApp(config);
      }
-  //  this.handleChange_date = this.handleChange_date.bind(this);
+    this.handleChange_date = this.handleChange_date.bind(this);
     this.handleChange = this.handleChange.bind(this);
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
     var  data = {};
@@ -50,17 +50,17 @@ export default class Dashboard extends React.Component {
       let app = firebase.database().ref('data_company/'+current_user.id+'/');
      
       app.on('value', snapshot => {
-          //let data = snapshot.val();
+          let data = snapshot.val();
          // let date = data.company_date.split('/');
          // let company_date = new Date(date[2],date[1]-1,date[0]);
           delete data.company_date;
           delete data.updated;
-         /* this.setState({
+          
+          this.setState(data);
+          this.setState({
             user_id:current_user.id
         
-          });*/
-          this.setState(data);
-          
+          });
           console.log('state',this.state);
           
          
