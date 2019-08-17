@@ -42,6 +42,7 @@ export default class Dashboard extends React.Component {
       firebase.initializeApp(config);
      }
     this.handleChange_date = this.handleChange_date.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     var localStorage = require('localStorage');
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
     if(current_user != null){
@@ -74,7 +75,7 @@ export default class Dashboard extends React.Component {
               });
               
               
-        });
+        }).bind(this);
         console.log('abc',this.state);
         
     }
