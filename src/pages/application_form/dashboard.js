@@ -56,15 +56,15 @@ export default class Dashboard extends React.Component {
             console.log('data',data);
 
             
-             $.each(data,function(i,v){
+             /*$.each(data,function(i,v){
               console.log('i',i);
               console.log('v',v);
               //this.setState({ i: v })
                 
-              });
+              });*/
               
 
-            //this.setState({});
+            this.setState(data);
             this.setState({
                 data:data,
                 company_date: company_date,
