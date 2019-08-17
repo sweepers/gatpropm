@@ -57,6 +57,10 @@ export default class Dashboard extends React.Component {
           delete data.updated;
           
           this.setState(data);
+          this.setState({
+            user_id:current_user.id
+        
+          });
           console.log('state',this.state);
           
          
@@ -108,7 +112,15 @@ export default class Dashboard extends React.Component {
     
     const form = e.target
     console.log('form',this.state);
-    firebase.database().ref('data_company/').push(this.state);
+   // firebase.database().ref('data_company/').push(this.state);
+    firebase.database().ref('data_company/'+this.state.user_id).set(this.state);
+    let data = {};
+    data['email'] = this.state.email;
+    data['fullname'] = this.state.fullname;
+    data['id'] = this.state.user_id;
+    console.log('dataa',JSON.stringify(data));
+    //return false;
+    localStorage.setItem('current_user',JSON.stringify(data));
     /*fetch('/', {
       method: 'POST',
       body: encode({
