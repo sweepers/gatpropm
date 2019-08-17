@@ -23,12 +23,12 @@ export default class Dashboard extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this.setState({'password':'123456'});
-    this.state = {
+    //this.setState({'password':'123456'});
+   /* this.state = {
       company_date: new Date(),
       avatarURL: "",
       avatar: "",
-    };
+    };*/
     if (!firebase.apps.length) {
       var config = {
         apiKey: "AIzaSyAcuRid40eaVEx5TKKn5yibuDTFNDyQxAU",
