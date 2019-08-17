@@ -186,6 +186,7 @@ export default class Dashboard extends React.Component {
                       id={'company_nameen'}
                       placeholder={'English'}
                       required={true}
+                      value={this.state.company_nameen}
                     />
                   </div>
                 </div>
@@ -228,6 +229,7 @@ export default class Dashboard extends React.Component {
                      
                       id={'company_type'}
                       required={true}
+                      value={this.state.company_type}
                     />
                   </div>
                   
@@ -245,6 +247,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'company_number'}
                       required={true}
+                      value={this.state.company_number}
                     />
                   </div>
                   
@@ -259,6 +262,7 @@ export default class Dashboard extends React.Component {
                   name={"company_date"}
                   selected={this.state.company_date}
                   onChange={this.handleChange_date}
+                  value={this.state.company_date}
                 />
                   </div>
                   
@@ -278,6 +282,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'house_number'}
                       required={true}
+                      value={this.state.house_number}
                     />
                   </div>
                   
@@ -292,7 +297,7 @@ export default class Dashboard extends React.Component {
                       type={'text'}
                       name={'house_name'}
                       onChange={this.handleChange}
-                    
+                      value={this.state.house_name}
                       id={'house_name'}
                       required={true}
                     />
@@ -312,6 +317,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'house_stair'}
                       required={false}
+                      value={this.state.house_stair}
                     />
                   </div>
                   
@@ -329,6 +335,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'road'}
                       required={true}
+                      value={this.state.road}
                     />
                   </div>
                   
@@ -346,6 +353,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'distic'}
                       required={true}
+                      value={this.state.distic}
                     />
                   </div>
                   
@@ -363,6 +371,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'states'}
                       required={true}
+                      value={this.state.states}
                     />
                   </div>
                   
@@ -380,6 +389,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'province'}
                       required={true}
+                      value={this.state.province}
                     />
                   </div>
                   
@@ -401,6 +411,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'price_register'}
                       required={true}
+                      value={this.state.price_register}
                     />
                   </div>
                   
@@ -418,6 +429,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'count_hun'}
                       required={true}
+                      value={this.state.count_hun}
                     />
                   </div>
                   
@@ -435,6 +447,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'hun_general'}
                       required={true}
+                      value={this.state.hun_general}
                     />
                   </div>
                   
@@ -452,6 +465,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'pay_pricegen'}
                       required={true}
+                      value={this.state.pay_pricegen}
                     />
                   </div>
                   
@@ -469,6 +483,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'hun_burin'}
                       required={true}
+                      value={this.state.hun_burin}
                     />
                   </div>
                   
@@ -485,6 +500,7 @@ export default class Dashboard extends React.Component {
                       onChange={this.handleChange}
                     
                       id={'pay_priceburin'}
+                      value={this.state.pay_priceburin}
                       required={true}
                     />
                   </div>
@@ -502,6 +518,7 @@ export default class Dashboard extends React.Component {
                       onChange={this.handleChange}
                     
                       id={'committee'}
+                      value={this.state.committee}
                       required={true}
                     />
                   </div>
@@ -523,6 +540,7 @@ export default class Dashboard extends React.Component {
                       onChange={this.handleChange}
                       placeholder={'ภาษาไทย'}
                       id={'committee_name1'}
+                      value={this.state.committee_name1}
                       required={true}
                     />
                   </div>
@@ -541,6 +559,7 @@ export default class Dashboard extends React.Component {
                       onChange={this.handleChange}
                       id={'committee_nameen1'}
                       placeholder={'English'}
+                      value={this.state.committee_nameen1}
                       required={true}
                     />
                   </div>
@@ -558,6 +577,7 @@ export default class Dashboard extends React.Component {
                       placeholder={'ภาษาไทย'}
                       id={'committee_name1'}
                       required={true}
+                      value={this.state.committee_name1}
                     />
                   </div>
                   
@@ -576,6 +596,7 @@ export default class Dashboard extends React.Component {
                       id={'committee_nameen1'}
                       placeholder={'English'}
                       required={true}
+                      value={this.state.committee_nameen1}
                     />
                   </div>
                 </div>
@@ -593,6 +614,7 @@ export default class Dashboard extends React.Component {
                       placeholder={'ภาษาไทย'}
                       id={'committee_name2'}
                       required={true}
+                      value={this.state.committee_name2}
                     />
                   </div>
                   
@@ -611,6 +633,7 @@ export default class Dashboard extends React.Component {
                       id={'committee_nameen2'}
                       placeholder={'English'}
                       required={false}
+                      value={this.state.committee_nameen2}
                     />
                   </div>
                 </div>
@@ -627,6 +650,7 @@ export default class Dashboard extends React.Component {
                       onChange={this.handleChange}
                       placeholder={'ภาษาไทย'}
                       id={'committee_name3'}
+                      value={this.state.committee_name3}
                       required={true}
                     />
                   </div>
@@ -646,6 +670,7 @@ export default class Dashboard extends React.Component {
                       id={'committee_nameen3'}
                       placeholder={'English'}
                       required={false}
+                      value={this.state.committee_nameen3}
                     />
                   </div>
                 </div>
@@ -665,6 +690,7 @@ export default class Dashboard extends React.Component {
                     
                       id={'fullname'}
                       required={true}
+                      value={this.state.fullname}
                     />
                   </div>
                   
@@ -679,7 +705,7 @@ export default class Dashboard extends React.Component {
                       type={'text'}
                       name={'position'}
                       onChange={this.handleChange}
-                    
+                      value={this.state.position}
                       id={'position'}
                       required={true}
                     />
@@ -696,7 +722,7 @@ export default class Dashboard extends React.Component {
                       type={'text'}
                       name={'email'}
                       onChange={this.handleChange}
-                    
+                      value={this.state.email}
                       id={'email'}
                       required={true}
                     />
@@ -713,7 +739,7 @@ export default class Dashboard extends React.Component {
                       type={'text'}
                       name={'mobile'}
                       onChange={this.handleChange}
-                    
+                      value={this.state.mobile}
                       id={'mobile'}
                       required={true}
                     />
