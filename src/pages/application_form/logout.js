@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 
 import Layout from '../../components/Layout'
-typeof window !== 'undefined' && window
+//typeof window !== 'undefined' && window
 var localStorage = require('localStorage');
 function encode(data) {
   const formData = new FormData()
@@ -37,7 +37,7 @@ export default class Application_form extends React.Component {
     
    
    localStorage.removeItem('current_user');
-   window.location.reload('/application_form/login/');
+   //window.location.reload('/application_form/login/');
    //navigate('/');
     return (
       <Layout>
