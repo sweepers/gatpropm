@@ -102,6 +102,7 @@ export default class Dashboard extends React.Component {
 
   render() {
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
+    var  data = {};
     if(current_user != null){
            
       let app = firebase.database().ref('data_company/'+current_user.id+'/');
@@ -110,7 +111,10 @@ export default class Dashboard extends React.Component {
           let data = snapshot.val();
           let date = data.company_date.split('/');
           let company_date = new Date(date[2],date[1]-1,date[0]);
+          delete data.company_date;
+          delete data.updated;
           console.log('data',data);
+          this.setState(data);
 
           
          
