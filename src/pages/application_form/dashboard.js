@@ -57,8 +57,8 @@ export default class Dashboard extends React.Component {
 
             
              $.each(data,function(i,v){
-               if(i != 'company_date'){
-                this.setState({ i: v })
+               if(i != 'company_date' && i != 'updated'){
+                  this.setState({ i: v })
                }
               // console.log('i',i);
               //console.log('v',v);
