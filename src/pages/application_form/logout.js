@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 
 import Layout from '../../components/Layout'
-
+typeof window !== 'undefined' && window
 var localStorage = require('localStorage');
 function encode(data) {
   const formData = new FormData()
