@@ -167,6 +167,7 @@ export default class Dashboard extends React.Component {
                       placeholder={'ภาษาไทย'}
                       id={'company_name'}
                       required={true}
+                      value={this.state.company_name}
                     />
                   </div>
                   
