@@ -50,9 +50,9 @@ export default class Dashboard extends React.Component {
       let app = firebase.database().ref('data_company/'+current_user.id+'/');
      
       app.on('value', snapshot => {
-          let data = snapshot.val();
-          let date = data.company_date.split('/');
-          let company_date = new Date(date[2],date[1]-1,date[0]);
+          //let data = snapshot.val();
+         // let date = data.company_date.split('/');
+         // let company_date = new Date(date[2],date[1]-1,date[0]);
           delete data.company_date;
           delete data.updated;
           
