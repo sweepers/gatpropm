@@ -29,6 +29,18 @@ export default class Dashboard extends React.Component {
       avatarURL: "",
       avatar: "",
     };
+    if (!firebase.apps.length) {
+      var config = {
+        apiKey: "AIzaSyAcuRid40eaVEx5TKKn5yibuDTFNDyQxAU",
+        authDomain: "promp-d2fc3.firebaseapp.com",
+        databaseURL: "https://promp-d2fc3.firebaseio.com",
+        projectId: "promp-d2fc3",
+        storageBucket: "promp-d2fc3.appspot.com",
+        messagingSenderId: "660976897097",
+        uid:'MzmCVg9pCnYPslxJrfN8cQs4uJ42',
+        };
+      firebase.initializeApp(config);
+     }
     this.handleChange_date = this.handleChange_date.bind(this);
     var localStorage = require('localStorage');
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
