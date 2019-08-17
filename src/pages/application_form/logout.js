@@ -39,7 +39,7 @@ export default class Application_form extends React.Component {
     
    
    localStorage.removeItem('current_user');
-   <Redirect to="/" />
+   <Redirect to="/application_form/login" />
    //const windowGlobal = typeof window !== 'undefined' && window;
   // windowGlobal.location.reload('/application_form/login/')
 
