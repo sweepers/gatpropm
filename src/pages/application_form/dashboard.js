@@ -57,7 +57,7 @@ export default class Dashboard extends React.Component {
           delete data.updated;
           
           this.setState(data);
-          console.log('data',this.state);
+          console.log('state',this.state);
           
          
 
