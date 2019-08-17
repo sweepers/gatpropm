@@ -40,8 +40,8 @@ export default class Dashboard extends React.Component {
             let data = snapshot.val();
             let date = data.company_date.split('/');
             let company_date = new Date(date[2],date[1]-1,date[0]);
-            console.log('abc',date);
-            this.setState(snapshot.val());
+            console.log('data',data);
+            //this.setState(snapshot.val());
             this.setState({
                
                 company_date: company_date,
