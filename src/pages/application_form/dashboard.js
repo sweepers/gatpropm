@@ -41,7 +41,7 @@ export default class Dashboard extends React.Component {
         };
       firebase.initializeApp(config);
      }
-    this.handleChange_date = this.handleChange_date.bind(this);
+  //  this.handleChange_date = this.handleChange_date.bind(this);
     this.handleChange = this.handleChange.bind(this);
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
     var  data = {};
@@ -98,7 +98,7 @@ export default class Dashboard extends React.Component {
     console.error(error);
   }
   handleUploadSuccess = filename => {
-    this.setState({ avatar: filename, progress: 100, isUploading: false });
+    //this.setState({ avatar: filename, progress: 100, isUploading: false });
     firebase
       .storage()
       .ref("company")
