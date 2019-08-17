@@ -121,6 +121,7 @@ export default class Dashboard extends React.Component {
     console.log('dataa',JSON.stringify(data));
     //return false;
     localStorage.setItem('current_user',JSON.stringify(data));
+    window.location.reload('/');
     /*fetch('/', {
       method: 'POST',
       body: encode({
