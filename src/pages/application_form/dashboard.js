@@ -65,7 +65,7 @@ export default class Dashboard extends React.Component {
               //console.log('v',v);
               //this.setState({ i: v })
               console.log('abc',this.state);
-              });
+              }).bind(this);
               
 
             //this.setState(data);
