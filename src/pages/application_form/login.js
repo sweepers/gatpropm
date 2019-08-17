@@ -65,7 +65,7 @@ export default class Application_form extends React.Component {
             localStorage.setItem('current_user',JSON.stringify(data));
             localStorage.setItem('abc','1');
             //console.log('data', data);
-            window.location.reload();
+           // window.location.reload();
             this.setState({ current_user: true });
          
         }else{
