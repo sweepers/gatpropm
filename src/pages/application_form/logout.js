@@ -25,7 +25,7 @@ export default class Application_form extends React.Component {
 
  
    } 
-   
+   typeof window !== 'undefined' && window
       
   }
 
@@ -37,6 +37,7 @@ export default class Application_form extends React.Component {
     
    
    localStorage.removeItem('current_user');
+  
    //window.location.reload('/application_form/login/');
    //navigate('/');
     return (
