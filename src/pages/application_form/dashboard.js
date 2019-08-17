@@ -22,7 +22,7 @@ function encode(data) {
 export default class Dashboard extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    //this.state = {}
     //this.setState({'password':'123456'});
    /* this.state = {
       company_date: new Date(),
