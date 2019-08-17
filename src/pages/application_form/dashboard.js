@@ -55,9 +55,9 @@ export default class Dashboard extends React.Component {
           let company_date = new Date(date[2],date[1]-1,date[0]);
           delete data.company_date;
           delete data.updated;
-          console.log('data',data);
+          
           this.setState(data);
-
+          console.log('data',this.state);
           
          
 
