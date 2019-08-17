@@ -3,7 +3,7 @@ import { navigate } from 'gatsby-link'
 
 import Layout from '../../components/Layout'
 
-
+var localStorage = require('localStorage');
 function encode(data) {
   const formData = new FormData()
 
@@ -15,8 +15,10 @@ function encode(data) {
 }
 
 export default class Application_form extends React.Component {
+  
   constructor(props) {
     super(props)
+    
     this.state = {
       wronglogin:false,
       current_user:false,
@@ -32,8 +34,10 @@ export default class Application_form extends React.Component {
   
   
   render() {
-   var localStorage = require('localStorage');
+    
+   
    localStorage.removeItem('current_user');
+   window.location.reload('/application_form/login/');
    //navigate('/');
     return (
       <Layout>
