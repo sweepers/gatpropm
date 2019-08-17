@@ -53,7 +53,15 @@ export default class Dashboard extends React.Component {
             let date = data.company_date.split('/');
             let company_date = new Date(date[2],date[1]-1,date[0]);
             console.log('data',data);
-            this.setState(data);
+            if(data.length > 0){
+              data.forEach(function(i,v){
+                console.log('i',i);
+                nsole.log('v',v);
+              });
+              
+
+            }
+            //this.setState({});
             this.setState({
                
                 company_date: company_date,
