@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import { Redirect } from '@reach/router'
 
 import Layout from '../../components/Layout'
 //typeof window !== 'undefined' && window
@@ -38,6 +39,7 @@ export default class Application_form extends React.Component {
     
    
    localStorage.removeItem('current_user');
+   <Redirect to="/" />
    //const windowGlobal = typeof window !== 'undefined' && window;
   // windowGlobal.location.reload('/application_form/login/')
 
