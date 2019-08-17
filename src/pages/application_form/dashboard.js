@@ -55,12 +55,12 @@ export default class Dashboard extends React.Component {
          // let company_date = new Date(date[2],date[1]-1,date[0]);
           delete data.company_date;
           delete data.updated;
-          
-          this.setState(data);
-          this.setState({
+         /* this.setState({
             user_id:current_user.id
         
-          });
+          });*/
+          this.setState(data);
+          
           console.log('state',this.state);
           
          
