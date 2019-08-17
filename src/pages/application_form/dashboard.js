@@ -8,7 +8,7 @@ import firebase from 'firebase';
 import 'firebase/database'
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
-
+var localStorage = require('localStorage');
 function encode(data) {
   const formData = new FormData()
 
@@ -43,46 +43,9 @@ export default class Dashboard extends React.Component {
      }
     this.handleChange_date = this.handleChange_date.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    var localStorage = require('localStorage');
-    let current_user  = JSON.parse(localStorage.getItem('current_user'));
-    if(current_user != null){
-           
-        let app = firebase.database().ref('data_company/'+current_user.id+'/');
-        console.log('current_user',current_user.id);
-        app.on('value', snapshot => {
-            let data = snapshot.val();
-            let date = data.company_date.split('/');
-            let company_date = new Date(date[2],date[1]-1,date[0]);
-            console.log('data',data);
-
-            
-             $.each(data,function(i,v){
-               if(i != 'company_date' && i != 'updated'){
-                this.setState({ i: v })
-               }
-
-              // console.log('i',i);
-              //console.log('v',v);
-              //this.setState({ i: v })
-              console.log('abc',this.state);
-              }).bind(this);
-              
-
-            //this.setState(data);
-            /*this.setState({
-               // data:data,
-                company_date: company_date,
-                iscommi: data.iscommi,
-                avatarURL:data.company_logo,
-                user_id:current_user.id
-                //company_date: company_date
-              });*/
-              
-              
-        }).bind(this);
-       
-        
-    }
+    
+    
+    
   }
 
   handleChange = e => {
@@ -138,6 +101,27 @@ export default class Dashboard extends React.Component {
   }
 
   render() {
+    let current_user  = JSON.parse(localStorage.getItem('current_user'));
+    if(current_user != null){
+           
+      let app = firebase.database().ref('data_company/'+current_user.id+'/');
+     
+      app.on('value', snapshot => {
+          let data = snapshot.val();
+          let date = data.company_date.split('/');
+          let company_date = new Date(date[2],date[1]-1,date[0]);
+          console.log('data',data);
+
+          
+         
+
+        
+            
+            
+      }).bind(this);
+      console.log('data_company',data);
+      
+  }
     var avatar = '';
         if(this.state.avatarURL){
               avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
