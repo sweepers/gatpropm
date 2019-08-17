@@ -35,14 +35,15 @@ export default class Dashboard extends React.Component {
     if(current_user != null){
            
         let app = firebase.database().ref('data_company/'+current_user.id+'/');
-        
+        console.log('current_user',current_user.id);
         app.on('value', snapshot => {
             let data = snapshot.val();
             let date = data.company_date.split('/');
             let company_date = new Date(date[2],date[1]-1,date[0]);
             console.log('abc',date);
+            this.setState(snapshot.val());
             this.setState({
-                data: snapshot.val(),
+               
                 company_date: company_date,
                 iscommi: data.iscommi,
                 avatarURL:data.company_logo,
