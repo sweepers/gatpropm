@@ -38,8 +38,8 @@ export default class Application_form extends React.Component {
     
    
    localStorage.removeItem('current_user');
-   const windowGlobal = typeof window !== 'undefined' && window;
-   windowGlobal.location.reload('/application_form/login/')
+   //const windowGlobal = typeof window !== 'undefined' && window;
+  // windowGlobal.location.reload('/application_form/login/')
 
    //navigate("/");
    //window.location.reload('/application_form/login/');
