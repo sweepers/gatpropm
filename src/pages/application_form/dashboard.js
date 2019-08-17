@@ -73,8 +73,9 @@ export default class Dashboard extends React.Component {
                 //company_date: company_date
               });
               
+              
         });
-        //console.log('abc',this.refs);
+        console.log('abc',this.state);
         
     }
   }
@@ -172,7 +173,6 @@ export default class Dashboard extends React.Component {
                       placeholder={'ภาษาไทย'}
                       id={'company_name'}
                       required={true}
-                      value={this.state.data.company_name}
                     />
                   </div>
                   
