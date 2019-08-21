@@ -67,6 +67,16 @@ export default class Application_form extends React.Component {
             //console.log('data', data);
            // window.location.reload();
             this.setState({ current_user: true });
+
+            fetch('/', {
+              method: 'POST',
+              body: encode({
+                'form-name': form.getAttribute('name'),
+                ...this.state,
+              }),
+            })
+              .then(() => navigate(form.getAttribute('action')))
+              .catch(error => alert(error))
          
         }else{
           console.log('pass', user_data.password );
@@ -117,7 +127,7 @@ export default class Application_form extends React.Component {
               <form
                 name="login"
                 method="post"
-                action="/contact/thanks/"
+                action="/application_form/dashboard"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
