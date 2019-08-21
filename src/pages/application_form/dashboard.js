@@ -46,6 +46,12 @@ export default class Dashboard extends React.Component {
      }
     this.handleChange_date = this.handleChange_date.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    
+    
+    
+    
+  }
+  fetchData() {
     let current_user  = JSON.parse(localStorage.getItem('current_user'));
     console.log('current_user',current_user)
     var  data = {};
@@ -76,9 +82,9 @@ export default class Dashboard extends React.Component {
       
       
   }
-    
-    
-    
+  }
+  componentDidMount(){
+    this.fetchData();
   }
 
   handleChange = e => {
