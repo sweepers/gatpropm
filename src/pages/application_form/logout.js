@@ -26,20 +26,26 @@ export default class Application_form extends React.Component {
 
  
    } 
-   navigate('/')
+   
    //window.location.reload('/application_form/login/')
       
   }
 
- 
+  fetchData() {
+    localStorage.removeItem('current_user').then(() => navigate('/'))
+    .catch(error => alert(error))
+   
+  }
 
   
-  
+  componentDidMount(){
+    this.fetchData();
+  }
   render() {
     
    
-   localStorage.removeItem('current_user');
-   <Redirect to="/application_form/login" />
+   
+  
    //const windowGlobal = typeof window !== 'undefined' && window;
   // windowGlobal.location.reload('/application_form/login/')
 
