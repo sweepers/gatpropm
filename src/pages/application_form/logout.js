@@ -32,8 +32,8 @@ export default class Application_form extends React.Component {
   }
 
   fetchData() {
-    
-    localStorage.removeItem('current_user').then(() => navigate('/'))
+
+    localStorage.removeItem('current_user').then(() => navigate('https://gatpropm.netlify.com/'))
     .catch(error => alert(error))
    
   }
@@ -44,15 +44,7 @@ export default class Application_form extends React.Component {
   }
   render() {
     
-   
-   
   
-   //const windowGlobal = typeof window !== 'undefined' && window;
-  // windowGlobal.location.reload('/application_form/login/')
-
-   //navigate("/");
-   //window.location.reload('/application_form/login/');
-   //navigate('/');
     return (
       <Layout>
         
