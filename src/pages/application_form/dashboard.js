@@ -143,9 +143,9 @@ export default class Dashboard extends React.Component {
       
   }
     var avatar = '';
-        if(this.state.avatarURL){
+       /* if(this.state.avatarURL){
               avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
-        }
+        }*/
     return (
       <Layout>
         <section className="section">
