@@ -32,6 +32,7 @@ export default class Application_form extends React.Component {
   }
 
   fetchData() {
+    
     localStorage.removeItem('current_user').then(() => navigate('/'))
     .catch(error => alert(error))
    
