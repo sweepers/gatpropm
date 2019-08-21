@@ -26,7 +26,7 @@ export default class Application_form extends React.Component {
 
  
    } 
-   
+   navigate('/')
    //window.location.reload('/application_form/login/')
       
   }
