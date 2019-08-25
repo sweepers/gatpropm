@@ -54,10 +54,10 @@ const TemplateWrapper = ({ children }) => {
 
      
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.3/exporting/jspdf.plugin.addimage.js"></script>
+        
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
-        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.3/exporting/jspdf.plugin.addimage.js"></script>
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
