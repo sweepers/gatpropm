@@ -163,7 +163,7 @@ export default class Dashboard extends React.Component {
                 <table className="table table-striped">
                   <tr>
                       <td rowSpan="2"><b>ชื่อบริษัท</b></td>
-                      <td colSpan="2">ภาษาไทย : { this.sate.company_name }</td>
+                      <td colSpan="2">ภาษาไทย : { this.state.company_name }</td>
                       <td rowSpan="2"><img src={this.state.company_logo} className="logo" /></td>
                   </tr>
                 </table>
