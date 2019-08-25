@@ -79,6 +79,52 @@ export default class Dashboard extends React.Component {
             
             
       }).bind(this);
+      let updatelist = firebase.database().ref('petition/');
+      updatelist.on('value',snapshot=>{
+        // var lists = snapshot.val();
+        var datelist = [];
+         snapshot.forEach(function(data){
+            
+             var dat = data.val();
+             //console.log('ab'+data.key,data.val());
+             if(current_user.id == dat.user_id){
+                 var form = dat.form.split(',');
+                 var form_sub = [];
+                 dat.app_id = data.key;
+                 form.forEach(function(d,i){
+                     if(d === '1'){
+                         form_sub.push('ชื่อบริษัท')
+                     }
+                     if(d === '2'){
+                         form_sub.push('ทุนจดทะเบียน')
+                     }
+                     if(d === '3'){
+                         form_sub.push('เพิ่มทุน/ลดทุน')
+                     }
+                     if(d === '4'){
+                         form_sub.push('เปลี่ยนแปลงกรรมการ')
+                     }
+                     if(d === '5'){
+                         form_sub.push('ย้านสถานที่ประกอบการ')
+                     }
+                     if(d === '6'){
+                         form_sub.push('เพิ่มเติมวัตถุประสงค์')
+                     }
+                     if(d === '7'){
+                         form_sub.push('เพิ่มเติมข้อบังคับ')
+                     }
+                     
+                 });
+                 dat.form_subject = form_sub.join(',');
+                 datelist.push(dat);
+             }
+             
+             
+         });
+         this.setState({ list_data: datelist });
+        // this.setState({ list_data: lists })
+        
+     }).bind(this);
       
       
   }
@@ -90,57 +136,12 @@ export default class Dashboard extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
-  handleChange_date(date) {
-    this.setState({
-      company_date: date
-    });
-  }
-  handleAttachment = e => {
-    this.setState({ [e.target.name]: e.target.files[0] })
-  }
-  handleInit() {
-    console.log('FilePond instance has initialised', this.pond);
- }
-  handleUploadStart = () => this.setState({ isUploading: true, progress: 0 });
-  handleProgress = progress => this.setState({ progress });
-  handleUploadError = error => {
-    this.setState({ isUploading: false });
-    console.error(error);
-  }
-  handleUploadSuccess = filename => {
-    //this.setState({ avatar: filename, progress: 100, isUploading: false });
-    firebase
-      .storage()
-      .ref("company")
-      .child(filename)
-      .getDownloadURL()
-      .then(url => this.setState({ avatarURL: url }));
-    }
+ 
 
   handleSubmit = e => {
     e.preventDefault()
     
-    const form = e.target
-    console.log('form',this.state);
-   // firebase.database().ref('data_company/').push(this.state);
-    firebase.database().ref('data_company/'+this.state.user_id).set(this.state);
-    let data = {};
-    data['email'] = this.state.email;
-    data['fullname'] = this.state.fullname;
-    data['id'] = this.state.user_id;
-    console.log('dataa',JSON.stringify(data));
-    //return false;
-    localStorage.setItem('current_user',JSON.stringify(data));
-    //window.location.reload('/');
-    /*fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))*/
+   
   }
   onDownload(){
     const pdf = new jsPDF('p', 'pt', 'A4');
@@ -154,6 +155,7 @@ export default class Dashboard extends React.Component {
         if(this.state.avatarURL){
               avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
         }
+    console.log('list_data',this.state.list_data);
     return (
       <Layout>
         <section className="section">
@@ -187,6 +189,24 @@ export default class Dashboard extends React.Component {
                             
                         </td>
                     </tr>
+                </table>
+
+                <h4>ยื่นการแก้ไข รออนุมัติ</h4>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th>หัวข้อขอการแก้ไข</th>
+                            <th>ว้นที่ยื่น</th>
+                            <th>Status</th>
+                            <th>Manage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { listdata }
+                        {this.state.list_data.forEach(answer => {     
+                        
+                        })}
+                    </tbody>
                 </table>
             </div>
           </div>
