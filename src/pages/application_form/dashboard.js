@@ -44,8 +44,7 @@ export default class Dashboard extends React.Component {
         };
       firebase.initializeApp(config);
      }
-    this.handleChange_date = this.handleChange_date.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    
     
     
     
@@ -124,7 +123,7 @@ export default class Dashboard extends React.Component {
          this.setState({ list_data: datelist });
         // this.setState({ list_data: lists })
         
-     });
+     }).bind(this);
       
       
   }
