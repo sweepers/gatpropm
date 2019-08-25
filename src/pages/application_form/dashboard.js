@@ -173,7 +173,7 @@ export default class Dashboard extends React.Component {
        /* */
       
        // pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
-        pdf.setFontSize(16);
+       // pdf.setFontSize(16);
       
         
         
