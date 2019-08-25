@@ -42,7 +42,11 @@ const Navbar = class extends React.Component {
 	//console.log('current_user',current_user);
 	
   }
-
+  fetchData() {
+  }
+  componentDidMount(){
+    this.fetchData();
+  }
   toggleHamburger = () => {
     // toggle the active boolean in the state
     this.setState(
@@ -64,7 +68,15 @@ const Navbar = class extends React.Component {
   };
   renderElement(){
     return (
-		<li class="nav-item submenu dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile</a><ul class="dropdown-menu"><li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li><li class="nav-item"><Link to="application_form/logout" className="nav-link">Logout</Link></li></ul></li>
+		<li class="nav-item submenu dropdown">
+			<Link to="application_form/dashboard" className="nav-link">Profile</Link>
+			
+				<ul class="dropdown-menu">
+					<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li>
+					<li class="nav-item"><Link to="application_form/edit" className="nav-link">Edit Profile</Link></li>
+					<li class="nav-item"><Link to="application_form/logout" className="nav-link">Logout</Link></li>
+				</ul>
+		</li>
     );
   }
   renderElementlogin(){
