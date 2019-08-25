@@ -201,10 +201,7 @@ export default class Dashboard extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        { listdata }
-                        {this.state.list_data.forEach(answer => {     
-                        
-                        })}
+                      
                     </tbody>
                 </table>
             </div>
