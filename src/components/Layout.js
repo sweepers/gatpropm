@@ -69,21 +69,7 @@ const TemplateWrapper = ({ children }) => {
         {children}
        
       <Footer />
-      <Helmet>
-      <script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/jquery-3.2.1.min_pov7vj.js"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/popper_dluxcd.js"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/bootstrap.min_h7sblb.js"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349063/js/stellar_bsoyoz.js"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/jquery.magnific-popup.min_ifvmkw.js"></script>
-
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349061/js/jquery.ajaxchimp.min_bpgags.js"></script>
-
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/mail-script_qnykxm.js"></script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/gmaps.min_yjttr7.js"></script>
-	<script src="https://res.cloudinary.com/sweepers/raw/upload/v1560349062/js/theme_po0qyw.js"></script>
-      </Helmet>
+    
     </div>
   )
 }
