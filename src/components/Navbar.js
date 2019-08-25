@@ -73,6 +73,7 @@ const Navbar = class extends React.Component {
 			
 				<ul class="dropdown-menu">
 					<li class="nav-item"><Link to="application_form/dashboard" className="nav-link">Dashboard</Link></li>
+					<li class="nav-item"><Link to="application_form/view" className="nav-link">View Profile</Link></li>
 					<li class="nav-item"><Link to="application_form/edit" className="nav-link">Edit Profile</Link></li>
 					<li class="nav-item"><Link to="application_form/logout" className="nav-link">Logout</Link></li>
 				</ul>

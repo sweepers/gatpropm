@@ -159,105 +159,33 @@ export default class Dashboard extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-                <h3><u>ส่วนที่ 1 ข้อมูลบริษัท</u></h3>
-                <table className="table table-striped">
-                  <tr>
-                      <td rowSpan="2"><b>ชื่อบริษัท</b></td>
-                      <td colSpan="2">ภาษาไทย : { this.state.company_name }</td>
-                      <td rowSpan="2"><img src={ this.state.company_logo} className="logo" /></td>
-                  </tr>
-                  <tr>
-                       
-                        <td colSpan="2">ภาษาอังกฤษ : { this.state.company_nameen }</td>
-                        
+                <table cellPadding="5" cellSpacing="5" className="table">
+                    <tr>
+                        <td>
+                            ชื่อบริษัท <br />
+                            {this.state.company_name}
+                        </td>
+                        <td>
+                            เลขทะเบียน <br />
+                            {this.state.company_number}
+
+                        </td>
+                        <td>วันที่จดทะเบียน<br />
+                            {this.state.company_date}
+                        </td>
                     </tr>
                     <tr>
-                        <td><b>ประเภทกิจการ</b></td>
-                        <td colSpan="3">{ this.state.company_type }</td>
-                    </tr>
-                    <tr>
-                        <td><b>เลขทะเบียนบริษัท</b></td>
-                        <td>{ this.state.company_number }</td>
-                        <td><b>วันที่จดทะเบียนจัดตั้ง</b></td>
-                        <td>{ this.state.company_date }</td>
-                    </tr>
-                    <tr>
-                        <td><b>สำนักงานตั้งอยู่ที่</b> </td>
-                        <td> { this.state.house_number }</td>
-                        <td><b>ชื่ออาคาร</b> {this.state.house_name}</td>
-                        <td><b>ชั้น</b> { this.state.house_stair } </td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2"><b>ถนน</b> { this.state.road }</td>
-                        <td colSpan="2"><b>ตำบล/แขวง</b> { this.state.distic }</td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2"><b>อำเภอ</b> { this.state.state }</td>
-                        <td colSpan="2"><b>จังหวัด</b> { this.state.province }</td>
-                    </tr>
-                    <tr>
-                        <td><b>ทุนจดทะเบียน</b></td>
-                        <td>{ this.state.price_register }</td>
-                        <td><b>จำนวนหุ้น</b></td>
-                        <td>{ this.state.count_hun } หุ้น</td>
-                    </tr>
-                    <tr>
-                        <td><b>หุ้นสามัญ</b></td>
-                        <td>{ this.state.hun_general } หุ้น</td>
-                        <td><b>หุ้นบุริมสิทธิ</b></td>
-                        <td>{ this.state.hun_burin } หุ้น</td>
-                    </tr>
-                    <tr>
-                        <td><b>ชำระแล้ว</b></td>
-                        <td>{ this.state.pay_pricegen } บาท</td>
-                        <td><b>ชำระแล้ว</b></td>
-                        <td>{ this.state.pay_priceburin } บาท</td>
-                    </tr>
-                    <tr>
-                        <td><b>กรรมการ</b> {this.state.committee} คน</td>
-                        <td colSpan="2"><b>1.</b> {this.state.committee_name1}<br />ชื่อภาษาอังกฤษ : {this.state.committee_nameen1}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colSpan="2"><b>2.</b> {this.state.committee_name2}<br />ชื่อภาษาอังกฤษ : {this.state.committee_nameen2}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colSpan="2"><b>3.</b> {this.state.committee_name3}<br />ชื่อภาษาอังกฤษ : {this.state.committee_nameen3}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><b>อำนาจกรรมการ</b></td>
-                        <td colSpan="3">{this.state.committee_na}</td>
-                    </tr>
-                    <tr>
-                        <td><b>ชื่อกรรมการลงนามในการขอจดทะเบียน</b></td>
-                        <td colSpan="3">{this.state.committ_register}</td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2"><b>วัตถุประสงค์</b>  </td>
-                        <td colSpan="2">{ this.state.purpose_number } <b>ข้อ</b> { this.state.purpose_texxt }</td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2"><b>ข้อบังคับ</b> </td>
-                        <td colSpan="2"> { this.state.control_number } <b>ข้อ</b> { this.state.control_texxt }</td>
-                    </tr>
-                    <tr>
-                        <td><b>รายชื่อผู้ถือหุ้น</b> </td>
-                        <td colSpan="2"><b>1.</b> {this.state.acc_name1}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colSpan="2"><b>2.</b> {this.state.acc_name2}</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colSpan="2"><b>3.</b> {this.state.acc_name3}</td>
-                        <td></td>
+                        <td>
+                            ทุนจดทะเบียน <br />
+                            {this.state.price_register}
+                        </td>
+                        <td>
+                          
+                        </td>
+                        <td>สำนักงานตั้งอยู่ที่<br />
+                        {this.state.house_number} {this.state.house_name} {this.state.house_stair} {this.state.road} {this.state.distic} {this.state.state} {this.state.province}
+                            
+                        </td>
                     </tr>
                 </table>
             </div>
