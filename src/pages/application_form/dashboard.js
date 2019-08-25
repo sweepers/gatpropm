@@ -1,8 +1,8 @@
 import React from 'react'
-import { navigate } from 'gatsby-link'
+//import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import DatePicker from "react-datepicker";
-import FileUploader from "react-firebase-file-uploader";
+//import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
 import firebase from 'firebase';
 import 'firebase/database'
@@ -179,7 +179,7 @@ export default class Dashboard extends React.Component {
         pdf.setFont('custom');
         var width = pdf.internal.pageSize.getWidth();
         var height = pdf.internal.pageSize.getHeight(); 
-      
+          
         pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
