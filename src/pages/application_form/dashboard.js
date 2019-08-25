@@ -155,6 +155,25 @@ export default class Dashboard extends React.Component {
               avatar = <div className="logo_img"><img src={this.state.avatarURL} /> <a onClick={() => this.onRemove('')}  >Remove</a></div>;
         }
     console.log('list_data',this.state.list_data);
+    var listdata = '';
+       
+      if(this.state.list_data){
+          console.log('atc',this.state.list_data);
+            listdata = this.state.list_data.map((data) =>
+              <tr>
+                  <td>{ data.form_subject }</td>
+                  <td>{ data.created }</td>
+                  <td>{ data.approved?'Approved':'Non Approved' }</td>
+                  <td>
+                    
+                      <button type="button" value={data.app_id} onClick={() => this.onDownload(data.app_id)} className="btn btn-xs btn-primary">Download</button>
+                  </td>
+              </tr>
+              );
+          this.state.list_data.forEach(function(data){
+              
+          });
+      }
     return (
       <Layout>
         <section className="section">
@@ -201,7 +220,7 @@ export default class Dashboard extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                      
+                      { listdata }
                     </tbody>
                 </table>
             </div>
