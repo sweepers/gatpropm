@@ -6,6 +6,7 @@ import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
 import firebase from 'firebase';
 import 'firebase/database'
+import * as jsPDF from 'jspdf'
 /*import PDF01 from './form/form1-1.jpg';
 
 import PDF02 from './form/form1-2.jpg';
