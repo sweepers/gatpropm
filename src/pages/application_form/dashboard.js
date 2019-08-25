@@ -6,14 +6,14 @@ import FileUploader from "react-firebase-file-uploader";
 import "react-datepicker/dist/react-datepicker.css";
 import firebase from 'firebase';
 import 'firebase/database'
-import PDF01 from './form/form1-1.jpg';
+/*import PDF01 from './form/form1-1.jpg';
 
 import PDF02 from './form/form1-2.jpg';
 import PDF03 from './form/form_certify.jpg';
 import PDF04 from './form/form-4.jpg';
 import EXAM02 from './form/edit_exam2.jpg';
 import EXAM022 from './form/form_boj2-2.jpg';
-import form_k from './form/add_people.jpg';
+import form_k from './form/add_people.jpg';*/
 //import { DatePicker } from '@appbaseio/reactivesearch';
 //import * as jsPDF from 'jspdf'
 var localStorage = require('localStorage');
@@ -178,7 +178,7 @@ export default class Dashboard extends React.Component {
         var width = pdf.internal.pageSize.getWidth();
         var height = pdf.internal.pageSize.getHeight(); 
       
-        pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
+       // pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
         
@@ -258,7 +258,7 @@ export default class Dashboard extends React.Component {
         //pdf.addImage(logo, 'JPEG', 0, 0, 100);
         pdf.text(this.state.committ_register,45,734);
         pdf.addPage();
-        pdf.addImage(PDF02, 'JPEG', 0, 0, width, height);
+        //pdf.addImage(PDF02, 'JPEG', 0, 0, width, height);
 
         
         pdf.text(this.state.company_date,472, 172);
@@ -345,7 +345,7 @@ export default class Dashboard extends React.Component {
         pdf.text('2',520, 663);*/
 
         pdf.addPage();
-        pdf.addImage(PDF03, 'JPEG', 0, 0, width, height);
+        //pdf.addImage(PDF03, 'JPEG', 0, 0, width, height);
         pdf.text(this.state.company_name,180,79);
         pdf.text(this.state.company_number,237,100);
         
@@ -404,7 +404,7 @@ export default class Dashboard extends React.Component {
 
 
         pdf.addPage();
-        pdf.addImage(PDF04, 'jpg', 0, 0, width, height);
+        //pdf.addImage(PDF04, 'jpg', 0, 0, width, height);
         pdf.text(this.state.company_name,180,99);
         pdf.text(this.state.company_number,237,121);
         let line = 145;
@@ -575,7 +575,7 @@ export default class Dashboard extends React.Component {
         if(data_form.committee_add_count > 0){
             
             pdf.addPage();
-            pdf.addImage(form_k, 'jpg', 0, 0, width, height);
+            //pdf.addImage(form_k, 'jpg', 0, 0, width, height);
             pdf.text(this.state.company_name,190,88);
             pdf.text(this.state.company_number,257,103);
             //add_idcard_
@@ -678,9 +678,10 @@ export default class Dashboard extends React.Component {
         
         //location_move_type
         if(exam2 === true){
+          
             
             pdf.addPage();
-            pdf.addImage(EXAM02, 'jpg', 0, 0, width, height);
+            //pdf.addImage(EXAM02, 'jpg', 0, 0, width, height);
             pdf.text(this.state.company_name,205,83);
             let meeting_date = '';
             let count_m = '';
@@ -736,7 +737,7 @@ export default class Dashboard extends React.Component {
             if(data_form.location_move_type === 'over'){
             }
             pdf.addPage();
-            pdf.addImage(EXAM022, 'jpg', 0, 0, width, height);
+            //pdf.addImage(EXAM022, 'jpg', 0, 0, width, height);
             
         }
        // pdf.addImage(PDF04, 'JPEG', 0, 0, width, height);
