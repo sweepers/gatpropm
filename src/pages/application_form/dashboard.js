@@ -124,7 +124,7 @@ export default class Dashboard extends React.Component {
          this.setState({ list_data: datelist });
         // this.setState({ list_data: lists })
         
-     }).bind(this);
+     });
       
       
   }
