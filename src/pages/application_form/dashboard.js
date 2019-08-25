@@ -256,7 +256,7 @@ export default class Dashboard extends React.Component {
 
         
         pdf.text(this.state.company_date,472, 172);
-        pdf.text(this.state.company_number,175, 192);
+       // pdf.text(this.state.company_number,175, 192);
         if(data_form.company_name){
             pdf.text(data_form.company_name,170, 246);
         }
