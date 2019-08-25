@@ -21,6 +21,11 @@
     "gatsby-transformer-remark": "^2.3.4",
     "gatsby-transformer-sharp": "^2.1.9",
     "gatsby-plugin-meta-redirect": "1.1.1",
+    "acorn": "^6.1.1",
+    "acorn-jsx": "^5.0.1",
+    "axios": "^0.18.0",
+    
+    "react-bootstrap": "^1.0.0-beta.5",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^2.6.1",
