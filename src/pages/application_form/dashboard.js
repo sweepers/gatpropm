@@ -7,7 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import firebase from 'firebase';
 import 'firebase/database'
 //import * as jsPDF from 'jspdf'
-
+import logo from "../img/logo.png";
 import PDF01 from '../form/form1-1.jpg';
 
 import PDF02 from '../form/form1-2.jpg';
@@ -179,9 +179,9 @@ export default class Dashboard extends React.Component {
         pdf.setFont('custom');
         var width = pdf.internal.pageSize.getWidth();
         var height = pdf.internal.pageSize.getHeight(); 
-        console.log('image',PDF01);
-        return false;
-        //pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
+        console.log('image',logo);
+        //return false;
+        pdf.addImage(logo, 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
         
