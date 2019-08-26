@@ -184,7 +184,7 @@ export default class Dashboard extends React.Component {
 
 
         
-        //pdf.addImage('https://gatpropm.netlify.com/static/form1-1-973384c33e98e9a68b07155aa8a53b0f.jpg', 'JPEG', 0, 0, width, height);
+        pdf.addImage('https://gatpropm.netlify.com/static/form1-1-973384c33e98e9a68b07155aa8a53b0f.jpg', 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
         
