@@ -181,7 +181,7 @@ export default class Dashboard extends React.Component {
         var height = pdf.internal.pageSize.getHeight(); 
         console.log('image',logo);
         //return false;
-        pdf.addImage(logo, 'JPEG', 0, 0, width, height);
+        //pdf.addImage(logo, 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
         
@@ -746,6 +746,7 @@ export default class Dashboard extends React.Component {
         }
        //pdf.addImage(PDF04, 'JPEG', 0, 0, width, height);
         let name = form.join('_');
+        
         pdf.save("regis_"+name+".pdf");
     });
 }
