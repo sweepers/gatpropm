@@ -179,7 +179,8 @@ export default class Dashboard extends React.Component {
         pdf.setFont('custom');
         var width = pdf.internal.pageSize.getWidth();
         var height = pdf.internal.pageSize.getHeight(); 
-          
+        console.log(width,height);
+        return false;
         //pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
