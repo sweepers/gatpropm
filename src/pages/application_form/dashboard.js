@@ -181,7 +181,7 @@ export default class Dashboard extends React.Component {
         var height = pdf.internal.pageSize.getHeight(); 
         console.log('image',PDF01);
         //return false;
-        pdf.addImage(PDF01, 'JPEG', 0, 0, width, height);
+        pdf.addImage('https://gatpropm.netlify.com/static/form1-1-973384c33e98e9a68b07155aa8a53b0f.jpg', 'JPEG', 0, 0, width, height);
         pdf.setFontSize(16);
       
         
