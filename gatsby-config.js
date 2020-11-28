@@ -2,9 +2,9 @@ var proxy = require("http-proxy-middleware")
 
 module.exports = {
   siteMetadata: {
-    title: 'บริการการยื่นคำร้อง-mypromp',
+    title: 'PROMPT Corporate Registration',
     description:
-      'บริการการยื่นคำร้องขอเปิดบริษัท',
+      'ก้าาวแรกสู่ความสำเร็จธุรกิจคุณ',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
